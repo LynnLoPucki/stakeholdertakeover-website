@@ -1,59 +1,71 @@
-.jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
-  background-color: #fff;
-}
+.align-top img { vertical-align: top; }
 
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-}
+.bg-light { background-color: #f6eeed !important; }
 
-.navbar a {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important; !important;
-}
+p.left { text-align: left; }
 
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
+div.center { text-align: center; }
 
-.jumbotron h1 {
-  font-weight: 300;
-}
+sup.smaller { top: -.8em; font-size: 50%; }
 
-.jumbotron .container {
-  max-width: 50rem;
-}
+footer { padding-top: 3rem; padding-bottom: 3rem; }
 
-.align-top img {
-  vertical-align: top;
-}
+footer p { margin-bottom: .25rem; }
 
-.bg-light {
-  background-color: #f6eeed!important;
-}
+.logo { height: 16px; width: 75px; }
 
-p.left {
-  text-align: left;
-}
+.no-wrap { white-space: nowrap; }
 
-div.center {
-  text-align: center;
-}
+.header { line-height: 14pt; }
 
-sup.smaller {
-  top: -.8em;
-  font-size: 50%;
-}
+.clickable { color: #007bff; cursor: pointer; }
 
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
+.large { font-size: larger; }
 
-footer p {
-  margin-bottom: .25rem;
-}
+.bold-header { font-weight: bold; }
+
+.indent-block { padding-left: 2em; }
+
+.arrow { height: 16px; font-size: larger; font-weight: 900; }
+
+.sort-button { height: 62px; width: 95%; padding: 6px; }
+
+.sort-button.green { background-color: #35650d; border-color: #35650d; }
+
+.sort-button:hover { background-color: #aaa; border-color: #aaa; }
+
+.space-above { padding-top: 0.5rem; }
+
+.space-below { padding-bottom: 0.5rem; }
+
+table.dataTable thead tr th { padding: 0px 2px 2px; }
+
+table.dataTable tbody tr td { padding: 0px 2px; }
+
+table.dataTable tbody tr td.pad-right { padding-right: 0.5rem; }
+
+table.dataTable tbody tr td.pad-right-extra { padding-right: 3rem; }
+
+table.dataTable tbody tr td { color: #000 }
+
+table.dataTable tbody tr td a { color: #0082ba }
+
+.top-border, .top-border th { border-top: 1px solid #000 !important; }
+
+.no-top-border, .no-top-border th { border-top: 0 !important; }
+
+.bottom-border, .bottom-border th { border-bottom: 1px solid #000 !important; }
+
+.no-bottom-border, .no-bottom-border th { border-bottom: 0 !important; }
+
+.left-border, .left-border th { border-left: 1px solid #000 !important; }
+
+.no-left-border, .no-left-border th { border-left: 0 !important; }
+
+.right-border, .right-border th { border-right: 1px solid #000 !important; }
+
+.no-right-border, .no-right-border th { border-right: 0 !important; }
+
+.grey-background { background-color: #eee; }
+
+.white-background { background-color: #fff; }

@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Lynn LoPucki">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <title>The Stakeholder Takeover Project</title>
+    <link rel="stylesheet" href="css/stakeholdertakeover.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.dataTables.css">
+    <link rel="stylesheet" href="css/fixedHeader.dataTables.min.css">
+    <style>
+      #TransparencyTable { width: 1500px; }
+      .columnGroupBorders tr td:nth-of-type(1) { border-left: 1px solid #000; border-right: 1px solid #000; }
+      .columnGroupBorders tr td:nth-of-type(3) { border-right: 1px solid #000; }
+      .columnGroupBorders tr td:nth-of-type(8) { border-right: 1px solid #000; }
+      .columnGroupBorders tr td:nth-of-type(10) { border-right: 1px solid #000; }
+      .columnGroupBorders tr td:nth-of-type(11) { border-right: 1px solid #000; }
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.fixedHeader.min.js"></script>
+    <script src="js/jquery.csv.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      var RawData = `
+Company Name,Transparency score,Scope1+2Reported,BiogenicReported,BoundaryFirm,GwpAssessment,CalendarYearAll,DaysGhgToRelease,CSR Report,Scope3Reported,CsrPermaLink
+Newmont Corporation,10,yes,yes,Operational control,IPCC Fourth,yes,154,yes,yes,https://perma.cc/2T8U-VXFJ
+Exelon Corporation,10,yes,yes,Equity share,IPCC Fourth,yes,158,yes,yes,https://perma.cc/MTY8-3F5J
+Northern Trust Corporation,9,yes,no,Operational control,IPCC 3rd/4th/5th,yes,,yes,yes,https://perma.cc/4DMG-CKL9
+Chevron Corporation,9,yes,no,Operational control,IPCC Fourth,yes,158,yes,yes,https://perma.cc/NB5L-Q4A2
+Archer-Daniels-Midland Company,9,yes,yes,Operational control,not reported,yes,160,yes,yes,https://perma.cc/35KF-9675
+Baxter International Inc.,9,yes,yes,Operational control,not reported,yes,182,yes,yes,https://perma.cc/24C4-G5Y5
+Johnson Controls International plc,9,yes,yes,Operational control,IPCC Fourth,no,191,yes,yes,https://perma.cc/6SVB-G89M
+Eaton Corporation plc,9,"yes, exclusions",yes,Operational control,IPCC Fifth,yes,209,yes,yes,https://perma.cc/KV8Q-CTLF
+"American Electric Power Company, Inc.",9,yes,no,Equity share,IPCC Fifth,yes,209,yes,yes,https://perma.cc/8LV9-LSPU
+Eli Lilly and Company,9,"yes, exclusions",yes,Operational control,IPCC Fifth,yes,213,yes,yes,https://perma.cc/Z6FC-GZTH
+Raytheon Technologies Corporation,9,yes,no,Operational control,IPCC 4th/5th,yes,216,yes,yes,https://perma.cc/9AWM-AA47
+Ameren Corporation,9,"yes, exclusions",yes,Operational control,EPA Table A-1,yes,221,yes,yes,https://perma.cc/YC96-5YXP
+Comerica Incorporated,9,yes,no,Operational control,IPCC 2nd/4th/5th,yes,229,yes,yes,https://perma.cc/U279-U9KG
+"Ventas, Inc.",9,yes,no,Operational control,IPCC 2nd/5th,yes,252,yes,yes,https://perma.cc/3J8M-7ACQ
+"Marriott International, Inc.",9,yes,no,Operational control,IPCC Fourth,yes,252,yes,yes,https://perma.cc/F7EH-SNHT
+"Host Hotels & Resorts, Inc.",9,yes,no,Financial control,IPCC Fifth,yes,256,yes,yes,https://perma.cc/TQT7-FZU5
+The Southern Company,9,yes,yes,Equity share,EPA Table A-1,yes,267,yes,yes,https://perma.cc/K363-7HPL
+Lincoln National Corporation,9,yes,no,Financial control,IPCC Fifth,yes,274,yes,yes,https://perma.cc/B94K-EC4S
+"United Airlines Holdings, Inc.",8,yes,no,Operational control,not reported,yes,,yes,yes,http://crreport.united.com/
+"Akamai Technologies, Inc.",8,yes,no,Operational control,not reported,yes,25,yes,yes,https://perma.cc/YH4C-4YYP
+Citigroup Inc.,8,yes,no,Operational control,not reported,yes,116,yes,yes,https://perma.cc/2UFB-B5HJ
+3M Company,8,yes,yes,other boundary,not reported,yes,131,yes,yes,https://perma.cc/KEK5-5T29
+Moody's Corporation,8,yes,no,Operational control,not reported,yes,132,yes,yes,https://perma.cc/SG4F-KX7W
+The Mosaic Company,8,"yes, exclusions",yes,Operational control,not reported,yes,165,yes,yes,https://perma.cc/GQ4X-AF8U
+Adobe Inc.,8,yes,no,Operational control,IPCC Fifth,no,175,yes,yes,https://perma.cc/4UFB-2ZD6
+The Bank of New York Mellon Corporation,8,yes,no,Operational control,not reported,yes,179,yes,yes,https://perma.cc/6FJV-2WDP
+Seagate Technology Holdings plc,8,yes,no,Operational control,IPCC Fifth,no,180,yes,yes,https://perma.cc/3JJG-SSDC
+Regions Financial Corporation,8,yes,no,Operational control,not reported,yes,181,yes,yes,https://perma.cc/4ML7-WLGB
+Aptiv PLC,8,yes,no,Operational control,not reported,yes,188,yes,yes,https://perma.cc/YHF6-P7NV
+"Waste Management, Inc.",8,"yes, exclusions",yes,Operational control,not reported,yes,196,yes,yes,https://perma.cc/GG2N-E29Q
+ConocoPhillips,8,"yes, exclusions",no,Operational control,IPCC Fourth,yes,201,yes,yes,https://perma.cc/4TQA-GJUZ
+The Allstate Corporation,8,yes,no,no boundary data,IPCC 2nd/4th,yes,208,yes,yes,https://perma.cc/H6JV-JPS6
+Abbott Laboratories,8,yes,no,Operational control,not reported,yes,214,yes,yes,https://perma.cc/U4ME-3M66
+Capital One Financial Corporation,8,yes,no,Operational control,not reported,yes,228,yes,yes,https://perma.cc/KLH5-W5G3
+"Merck & Co., Inc.",8,yes,no,Operational control,not reported,yes,257,yes,yes,https://perma.cc/KN23-XPLM
+Southwest Airlines Co.,7,yes,no,no boundary data,not reported,yes,32,yes,yes,https://perma.cc/W4AP-LFSU
+"Healthpeak Properties, Inc.",7,yes,no,Operational control,not reported,yes,32,yes,no,https://perma.cc/ZKN6-5ECC
+"Alexion Pharmaceuticals, Inc.",7,yes,no,Operational control,not reported,yes,62,yes,no,https://perma.cc/9V88-5W4L
+"Expeditors International of Washington, Inc.",7,yes,no,Operational control,not reported,yes,82,yes,yes,https://perma.cc/3X7U-J2FV
+Duke Energy Corporation,7,yes,no,Equity share,not reported,yes,112,yes,no,https://perma.cc/6R95-BTZA
+KeyCorp,7,yes,no,Operational control,not reported,yes,138,yes,yes,https://perma.cc/MCR3-NSYK
+"PPG Industries, Inc.",7,yes,no,Financial control,not reported,yes,139,yes,no,https://sustainability.ppg.com/
+Cognizant Technology Solutions Corporation,7,"yes, exclusions",no,Operational control,not reported,yes,148,yes,yes,https://perma.cc/N4LD-9QH2
+"Corteva, Inc.",7,yes,no,Operational control,not reported,yes,153,yes,yes,https://perma.cc/D4TX-NR89
+UnitedHealth Group Incorporated,7,"yes, exclusions",no,Operational control,not reported,yes,165,yes,yes,https://perma.cc/AX23-VJR9
+General Electric Company,7,yes,no,Operational control,EPA,yes,202,yes,no,https://perma.cc/HFU7-2EYY
+Sysco Corporation,7,"yes, exclusions",no,Operational control,IPCC Fifth,no,209,yes,yes,https://perma.cc/M4AB-J2FR
+"The Williams Companies, Inc.",7,"yes, exclusions",no,Operational control,IPCC Fourth,yes,209,yes,no,https://perma.cc/8SDM-LPPS
+Starbucks Corporation,7,yes,no,Operational control,not reported,no,212,yes,yes,https://perma.cc/KQB9-3UH4
+Bristol-Myers Squibb Company,7,yes,no,Operational control,not reported,yes,215,yes,yes,https://perma.cc/CH9E-GTPS
+Oracle Corporation,7,yes,no,Operational control,IPCC Fourth,no,256,yes,yes,https://perma.cc/3ZJ6-K5MP
+The Kraft Heinz Company,7,"yes, exclusions",yes,other boundary,not reported,yes,292,yes,yes,https://perma.cc/MQ9B-DEME
+"Tapestry, Inc.",7,yes,no,Operational control,IPCC Fifth,no,349,yes,yes,https://perma.cc/M2YM-X2W8
+Allegion plc,6,yes,no,Operational control,not reported,yes,,yes,no,https://perma.cc/F6HR-P9EB
+Booking Holdings Inc.,6,yes,no,no boundary data,not reported,yes,84,yes,yes,https://perma.cc/47T9-BV99
+The Sherwin-Williams Company,6,yes,no,no boundary data,not reported,yes,90,yes,yes,https://perma.cc/YVY3-QFRN
+"Essex Property Trust, Inc.",6,yes,no,Operational control,not reported,yes,126,yes,no,https://perma.cc/JR9P-C28W
+Caterpillar Inc.,6,yes,no,no boundary data,not reported,yes,133,yes,no,https://perma.cc/TV4F-VDB3
+Albemarle Corporation,6,yes,no,Financial control,not reported,yes,154,yes,no,https://perma.cc/6WJ5-CH8H
+Edison International,6,yes,no,other boundary,not reported,yes,155,yes,yes,https://perma.cc/M9SA-S4HA
+Invesco Ltd.,6,"yes, exclusions",no,Operational control,not reported,yes,160,yes,yes,https://perma.cc/DVP7-PJGT
+Omnicom Group Inc.,6,yes,no,no boundary data,not reported,yes,188,yes,yes,https://perma.cc/3ENS-WLP2
+"American Water Works Company, Inc.",6,"yes, exclusions",yes,no boundary data,IPCC Fifth,yes,201,yes,no,https://perma.cc/A77C-TF24
+Valero Energy Corporation,6,yes,no,Operational control,not reported,yes,207,yes,no,https://perma.cc/PZQ6-D4JK
+"Ameriprise Financial, Inc.",6,yes,no,Operational control,not reported,yes,210,yes,no,https://perma.cc/D4BP-LGE5
+HP Inc.,6,yes,no,other boundary,not reported,no,218,yes,yes,https://perma.cc/7WMC-ERFX
+Global Payments Inc.,6,yes,no,Operational control,not reported,yes,229,yes,no,https://perma.cc/V9GK-35DM
+"UDR, Inc.",6,"yes, exclusions",no,Operational control,not reported,yes,291,yes,no,https://perma.cc/93YJ-BFU9
+"Juniper Networks, Inc.",6,"yes, exclusions",no,Operational control,not reported,yes,309,yes,yes,https://perma.cc/693A-ETYR
+Fox Corporation,5,yes,no,no boundary data,not reported,no,78,yes,yes,https://perma.cc/XM5C-DJCB
+"CF Industries Holdings, Inc.",5,yes,no,other boundary,not reported,yes,81,yes,no,https://perma.cc/TG3D-FDW4
+QUALCOMM Incorporated,5,yes,no,no boundary data,not reported,no,127,yes,yes,https://perma.cc/N8D2-GEBB
+Otis Worldwide Corporation,5,yes,no,no boundary data,not reported,yes,144,yes,no,https://perma.cc/UY6T-4672
+"The Cooper Companies, Inc.",5,yes,no,Operational control,not reported,no,164,yes,no,https://perma.cc/QPE7-2EJ6
+Textron Inc.,5,yes,no,no boundary data,not reported,yes,188,yes,no,https://perma.cc/7XDE-UZTT
+NortonLifeLock Inc.,5,yes,no,no boundary data,not reported,no,212,yes,yes,https://perma.cc/6RR3-5UPL
+"AMETEK, Inc.",5,yes,no,no boundary data,not reported,yes,300,yes,no,https://perma.cc/EA8J-UQ3X
+Trimble Inc.,4,"yes, exclusions",no,no boundary data,not reported,no,89,yes,yes,https://perma.cc/X58M-KYYX
+Zoetis Inc.,4,"yes, exclusions",no,no boundary data,not reported,yes,154,yes,no,https://perma.cc/K3K3-V8JT
+Carrier Global Corporation,4,"yes, exclusions",no,other boundary,not reported,yes,222,yes,no,https://perma.cc/ZF8H-AMCB
+IHS Markit Ltd.,3,no,no,no boundary data,EPA US eGrid,no,,yes,yes,https://perma.cc/T5CY-DL66
+"Constellation Brands, Inc.",3,no,no,no boundary data,IPCC Fourth,no,,yes,yes,https://perma.cc/Q97E-YQ5T
+"L Brands, Inc.",2,no,no,no CSR Report,IPCC Fifth,no,,no,yes,
+Brown-Forman Corporation,2,no,no,no boundary data,not reported,no,,yes,yes,https://perma.cc/B753-25F8
+"Quanta Services, Inc.",1,no,no,no boundary data,not reported,no,,yes,no,https://perma.cc/AZ3L-UNKL
+"Penn National Gaming, Inc.",1,no,no,no boundary data,not reported,no,,yes,no,https://perma.cc/Y5GP-P632
+Snap-on Incorporated,1,no,no,no boundary data,not reported,no,,yes,no,https://perma.cc/5YBE-XEA3
+"Paycom Software, Inc.",1,no,no,no boundary data,not reported,no,,yes,no,https://perma.cc/FKM4-7K94
+Garmin Ltd.,1,no,no,no boundary data,not reported,no,,yes,no,https://perma.cc/C7RM-AYJN
+Atmos Energy Corporation,1,no,no,no boundary data,not reported,no,,yes,no,https://perma.cc/6947-BAGN
+"Tesla, Inc.",1,no,no,no boundary data,not reported,no,,yes,no,https://perma.cc/N7ZV-569Z
+"People's United Financial, Inc.",1,no,no,no boundary data,not reported,no,,yes,no,https://perma.cc/9E9Z-U4MU
+"Abiomed, Inc.",1,no,no,no boundary data,not reported,no,,yes,no,https://perma.cc/XWW5-W66B
+"Hologic, Inc.",1,no,no,no boundary data,not reported,no,,yes,no,https://perma.cc/9MFP-DPXA
+"IDEXX Laboratories, Inc.",0,no,no,no CSR Report,not reported,no,,no,no,
+Teledyne Technologies Incorporated,0,no,no,no CSR Report,not reported,no,,no,no,
+Fastenal Company,0,no,no,no CSR Report,not reported,no,,no,no,
+"Live Nation Entertainment, Inc.",0,no,no,no CSR Report,not reported,no,,no,no,
+"Copart, Inc.",0,no,no,no CSR Report,not reported,no,,no,no,
+Lennar Corporation,0,no,no,no CSR Report,not reported,no,,no,no,
+      `;
+      function CompanyLogo(CompanyName) {
+        if (CompanyName.slice(0, 4) === 'The ') {
+          CompanyName = CompanyName.slice(4);
+        }
+        NameParts = CompanyName.match(/^([\w\-\']+) ?([\w\-\']+)?/);
+        ImageName = NameParts[1];
+        if (NameParts[2]) { ImageName += NameParts[2]; }
+        return '<img src="img/' + ImageName + '_32.png" class="logo">';
+      }
+      function CleanNumber(DirtyNumber, DecimalCount) {
+        if (DirtyNumber === '') { return DirtyNumber; }
+        var CleanNumber = DirtyNumber.replaceAll(/[^\d\.]/g, '').replace(/^0+/g, '');
+        if (CleanNumber.indexOf('.') !== -1) {
+          CleanNumber = CleanNumber.replace(/0+$/g, '').replace(/\.$/g, '');
+        }
+        return Intl.NumberFormat('en-US', { minimumFractionDigits: DecimalCount, maximumFractionDigits: DecimalCount }).format(CleanNumber);
+      }
+      function ShortNameWithToolTip(LongName) {
+        ShortName = LongName.replace('&amp;', '&').trim();
+        PrefixList = ['company', 'co', 'incorporated', 'inc', 'corporation', 'corp', 'limited', 'ltd', 'llc', 'plc'];
+        if (ShortName.slice(0, 4) === 'The ') {
+          ShortName = ShortName.slice(4).trim();
+          PrefixList = PrefixList.slice(1);
+        }
+        if (ShortName.slice(-1) === '.') {
+          ShortName = ShortName.slice(0, -1).trim();
+        }
+        PrefixList.forEach(function(suffix) {
+          if (ShortName.slice(-suffix.length - 1).toLowerCase() === ' ' + suffix.toLowerCase()) {
+            ShortName = ShortName.slice(0, -suffix.length - 1).trim();
+          }
+        });
+        if (ShortName.length > 25 && ShortName.indexOf(' ') > -1) {
+          if (ShortName.indexOf(' ') > 25) {
+            ShortName = ShortName.slice(0, ShortName.indexOf(' ')).trim();
+          } else {
+            ShortName = ShortName.slice(0, 28).trim();
+            ShortName = ShortName.slice(0, ShortName.lastIndexOf(' ')).trim();
+          }
+          if (ShortName.slice(-1) === ',') {
+            ShortName = ShortName.slice(0, -1).trim();
+          }
+        }
+        if (ShortName.slice(-1) === '&') {
+          ShortName = ShortName.slice(0, -1).trim();
+        }
+        if (ShortName.slice(-4) === ' and') {
+          ShortName = ShortName.slice(0, -4).trim();
+        }
+        if (ShortName.slice(-4) === ' of') {
+          ShortName = ShortName.slice(0, -3).trim();
+        }
+        if (ShortName.slice(-1) === ',') {
+          ShortName = ShortName.slice(0, -1).trim();
+        }
+        return '<a href="#" data-toggle="tooltip" title="' + LongName + '">' + ShortName + '</a>';
+      }
+      ParsedData = $.csv.toArrays(RawData).slice(1).map(function(r) { return [
+        '',
+        '&nbsp; <span class="no-wrap">' + CompanyLogo(r[0]) + ' ' + ShortNameWithToolTip(r[0]) + '</span>',
+        r[1],
+        '<span class="no-wrap">' + r[2] + '</span>', r[9], r[3], r[4] === 'Operational control, Equity share' ? 'Operational control' : r[4], r[5],
+        r[6], CleanNumber(r[7], 0),
+        r[8] + (r[10] ? ' — <a href="' + r[10] + '" target="_new">download</a>' : ''),
+      ]; });
+      TableData = ParsedData.slice(1);
+      $(document).ready( function () {
+        var TransparencyTable = $('#TransparencyTable').DataTable( {
+          data: TableData,
+          sDom: 'ltipr',
+          autoWidth: false,
+          paging: false,
+          fixedHeader: true,
+          searching: true,
+          language: { searchPlaceholder: 'Search', search: '' },
+          columnDefs: [
+            { orderable: false, targets: [ 0 ] },
+            { type: 'num-fmt', targets: [ 2, 9 ] },
+            { className: 'text-center grey-background', targets: [ 0 ] },
+            { className: 'text-center', targets: [ 2, 3, 4, 5, 7, 8, 10 ] },
+            { className: 'text-right pad-right-extra', targets: [ 9 ] },
+            { className: 'no-wrap', targets: [ 1, 2, 6, 7 ] },
+          ],
+          order: [ [ 1, 'asc' ] ],
+        } );
+        TransparencyTable.on( 'order.dt search.dt', function () {
+          TransparencyTable.column( 0, { search:'applied', order:'applied' } )
+            .nodes()
+            .each( function (cell, i) { cell.innerHTML = i + 1; } );
+        } ).draw();
+        $('[data-toggle="tooltip"]').tooltip();
+        $('#mySearchText').keyup(function() {
+          TransparencyTable.search($('#mySearchText').val()).draw();
+        } );
+      } );
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <div class="navbar navbar-dark" style="background-color: #8800ff;">
+        <div class="container d-flex justify-content-between">
+          <a href="index.html" class="navbar-brand d-flex align-items-center">
+            The Stakeholder Takeover Project &nbsp; &nbsp;
+            <em style="font-size: 70%;">Humanizing corporations through the market power of people</em>
+          </a>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-sm navbar-light grey-background py-0">
+        <div class="container d-flex justify-content-between">
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link py-1" href="index.html">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link py-1" href="#">|</a></li>
+              <li class="nav-item">
+                <a class="nav-link py-1" href="rankings.html">Rankings</a>
+              </li>
+              <li class="nav-item"><a class="nav-link py-1" href="#">|</a></li>
+              <li class="nav-item">
+                <a class="nav-link py-1 active" href="transparency.html">Transparency</a>
+              </li>
+              <li class="nav-item"><a class="nav-link py-1" href="#">|</a></li>
+              <li class="nav-item">
+                <a class="nav-link py-1" href="definitions.html#transparency">Definitions</a>
+              </li>
+            </ul>
+           </div>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main" class="space-above space-below">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-lg-7">
+            <h2>Transparency</h2>
+          </div>
+          <div class="col-lg-5 d-flex align-items-end">
+            <a href="transparency-how-to-use.html">How to use this page</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9">
+            Sample: 100 randomly selected S&P 500 companies<br>
+            Data: From voluntary CSR reports and mandatory EPA reports.
+          </div>
+          <div class="col-lg-3 d-flex align-items-end">
+            <input type="text" id="mySearchText" placeholder="Search..." aria-controls="TransparencyTable">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <table id="TransparencyTable" class="table table-sm table-hover">
+      <thead>
+        <!-- Empty row needed for layout - do not remove -->
+        <tr class="no-bottom-border">
+          <th class="no-top-border"></th>
+
+          <th class="no-top-border"></th>
+
+          <th class="right-border no-top-border"></th>
+
+          <th class="top-border"></th>
+          <th class="top-border"></th>
+          <th class="top-border"></th>
+          <th class="top-border"></th>
+          <th class="right-border top-border"></th>
+
+          <th class="top-border"></th>
+          <th class="right-border top-border"></th>
+
+          <th class="no-top-border no-right-border"></th>
+        </tr>
+        <tr class="no-top-border">
+          <th rowspan="2" class="header white-background"></th>
+          <th rowspan="2" class="header text-center no-right-border"><button type="button" class="btn btn-success sort-button green">Company</button></th>
+          <th rowspan="2" class="header text-center right-border"><button type="button" class="btn btn-success sort-button green">Transparency<br>score</button></th>
+          <th colspan="5" class="header text-center right-border no-bottom-border">GHG Information Reported</th>
+          <th colspan="2" class="header text-center right-border no-bottom-border">Data Comparability</th>
+          <th rowspan="2" class="header text-center no-right-border"><button type="button" class="btn btn-success sort-button green"><span class="no-wrap">CSR</span><br><span class="no-wrap">report</span></button></th>
+        </tr>
+        <tr class="no-top-border bottom-border">
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green"><span class="no-wrap">Scope 1+2</span><br>emissions</button></th>
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green"><span class="no-wrap">Scope 3</span><br>emissions</button></th>
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green">Biogenic<br>emissions</button></th>
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green">Firm boundary</button></th>
+          <th class="header text-center right-border"><button type="button" class="btn btn-success sort-button green">GWP<br>assessment</button></th>
+
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green"><span class="no-wrap">All data are</span><br><span class="no-wrap">calendar year</span></button></th>
+          <th class="header text-center right-border"><button type="button" class="btn btn-success sort-button green"><span class="no-wrap">Days to</span><br><span class="no-wrap">GHG release</span></button></th>
+        </tr>
+      </thead>
+      <tbody class="columnGroupBorders">
+
+      </tbody>
+    </table>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Lynn LoPucki</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
