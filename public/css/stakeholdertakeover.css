@@ -14,7 +14,9 @@ footer { padding-top: 3rem; padding-bottom: 3rem; }
 
 footer p { margin-bottom: .25rem; }
 
-.nav-link { font-size: larger; }
+.navbar-light .navbar-nav a.nav-link { font-size: larger; color: #000; }
+
+.navbar-light .navbar-nav a.nav-link.active { color: #80F; font-weight: 500; }
 
 .logo { height: 16px; width: 75px; }
 
@@ -32,7 +34,7 @@ footer p { margin-bottom: .25rem; }
 
 .arrow { height: 16px; font-size: larger; font-weight: 900; }
 
-.sort-button { height: 62px; width: 95%; padding: 6px; }
+.sort-button { height: 56px; width: 95%; padding: 0px 6px !important; }
 
 .sort-button.green, .btn-success.green { background-color: #35650d; border-color: #35650d; }
 
