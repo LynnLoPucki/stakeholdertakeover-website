@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/jquery.dataTables.css">
     <link rel="stylesheet" href="css/fixedHeader.dataTables.min.css">
     <style>
+      @media print { #TransparencyTable { width: 1000px; transform: scale(0.9); } }
       #TransparencyTable { width: 1500px; }
       .columnGroupBorders tr td:nth-of-type(1) { border-left: 1px solid #000; border-right: 1px solid #000; }
       .columnGroupBorders tr td:nth-of-type(3) { border-right: 1px solid #000; }
@@ -210,7 +211,7 @@ Lennar Corporation,0,no,no,no CSR Report,not reported,no,,no,no,
             { className: 'text-center grey-background', targets: [ 0 ] },
             { className: 'text-center', targets: [ 2, 3, 4, 5, 7, 8, 10 ] },
             { className: 'text-right pad-right-extra', targets: [ 9 ] },
-            { className: 'no-wrap', targets: [ 1, 2, 6, 7 ] },
+            { className: 'no-wrap', targets: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] },
           ],
           order: [ [ 1, 'asc' ] ],
         } );
@@ -269,13 +270,14 @@ Lennar Corporation,0,no,no,no CSR Report,not reported,no,,no,no,
             <h2>Transparency</h2>
           </div>
           <div class="col-lg-5 d-flex align-items-end">
-            <a href="transparency-how-to-use.html">How to use this page</a>
+            <a href="transparency-how-to-use.html" class="hide-on-print">How to use this page</a>
           </div>
         </div>
-        <div class="row">
+        <div class="row hide-on-print">
           <div class="col-lg-9">
             Sample: 100 randomly selected S&P 500 companies<br>
-            Data: From voluntary CSR reports and mandatory EPA reports.
+            Data: From voluntary CSR reports and mandatory EPA reports.<br>
+            Click on the green <button type="button" class="btn btn-success green">Buttons</button> to order data by field
           </div>
           <div class="col-lg-3 d-flex align-items-end">
             <input type="text" id="mySearchText" placeholder="Search..." aria-controls="TransparencyTable">
@@ -307,21 +309,21 @@ Lennar Corporation,0,no,no,no CSR Report,not reported,no,,no,no,
         </tr>
         <tr class="no-top-border">
           <th rowspan="2" class="header white-background"></th>
-          <th rowspan="2" class="header text-center no-right-border"><button type="button" class="btn btn-success sort-button green">Company</button></th>
-          <th rowspan="2" class="header text-center right-border"><button type="button" class="btn btn-success sort-button green">Transparency<br>score</button></th>
+          <th rowspan="2" class="header text-center no-right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="The company name and logo.">Company</button></th>
+          <th rowspan="2" class="header text-center right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="How many of ten data points did the company report for 2020?">Transparency<br>score</button></th>
           <th colspan="5" class="header text-center right-border no-bottom-border">GHG Information Reported</th>
           <th colspan="2" class="header text-center right-border no-bottom-border">Data Comparability</th>
-          <th rowspan="2" class="header text-center no-right-border"><button type="button" class="btn btn-success sort-button green"><span class="no-wrap">CSR</span><br><span class="no-wrap">report</span></button></th>
+          <th rowspan="2" class="header text-center no-right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company published a 2020 Corporate Social Responsibility report"><span class="no-wrap">CSR</span><br><span class="no-wrap">report</span></button></th>
         </tr>
         <tr class="no-top-border bottom-border">
-          <th class="header text-center"><button type="button" class="btn btn-success sort-button green"><span class="no-wrap">Scope 1+2</span><br>emissions</button></th>
-          <th class="header text-center"><button type="button" class="btn btn-success sort-button green"><span class="no-wrap">Scope 3</span><br>emissions</button></th>
-          <th class="header text-center"><button type="button" class="btn btn-success sort-button green">Biogenic<br>emissions</button></th>
-          <th class="header text-center"><button type="button" class="btn btn-success sort-button green">Firm boundary</button></th>
-          <th class="header text-center right-border"><button type="button" class="btn btn-success sort-button green">GWP<br>assessment</button></th>
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company reported the amounts of its scope 1 and 2 emissions"><span class="no-wrap">Scope 1+2</span><br>emissions</button></th>
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company reported at least one category of scope 3 emissions"><span class="no-wrap">Scope 3</span><br>emissions</button></th>
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company reported its biogenic emissions">Biogenic<br>emissions</button></th>
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company reported its criteria for inclusion of subsidiary emissions">Firm boundary</button></th>
+          <th class="header text-center right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company reported how it converted gases to CO2 equivalents">GWP<br>assessment</button></th>
 
-          <th class="header text-center"><button type="button" class="btn btn-success sort-button green"><span class="no-wrap">All data are</span><br><span class="no-wrap">calendar year</span></button></th>
-          <th class="header text-center right-border"><button type="button" class="btn btn-success sort-button green"><span class="no-wrap">Days to</span><br><span class="no-wrap">GHG release</span></button></th>
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company’s 10-K, GHG, and CSR reports are for calendar year"><span class="no-wrap">All data are</span><br><span class="no-wrap">calendar year</span></button></th>
+          <th class="header text-center right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Days from end of reporting period to release of the GHG data"><span class="no-wrap">Days to</span><br><span class="no-wrap">GHG release</span></button></th>
         </tr>
       </thead>
       <tbody class="columnGroupBorders">
