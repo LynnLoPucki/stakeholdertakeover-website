@@ -1,4 +1,4 @@
-@media print { .hide-on-print { display: none; } }
+@media print { .hide-on-print, .dtfh-floatingparent { display: none; } }
 
 .align-top img { vertical-align: top; }
 
@@ -16,7 +16,7 @@ footer p { margin-bottom: .25rem; }
 
 .navbar-light .navbar-nav a.nav-link { font-size: larger; color: #000; }
 
-.navbar-light .navbar-nav a.nav-link.active { color: #80F; font-weight: 500; }
+.navbar-light .navbar-nav a.nav-link.active { color: #80f; font-weight: 500; }
 
 .logo { height: 16px; width: 75px; }
 
@@ -43,6 +43,8 @@ footer p { margin-bottom: .25rem; }
 .space-above { padding-top: 0.5rem; }
 
 .space-below { padding-bottom: 0.5rem; }
+
+table.dataTable tbody tr { page-break-inside: avoid; }
 
 table.dataTable thead tr th { padding: 0px 2px 2px; }
 

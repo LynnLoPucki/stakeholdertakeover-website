@@ -238,7 +238,7 @@ The Southern Company,"75,279,857.00",80.00,no,no assurances,"21,267.00","3,539.7
   </head>
   <body>
 
-    <header>
+    <header class="hide-on-print">
       <div class="navbar navbar-dark" style="background-color: #8800ff;">
         <div class="container d-flex justify-content-between">
           <a href="index.html" class="navbar-brand d-flex align-items-center">
@@ -278,18 +278,18 @@ The Southern Company,"75,279,857.00",80.00,no,no assurances,"21,267.00","3,539.7
           <div class="col-lg-7">
             <h2>Greenhouse Gas Emissions Rankings</h2>
           </div>
-          <div class="col-lg-5 d-flex align-items-end">
+          <div class="col-lg-5 d-flex align-items-end hide-on-print">
             <a href="rankings-how-to-use.html" class="hide-on-print">How to use this page</a>
           </div>
         </div>
-        <div class="row hide-on-print">
+        <div class="row">
           <div class="col-lg-9">
             Sample: 100 randomly selected S&P 500 companies<br>
             Data: From voluntary CSR reports and mandatory EPA reports.<br>
-            Click on the blue <button type="button" class="btn btn-primary">Buttons</button> to order data by field
+            <span class="hide-on-print">Click on the blue <button type="button" class="btn btn-primary">Buttons</button> to order data by field</span>
           </div>
-          <div class="col-lg-3 d-flex align-items-end">
-            <input type="text" id="mySearchText" placeholder="Search..." aria-controls="EmissionsTable">
+          <div class="col-lg-3 d-flex align-items-end hide-on-print">
+            <input type="text" id="mySearchText" placeholder="Search..." aria-controls="EmissionsTable" class="hide-on-print">
           </div>
         </div>
       </div>

@@ -229,7 +229,7 @@ Lennar Corporation,0,no,no,no CSR Report,not reported,no,,no,no,
   </head>
   <body>
 
-    <header>
+    <header class="hide-on-print">
       <div class="navbar navbar-dark" style="background-color: #8800ff;">
         <div class="container d-flex justify-content-between">
           <a href="index.html" class="navbar-brand d-flex align-items-center">
@@ -269,18 +269,18 @@ Lennar Corporation,0,no,no,no CSR Report,not reported,no,,no,no,
           <div class="col-lg-7">
             <h2>Transparency</h2>
           </div>
-          <div class="col-lg-5 d-flex align-items-end">
+          <div class="col-lg-5 d-flex align-items-end hide-on-print">
             <a href="transparency-how-to-use.html" class="hide-on-print">How to use this page</a>
           </div>
         </div>
-        <div class="row hide-on-print">
+        <div class="row">
           <div class="col-lg-9">
             Sample: 100 randomly selected S&P 500 companies<br>
             Data: From voluntary CSR reports and mandatory EPA reports.<br>
-            Click on the green <button type="button" class="btn btn-success green">Buttons</button> to order data by field
+            <span class="hide-on-print">Click on the green <button type="button" class="btn btn-success green">Buttons</button> to order data by field</span>
           </div>
-          <div class="col-lg-3 d-flex align-items-end">
-            <input type="text" id="mySearchText" placeholder="Search..." aria-controls="TransparencyTable">
+          <div class="col-lg-3 d-flex align-items-end hide-on-print">
+            <input type="text" id="mySearchText" placeholder="Search..." aria-controls="TransparencyTable" class="hide-on-print">
           </div>
         </div>
       </div>
@@ -310,7 +310,7 @@ Lennar Corporation,0,no,no,no CSR Report,not reported,no,,no,no,
         <tr class="no-top-border">
           <th rowspan="2" class="header white-background"></th>
           <th rowspan="2" class="header text-center no-right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="The company name and logo.">Company</button></th>
-          <th rowspan="2" class="header text-center right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="How many of ten data points did the company report for 2020?">Transparency<br>score</button></th>
+          <th rowspan="2" class="header text-center right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="How many of ten data points did the company report for 2020?">Transparency<br>score (of 10)</button></th>
           <th colspan="5" class="header text-center right-border no-bottom-border">GHG Information Reported</th>
           <th colspan="2" class="header text-center right-border no-bottom-border">Data Comparability</th>
           <th rowspan="2" class="header text-center no-right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company published a 2020 Corporate Social Responsibility report"><span class="no-wrap">CSR</span><br><span class="no-wrap">report</span></button></th>
