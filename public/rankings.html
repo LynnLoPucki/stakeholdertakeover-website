@@ -191,7 +191,7 @@ The Southern Company,"75,279,857.00",80.00,no,no assurances,"21,267.00","3,539.7
       ParsedData = $.csv.toArrays(RawData).slice(1).map(function(r) { return [
         '',
         '<span class="no-wrap">&nbsp;' + CompanyLogo(r[0]) + ' ' + ShortNameWithToolTip(r[0]) + '</span>',
-        CleanNumber(r[2], 0), r[1] ? (r[1].slice(-3) === '.00' ? r[1].slice(0, -3) : r[1]) : 'no report', r[3].slice(0, 2) === 'no' ? r[3] : '<img src="img/DownArrow.png" class="arrow">', '<span class="no-wrap">' + r[4] + '</span>',
+        CleanNumber(r[2], 0), r[1] ? (r[1].slice(-3) === '.00' ? r[1].slice(0, -3) : r[1]) : 'no report', r[3].slice(0, 2) === 'no' ? r[3] : '<a href="#" data-toggle="tooltip" class="no-wrap" title="The company excluded some emissions from its report"><img src="img/DownArrow.png" class="arrow"></a>', '<span class="no-wrap">' + r[4] + '</span>',
         CleanNumber(r[7], 0), CleanNumber(r[5], 0), r[6] ? CleanNumber(r[6], 2) : 'no report',
         ShortNameWithToolTip(r[8]), CleanNumber(r[9], 0),
         CleanNumber(r[11], 0), CleanNumber(r[10], 0), CleanNumber(r[13], 0), CleanNumber(r[12], 2),
