@@ -29,19 +29,19 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
       var RawData = `
-Company Name,Scope1+2Total,Rank,Exclusions,AssureType,Revenues,Scope1+2-Revenues,RankRevenues,SasbIndustryShort,RankIndustry,EpaScope1Emit,EpaScope1Rank,EpaScope1/Revenues,EpaRankRevenues
-IHS Markit Ltd.,,81.00,no report,no assurances,"4,481.70",,81.00,Professional/Commercial Services,2.00,0.00,1,0.00,1.00
+Company Name,Scope1+2Total,Rank,Exclusions,AssureType,Revenues,Scope1+2-Revenues,RankRevenues,SasbIndustry,RankIndustry,EpaScope1Emit,EpaScope1Rank,EpaScope1/Revenues,EpaRankRevenues
+IHS Markit Ltd.,,81.00,no report,no assurances,"4,481.70",,81.00,Professional & Commercial Services,2.00,0.00,1,0.00,1.00
 Brown-Forman Corporation,,81.00,no report,no assurances,"3,461.00",,81.00,Alcoholic Beverages,,"57,438.00",73,16.60,82.00
 "Constellation Brands, Inc.",,81.00,no report,no assurances,"8,614.90",,81.00,Alcoholic Beverages,,0.00,1,0.00,1.00
 "IDEXX Laboratories, Inc.",,81.00,no report,no CSR Report,"2,858.03",,81.00,Medical Equipment & Supplies,4.00,0.00,1,0.00,1.00
 "Paycom Software, Inc.",,81.00,no report,no assurances,871.26,,81.00,Software & IT Services,6.00,0.00,1,0.00,1.00
 "People's United Financial, Inc.",,81.00,no report,no assurances,"1,912.60",,81.00,Commercial Banks,5.00,0.00,1,0.00,1.00
-"Quanta Services, Inc.",,81.00,no report,no assurances,"11,142.16",,81.00,Engineering/Construction Services,,0.00,1,0.00,1.00
+"Quanta Services, Inc.",,81.00,no report,no assurances,"11,142.16",,81.00,Engineering & Construction Services,,0.00,1,0.00,1.00
 "L Brands, Inc.",,81.00,no report,no CSR Report,"13,217.00",,81.00,"Apparel, Accessories & Footwear",2.00,0.00,1,0.00,1.00
 "Penn National Gaming, Inc.",,81.00,no report,no assurances,"3,737.50",,81.00,Casinos & Gaming,,0.00,1,0.00,1.00
 Snap-on Incorporated,,81.00,no report,no assurances,"4,117.30",,81.00,Industrial Machinery & Goods,2.00,0.00,1,0.00,1.00
 Teledyne Technologies Incorporated,,81.00,no report,no CSR Report,"3,107.30",,81.00,Aerospace & Defense,3.00,0.00,1,0.00,1.00
-"Copart, Inc.",,81.00,no report,no CSR Report,"2,469.54",,81.00,Professional/Commercial Services,2.00,0.00,1,0.00,1.00
+"Copart, Inc.",,81.00,no report,no CSR Report,"2,469.54",,81.00,Professional & Commercial Services,2.00,0.00,1,0.00,1.00
 Atmos Energy Corporation,,81.00,no report,no assurances,"3,201.46",,81.00,Gas Utilities & Distributors,,"1,006,969.00",84,314.53,91.00
 Garmin Ltd.,,81.00,no report,no assurances,"4,402.79",,81.00,Hardware,4.00,0.00,1,0.00,1.00
 Lennar Corporation,,81.00,no report,no CSR Report,"24,451.86",,81.00,Home Builders,,0.00,1,0.00,1.00
@@ -49,17 +49,17 @@ Lennar Corporation,,81.00,no report,no CSR Report,"24,451.86",,81.00,Home Builde
 "Abiomed, Inc.",,81.00,no report,no assurances,847.52,,81.00,Medical Equipment & Supplies,4.00,0.00,1,0.00,1.00
 "Tesla, Inc.",,81.00,no report,no assurances,"35,940.00",,81.00,Automobiles,,"23,613.00",71,0.66,71.00
 "Live Nation Entertainment, Inc.",,81.00,no report,no CSR Report,786.09,,81.00,Leisure Facilities,,0.00,1,0.00,1.00
-Fastenal Company,,81.00,no report,no CSR Report,"5,697.30",,81.00,Retailers & Distributors,,0.00,1,0.00,1.00
-"Ameriprise Financial, Inc.","1,640.00",1.00,no,no assurances,"12,287.00",0.13,1.00,Asset Mngmt. & Custody Activities,1.00,0.00,1,0.00,1.00
-Moody's Corporation,"1,667.00",2.00,no,limited,"5,681.00",0.29,2.00,Professional/Commercial Services,1.00,0.00,1,0.00,1.00
+Fastenal Company,,81.00,no report,no CSR Report,"5,697.30",,81.00,Multiline & Specialty Retailers &Distributors,,0.00,1,0.00,1.00
+"Ameriprise Financial, Inc.","1,640.00",1.00,no,no assurances,"12,287.00",0.13,1.00,Asset Management & Custody Activities,1.00,0.00,1,0.00,1.00
+Moody's Corporation,"1,667.00",2.00,no,limited,"5,681.00",0.29,2.00,Professional & Commercial Services,1.00,0.00,1,0.00,1.00
 Capital One Financial Corporation,"7,198.00",3.00,no,limited,"24,369.00",0.30,3.00,Consumer Finance,,0.00,1,0.00,1.00
-The Bank of New York Mellon Corporation,"8,359.00",4.00,no,limited,"15,537.00",0.54,5.00,Asset Mngmt. & Custody Activities,2.00,0.00,1,0.00,1.00
+The Bank of New York Mellon Corporation,"8,359.00",4.00,no,limited,"15,537.00",0.54,5.00,Asset Management & Custody Activities,2.00,0.00,1,0.00,1.00
 Lincoln National Corporation,"8,492.00",5.00,no,moderate,"17,548.00",0.48,4.00,Insurance,1.00,0.00,1,0.00,1.00
-Invesco Ltd.,"9,117.00",6.00,yes,no assurances,"6,206.40",1.47,8.00,Asset Mngmt. & Custody Activities,3.00,0.00,1,0.00,1.00
+Invesco Ltd.,"9,117.00",6.00,yes,no assurances,"6,206.40",1.47,8.00,Asset Management & Custody Activities,3.00,0.00,1,0.00,1.00
 Trimble Inc.,"9,700.00",7.00,yes,no assurances,"3,241.90",2.99,12.00,Electrical & Electronic Equipment,1.00,0.00,1,0.00,1.00
 "Alexion Pharmaceuticals, Inc.","11,264.00",8.00,no,reasonable,"6,261.60",1.80,10.00,Biotechnology & Pharmaceuticals,1.00,0.00,1,0.00,1.00
 NortonLifeLock Inc.,"19,408.00",9.00,no,no assurances,"2,551.00",7.61,23.00,Software & IT Services,1.00,0.00,1,0.00,1.00
-Northern Trust Corporation,"25,761.00",10.00,no,limited,"6,062.50",4.25,15.00,Asset Mngmt. & Custody Activities,4.00,0.00,1,0.00,1.00
+Northern Trust Corporation,"25,761.00",10.00,no,limited,"6,062.50",4.25,15.00,Asset Management & Custody Activities,4.00,0.00,1,0.00,1.00
 "Tapestry, Inc.","27,077.00",11.00,no,no assurances,"4,845.70",5.59,18.00,"Apparel, Accessories & Footwear",1.00,0.00,1,0.00,1.00
 Comerica Incorporated,"38,025.00",12.00,no,limited,"2,931.00",12.97,28.00,Commercial Banks,1.00,0.00,1,0.00,1.00
 "UDR, Inc.","42,453.00",13.00,yes,limited,"1,241.52",34.19,44.00,Real Estate,1.00,0.00,1,0.00,1.00
@@ -111,25 +111,25 @@ The Kraft Heinz Company,"1,297,152.00",58.00,yes,limited,"26,422.00",49.09,50.00
 Caterpillar Inc.,"1,461,000.00",59.00,no,limited,"43,000.00",33.98,43.00,Industrial Machinery & Goods,1.00,"596,462.00",82,13.87,81.00
 Raytheon Technologies Corporation,"1,557,479.00",60.00,no,limited,"60,478.00",25.75,37.00,Aerospace & Defense,2.00,0.00,1,0.00,1.00
 General Electric Company,"2,080,000.00",61.00,no,no assurances,"77,248.00",26.93,40.00,Electrical & Electronic Equipment,8.00,"789,177.00",83,10.22,80.00
-Edison International,"2,200,000.00",62.00,no,no assurances,"13,748.00",160.02,60.00,Electric Utilities/Power Generators,1.00,"1,241,056.00",87,90.27,85.00
+Edison International,"2,200,000.00",62.00,no,no assurances,"13,748.00",160.02,60.00,Electric Utilities & Power Generators,1.00,"1,241,056.00",87,90.27,85.00
 Newmont Corporation,"3,455,480.00",63.00,no,moderate,"11,788.00",293.14,65.00,Metals & Mining,,"1,114,027.00",85,94.51,86.00
 3M Company,"4,850,000.00",64.00,no,moderate,"32,960.00",147.15,59.00,Chemicals,5.00,"1,188,192.00",86,36.05,83.00
 The Mosaic Company,"4,920,000.00",65.00,yes,limited,"9,180.70",535.91,68.00,Chemicals,6.00,"1,255,351.00",88,136.74,87.00
 "Marriott International, Inc.","5,166,032.00",66.00,no,limited,"1,771.00","2,917.01",75.00,Hotels & Lodging,,0.00,1,0.00,1.00
-"The Williams Companies, Inc.","11,930,000.00",67.00,yes,limited,"8,418.00","1,417.20",72.00,Oil & Gas – Midstream,,"10,074,614.00",91,"1,196.79",95.00
+"The Williams Companies, Inc.","11,930,000.00",67.00,yes,limited,"8,418.00","1,417.20",72.00,Oil & Gas � Midstream,,"10,074,614.00",91,"1,196.79",95.00
 Southwest Airlines Co.,"12,630,318.00",68.00,no,moderate,"6,866.00","1,839.55",74.00,Airlines,1.00,0.00,1,0.00,1.00
-Exelon Corporation,"12,970,146.00",69.00,no,reasonable,"34,182.00",379.44,66.00,Electric Utilities/Power Generators,2.00,"8,591,771.00",89,251.35,90.00
+Exelon Corporation,"12,970,146.00",69.00,no,reasonable,"34,182.00",379.44,66.00,Electric Utilities & Power Generators,2.00,"8,591,771.00",89,251.35,90.00
 "United Airlines Holdings, Inc.","15,660,450.00",70.00,no,limited,"10,597.00","1,477.82",73.00,Airlines,2.00,0.00,1,0.00,1.00
-ConocoPhillips,"16,200,000.00",71.00,yes,limited,"22,772.00",711.40,70.00,Oil & Gas – Exploration & Prod.,1.00,"9,187,289.00",90,403.45,93.00
+ConocoPhillips,"16,200,000.00",71.00,yes,limited,"22,772.00",711.40,70.00,Oil & Gas � Exploration & Production,1.00,"9,187,289.00",90,403.45,93.00
 Archer-Daniels-Midland Company,"16,230,000.00",72.00,no,limited,"68,278.00",237.70,62.00,Agricultural Products,,"12,388,843.00",92,181.45,88.00
 "Waste Management, Inc.","16,319,371.00",72.00,yes,limited,"15,601.00","1,046.05",71.00,Waste Management,,"12,711,114.00",93,814.76,94.00
 "CF Industries Holdings, Inc.","18,689,037.00",74.00,no,no assurances,"4,201.00","4,448.71",79.00,Chemicals,7.00,"20,066,539.00",94,"4,776.61",100.00
-Ameren Corporation,"26,025,341.00",75.00,yes,limited,"5,661.00","4,597.30",80.00,Electric Utilities/Power Generators,3.00,"24,314,880.00",97,"4,295.16",98.00
-Valero Energy Corporation,"27,500,000.00",76.00,no,no assurances,"59,067.00",465.57,67.00,Oil & Gas – Refining & Marketing,,"23,474,041.00",96,397.41,92.00
-"American Electric Power Company, Inc.","49,713,300.00",77.00,no,high,"15,452.10","3,217.25",77.00,Electric Utilities/Power Generators,4.00,"69,794,576.00",98,"4,516.83",99.00
-Chevron Corporation,"57,000,000.00",78.00,no,reasonable,"95,842.00",594.73,69.00,Oil & Gas – Exploration & Prod.,2.00,"22,445,606.00",95,234.19,89.00
-Duke Energy Corporation,"74,979,700.00",79.00,no,high,"23,654.00","3,169.85",76.00,Electric Utilities/Power Generators,5.00,"85,956,926.00",99,"3,633.93",96.00
-The Southern Company,"75,279,857.00",80.00,no,no assurances,"21,267.00","3,539.75",78.00,Electric Utilities/Power Generators,6.00,"87,486,577.00",100,"4,113.72",97.00
+Ameren Corporation,"26,025,341.00",75.00,yes,limited,"5,661.00","4,597.30",80.00,Electric Utilities & Power Generators,3.00,"24,314,880.00",97,"4,295.16",98.00
+Valero Energy Corporation,"27,500,000.00",76.00,no,no assurances,"59,067.00",465.57,67.00,Oil & Gas � Refining & Marketing,,"23,474,041.00",96,397.41,92.00
+"American Electric Power Company, Inc.","49,713,300.00",77.00,no,high,"15,452.10","3,217.25",77.00,Electric Utilities & Power Generators,4.00,"69,794,576.00",98,"4,516.83",99.00
+Chevron Corporation,"57,000,000.00",78.00,no,reasonable,"95,842.00",594.73,69.00,Oil & Gas � Exploration & Production,2.00,"22,445,606.00",95,234.19,89.00
+Duke Energy Corporation,"74,979,700.00",79.00,no,high,"23,654.00","3,169.85",76.00,Electric Utilities & Power Generators,5.00,"85,956,926.00",99,"3,633.93",96.00
+The Southern Company,"75,279,857.00",80.00,no,no assurances,"21,267.00","3,539.75",78.00,Electric Utilities & Power Generators,6.00,"87,486,577.00",100,"4,113.72",97.00
       `;
       function CompanyLogo(CompanyName) {
         if (CompanyName.slice(0, 4) === 'The ') {
