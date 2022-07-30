@@ -534,9 +534,10 @@ Cerner Corporation,7,yes,no,no boundary data,US EPA eGRID 2020,yes,251.00,yes,ye
         if (CompanyName.slice(0, 4) === 'The ') {
           CompanyName = CompanyName.slice(4);
         }
-        NameParts = CompanyName.match(/^([\w\-\']+) ?([\w\-\']+)?/);
+        NameParts = CompanyName.replace(/[\.\&]/g, '').match(/^([\w\-\']+) ?([\w\-\']+)? ?([\w\-\']+)?/);
         ImageName = NameParts[1];
         if (NameParts[2]) { ImageName += NameParts[2]; }
+        if (ImageName.length === 2 && NameParts[3]) { ImageName += NameParts[3]; }
         return '<img src="img/' + ImageName + '_32.png" class="logo">';
       }
       function CleanNumber(DirtyNumber, DecimalCount) {
