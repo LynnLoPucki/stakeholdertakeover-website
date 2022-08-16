@@ -1,501 +1,501 @@
 ﻿Company Name,Scope1+2Total,Rank,Exclusions,AssureType,Revenues,Scope1+2-Revenues,RankRevenues,SasbIndustry,RankIndustry,EpaScope1Emit,EpaScope1Rank,EpaScope1/Revenues,EpaRankRevenues
-"American Water Works Company, Inc.",545111,251,yes,no assurances,3821,142.6618686,315,Water Utilities & Services,1,0,1,0,1
-"Waste Management, Inc.",16319371,383,yes,limited,15601,1046.046471,372,Waste Management,2,12711114,475,814.7627716,473
-"Republic Services, Inc.",13453373,376,no,limited,10196.1,1319.462638,375,Waste Management,1,10363032,470,1016.372142,477
-"Hasbro, Inc.",5895,17,no,moderate,5474.64,1.076783131,32,Toys & Sporting Goods,1,0,1,0,1
-Philip Morris International Inc.,412999,236,no,reasonable,29126,14.17973632,167,Tobacco,2,0,1,0,1
-"Altria Group, Inc.",280968,210,no,limited,20675,13.58974607,166,Tobacco,1,87832,399,4.248222491,393
-AT&T Inc.,5788258,356,no,moderate,172920,33.47361786,243,Telecommunication Services,6,0,1,0,1
-Verizon Communications Inc.,4090491,342,no,limited,129549,31.57485585,237,Telecommunication Services,5,0,1,0,1
-Comcast Corporation,2222593,324,no,limited,104160,21.33825845,193,Telecommunication Services,4,0,1,0,1
-"Lumen Technologies, Inc.",2003874,320,no,limited,20513,97.68800273,304,Telecommunication Services,3,0,1,0,1
-"T-Mobile US, Inc.",1911386,317,yes,limited,77043,24.80934024,212,Telecommunication Services,2,0,1,0,1
-"Charter Communications, Inc.",1474549,304,no,no assurances,48881,30.16609726,230,Telecommunication Services,1,0,1,0,1
-DISH Network Corporation,,413,no report,no 2020 GHG data,16773.9,,413,Telecommunication Services,7,0,1,0,1
-"Enphase Energy, Inc.",,413,no report,no 2020 GHG data,870.63,,413,Solar Technology & Project Developers,1,0,1,0,1
-International Business Machines Corporation,621271,256,yes,limited,73779,8.420702368,124,Software & IT Services,32,0,1,0,1
-Oracle Corporation,429577,239,no,no assurances,40479,10.6123422,145,Software & IT Services,31,0,1,0,1
-DXC Technology Company,380880,229,no,limited,17729,21.4834452,195,Software & IT Services,30,0,1,0,1
-Microsoft Corporation,287639,211,no,limited,159969,1.79809213,52,Software & IT Services,29,0,1,0,1
-Hewlett Packard Enterprise Company,193748,186,no,limited,27557,7.030808869,110,Software & IT Services,28,0,1,0,1
-Iron Mountain Incorporated,187413,184,yes,limited,4160.58,45.04492162,270,Software & IT Services,27,0,1,0,1
-Accenture plc,176928,179,no,limited,47949.38,3.689891298,77,Software & IT Services,26,0,1,0,1
-Cerner Corporation,133884,162,no,no assurances,5481.83,24.42323093,210,Software & IT Services,25,0,1,0,1
-Cognizant Technology Solutions Corporation,108122,150,yes,limited,16828,6.425124792,101,Software & IT Services,24,0,1,0,1
-"Akamai Technologies, Inc.",105138,145,no,limited,3276.56,32.08792148,239,Software & IT Services,23,0,1,0,1
-"Automatic Data Processing, Inc.",98901,137,no,limited,14645.2,6.753134133,106,Software & IT Services,22,0,1,0,1
-"Fidelity National Information Services, Inc.",89428,134,no,no assurances,12697,7.04323856,111,Software & IT Services,21,0,1,0,1
-"salesforce.com, inc.",85000,129,no,limited,22350,3.803131991,78,Software & IT Services,20,0,1,0,1
-"Leidos Holdings, Inc.",48550,93,no,type unknown,12723,3.815923917,79,Software & IT Services,19,0,1,0,1
-Global Payments Inc.,45832,87,no,no assurances,7509.97,6.10282065,97,Software & IT Services,18,0,1,0,1
-"Broadridge Financial Solutions, Inc.",44547,84,no,no assurances,4824,9.234452736,133,Software & IT Services,17,0,1,0,1
-Adobe Inc.,44382,83,no,limited,14389,3.084439502,69,Software & IT Services,16,0,1,0,1
-"Jack Henry & Associates, Inc.",34924,70,yes,no assurances,1718.48,23.3258461,204,Software & IT Services,15,0,1,0,1
-"Cadence Design Systems, Inc.",29244,65,no,no assurances,2800.96,10.44070604,142,Software & IT Services,14,0,1,0,1
-"PayPal Holdings, Inc.",25000,58,yes,limited,22869,1.093182911,34,Software & IT Services,13,0,1,0,1
-"Synopsys, Inc.",24993,57,no,limited,3984.22,6.272996973,98,Software & IT Services,12,0,1,0,1
-"Citrix Systems, Inc.",21418,45,no,limited,3151.52,6.796085698,107,Software & IT Services,11,0,1,0,1
-"ServiceNow, Inc.",20410,44,no,no assurances,4833.48,4.222630486,82,Software & IT Services,10,0,1,0,1
-NortonLifeLock Inc.,19408,43,no,no assurances,2551,7.607996864,118,Software & IT Services,9,0,1,0,1
-CDW Corporation,17899,40,no,no assurances,18915.8,0.946245995,29,Software & IT Services,8,0,1,0,1
-"ANSYS, Inc.",16045,37,no,no assurances,1739.54,9.223702818,132,Software & IT Services,7,0,1,0,1
-Visa Inc.,13923,35,no,limited,21354,0.652008991,20,Software & IT Services,6,0,1,0,1
-"Tyler Technologies, Inc.",7626,20,no,no assurances,1134.92,6.719416347,105,Software & IT Services,5,0,1,0,1
-"Paychex, Inc.",5746,16,no,no assurances,4056.8,1.4163873,42,Software & IT Services,4,0,1,0,1
-Intuit Inc.,4230,12,no,no assurances,8888,0.475922592,14,Software & IT Services,3,0,1,0,1
-Mastercard Incorporated,3489,8,no,limited,15447,0.225869101,6,Software & IT Services,2,0,1,0,1
-"Autodesk, Inc.",970,3,no,limited,3894,0.249101181,7,Software & IT Services,1,0,1,0,1
-"Paycom Software, Inc.",,413,no report,no 2020 GHG data,871.26,,413,Software & IT Services,33,0,1,0,1
-"FLEETCOR Technologies, Inc.",,413,no report,no 2020 GHG data,2336.39,,413,Software & IT Services,33,0,1,0,1
-Electronic Arts Inc.,,413,no report,no 2020 GHG data,5629,,413,Software & IT Services,33,0,1,0,1
-PTC Inc.,,413,no report,no 2020 GHG data,1633.54,,413,Software & IT Services,33,0,1,0,1
-"Roper Technologies, Inc.",,413,no report,no 2020 GHG data,5705,,413,Software & IT Services,33,0,1,0,1
-The Western Union Company,,413,no report,no 2020 GHG data,4855,,413,Software & IT Services,33,0,1,0,1
-"Fiserv, Inc.",,413,no report,no 2020 GHG data,14838,,413,Software & IT Services,33,0,1,0,1
-"Activision Blizzard, Inc.",,413,no report,no 2020 GHG data,8573,,413,Software & IT Services,33,0,1,0,1
-"VeriSign, Inc.",,413,no report,no 2020 GHG data,1276.15,,413,Software & IT Services,33,0,1,0,1
-"Take-Two Interactive Software, Inc.",,413,no report,no 2020 GHG data,3372.77,,413,Software & IT Services,33,0,1,0,1
-"Fortinet, Inc.",,413,no report,no 2020 GHG data,2727,,413,Software & IT Services,33,0,1,0,1
-"Micron Technology, Inc.",7141289,363,no,limited,23503,303.8458495,342,Semiconductors,16,649698,429,27.64319449,424
-Intel Corporation,2882000,330,no,limited,77712,37.08564958,256,Semiconductors,15,735842,432,9.468833642,409
-Texas Instruments Incorporated,1916743,318,yes,limited,15421,124.2943389,314,Semiconductors,14,967875,434,62.76343947,435
-NXP Semiconductors N.V.,948481,281,no,no assurances,9158,103.5685739,306,Semiconductors,13,297794,418,32.51736187,427
-Microchip Technology Incorporated,653748,261,no,no assurances,5438.4,120.2096205,312,Semiconductors,12,413034,423,75.94770521,437
-QUALCOMM Incorporated,315526,217,no,no assurances,29409,10.72889252,146,Semiconductors,11,62144,392,2.113094631,382
-Broadcom Inc.,240722,199,no,no assurances,25553,9.420498572,135,Semiconductors,10,204888,414,8.018158338,406
-"Applied Materials, Inc.",151300,168,yes,limited,19827,7.631008221,119,Semiconductors,9,0,1,0,1
-"Analog Devices, Inc.",140623,165,no,no assurances,6202.3,22.67271819,200,Semiconductors,8,52234,387,8.421714525,408
-"Skyworks Solutions, Inc.",128198,160,no,no assurances,4375.3,29.30039083,228,Semiconductors,7,31360,379,7.167508514,404
-Lam Research Corporation,113483,154,no,no assurances,13272.84,8.550016425,125,Semiconductors,6,0,1,0,1
-IPG Photonics Corporation,69016,115,no,no assurances,1297.07,53.20915602,282,Semiconductors,5,0,1,0,1
-NVIDIA Corporation,68753,113,no,limited,19256,3.570471541,76,Semiconductors,4,0,1,0,1
-"Advanced Micro Devices, Inc.",32251,69,no,limited,11422,2.823586062,66,Semiconductors,3,0,1,0,1
-"Teradyne, Inc.",31653,67,no,no assurances,3198.72,9.895520708,139,Semiconductors,2,0,1,0,1
-"Xilinx, Inc.",21876,47,no,no assurances,3147.6,6.950057186,109,Semiconductors,1,0,1,0,1
-KLA Corporation,,413,no report,no 2020 GHG data,6452.86,,413,Semiconductors,17,0,1,0,1
-"Maxim Integrated Products, Inc.",,413,no report,no 2020 GHG data,2458.04,,413,Semiconductors,17,33634,380,13.68325983,415
-"Monolithic Power Systems, Inc.",,413,no report,no 2020 GHG data,933.13,,413,Semiconductors,17,0,1,0,1
-"Qorvo, Inc.",,413,no,no assurances,4015.31,,413,Semiconductors,17,145144,408,36.14764489,430
-"Intercontinental Exchange, Inc.",47522,91,no,no assurances,6274,7.574434173,116,Security & Commodity Exchanges,3,0,1,0,1
-"Cboe Global Markets, Inc.",11325,29,yes,no assurances,3516.4,3.220623365,70,Security & Commodity Exchanges,2,0,1,0,1
-"Nasdaq, Inc.",4511,14,no,no assurances,5926,0.761221735,24,Security & Commodity Exchanges,1,0,1,0,1
-CME Group Inc.,,413,no report,no 2020 GHG data,4602.6,,413,Security & Commodity Exchanges,4,0,1,0,1
-"J.B. Hunt Transport Services, Inc.",1764625,311,no,limited,9973.9,176.9242724,325,Road Transportation,2,0,1,0,1
-"Old Dominion Freight Line, Inc.",1140641,291,no,no assurances,4154.28,274.5700819,338,Road Transportation,1,0,1,0,1
-Starbucks Corporation,627000,257,no,limited,23842.7,26.29735726,215,Restaurants,4,0,1,0,1
-McDonald's Corporation,528793,248,no,no assurances,19618,26.95448058,219,Restaurants,3,0,1,0,1
-"Chipotle Mexican Grill, Inc.",244164,202,no,type unknown,6315.44,38.66143927,258,Restaurants,2,0,1,0,1
-"Yum! Brands, Inc.",169860,174,yes,limited,5875,28.91234043,224,Restaurants,1,0,1,0,1
-"Darden Restaurants, Inc.",,413,no report,no 2020 GHG data,7196.1,,413,Restaurants,5,0,1,0,1
-"Domino's Pizza, Inc.",,413,no report,no 2020 GHG data,4228.01,,413,Restaurants,5,0,1,0,1
-Deere & Company,766000,270,yes,type unknown,39800,19.24623116,185,Resource Transformation,1,63353,393,1.59178392,377
-"CBRE Group, Inc.",83100,128,no,reasonable,23875.91,3.480495613,74,Real Estate Services,1,0,1,0,1
-"Digital Realty Trust, Inc.",1866188,314,no,limited,4169,447.6344447,347,Real Estate,24,0,1,0,1
-American Tower Corporation (REIT),627705,259,yes,no assurances,8206.9,76.48503089,298,Real Estate,23,0,1,0,1
-Welltower Inc.,469011,245,no,limited,4399.43,106.6072196,308,Real Estate,22,0,1,0,1
-"Equinix, Inc. (REIT)",382800,230,no,no assurances,6114.63,62.60395151,290,Real Estate,21,0,1,0,1
-"Ventas, Inc.",371234,227,no,limited,3713.67,99.96418637,305,Real Estate,20,0,1,0,1
-"Healthpeak Properties, Inc.",288724,212,no,limited,1719.1,167.9506719,323,Real Estate,19,0,1,0,1
-"Host Hotels & Resorts, Inc.",237299,197,no,limited,942,251.9097665,336,Real Estate,18,0,1,0,1
-"Alexandria Real Estate Equities, Inc.",212154,192,no,no assurances,1948.01,108.9080652,310,Real Estate,17,0,1,0,1
-"Simon Property Group, Inc.",184871,183,yes,limited,4491.73,41.15808386,264,Real Estate,16,0,1,0,1
-Vornado Realty Trust,163187,171,no,limited,1557.6,104.7682332,307,Real Estate,15,0,1,0,1
-Extra Space Storage Inc.,135770,163,no,no assurances,1406.89,96.50363568,303,Real Estate,14,0,1,0,1
-Equity Residential,116821,156,no,limited,2487,46.97265782,272,Real Estate,13,0,1,0,1
-"Mid-America Apartment Communities, Inc.",109001,151,no,no assurances,1684.89,64.69324407,291,Real Estate,12,0,1,0,1
-Public Storage,98457,136,no,no assurances,3036.07,32.42909419,240,Real Estate,11,0,1,0,1
-Crown Castle International Corp. (REIT),77800,121,no,no assurances,5904,13.17750678,163,Real Estate,10,0,1,0,1
-"AvalonBay Communities, Inc.",68828,114,no,limited,2249.75,30.59362151,232,Real Estate,9,0,1,0,1
-"Boston Properties, Inc.",55249,102,no,limited,2693.78,20.50984119,189,Real Estate,8,0,1,0,1
-"Essex Property Trust, Inc.",47711,92,no,no assurances,1515.39,31.48430437,236,Real Estate,7,0,1,0,1
-"UDR, Inc.",42453,80,yes,limited,1241.52,34.19437464,247,Real Estate,6,0,1,0,1
-Kimco Realty Corporation,31792,68,yes,limited,1050.46,30.26483636,231,Real Estate,5,0,1,0,1
-Regency Centers Corporation,24682,55,no,limited,1039.22,23.75050519,205,Real Estate,4,0,1,0,1
-Federal Realty Investment Trust,18027,41,no,no assurances,813.86,22.15000123,198,Real Estate,3,0,1,0,1
-"Prologis, Inc.",3841,10,no,limited,4884.5,0.786365032,25,Real Estate,2,0,1,0,1
-Realty Income Corporation,131,1,no,no assurances,1680.09,0.077972013,1,Real Estate,1,0,1,0,1
-Duke Realty Corporation,,413,no report,no 2020 GHG data,1068.07,,413,Real Estate,25,0,1,0,1
-Union Pacific Corporation,9280792,366,no,type unknown,19305,480.7455063,354,Rail Transportation,4,0,1,0,1
-Norfolk Southern Corporation,3963111,340,no,limited,9803,404.2753239,345,Rail Transportation,3,13967,370,1.424767928,375
-CSX Corporation,3960944,339,yes,reasonable,10541,375.7654871,343,Rail Transportation,2,0,1,0,1
-Kansas City Southern,1230000,295,no,limited,2606.9,471.8247727,353,Rail Transportation,1,0,1,0,1
-Arthur J. Gallagher & Co.,47191,89,no,no assurances,7082.8,6.66276049,104,Professional & Commercial Services,10,0,1,0,1
-Nielsen Holdings plc,45362,86,no,limited,6311,7.18776739,113,Professional & Commercial Services,9,0,1,0,1
-Equifax Inc.,27940,64,no,no assurances,4382.6,6.375211062,100,Professional & Commercial Services,8,0,1,0,1
-Jacobs Engineering Group Inc.,24329,53,yes,limited,13709.45,1.77461532,50,Professional & Commercial Services,7,0,1,0,1
-S&P Global Inc.,18780,42,no,limited,7672,2.447862357,60,Professional & Commercial Services,6,0,1,0,1
-Robert Half International Inc.,17552,39,no,no assurances,5000.69,3.509915632,75,Professional & Commercial Services,5,0,1,0,1
-"Gartner, Inc.",3949,11,yes,no assurances,4184.55,0.943709598,28,Professional & Commercial Services,4,0,1,0,1
-MSCI Inc.,3624,9,no,limited,1757.03,2.062571498,56,Professional & Commercial Services,3,0,1,0,1
-"Verisk Analytics, Inc.",3039,7,no,limited,2820.9,1.07731575,33,Professional & Commercial Services,2,0,1,0,1
-Moody's Corporation,1667,6,no,limited,5681,0.293434255,10,Professional & Commercial Services,1,0,1,0,1
-IHS Markit Ltd.,,413,no report,no 2020 GHG data,4481.7,,413,Professional & Commercial Services,11,0,1,0,1
-"Copart, Inc.",,413,no report,no 2020 GHG data,2469.54,,413,Professional & Commercial Services,11,0,1,0,1
-MarketAxess Holdings Inc.,,413,no report,no 2020 GHG data,715.61,,413,Professional & Commercial Services,11,0,1,0,1
-"Rollins, Inc.",,413,no report,no 2020 GHG data,2208.87,,413,Professional & Commercial Services,11,0,1,0,1
-"Mondelez International, Inc.",1527318,305,no,reasonable,27112,56.33365299,286,Processed Foods,9,0,1,0,1
-The Kraft Heinz Company,1297152,296,yes,limited,26422,49.09363409,276,Processed Foods,8,46698,386,1.767390811,379
-Kellogg Company,904000,278,yes,limited,13942,64.84005164,292,Processed Foods,7,166564,411,11.94692297,413
-"Conagra Brands, Inc.",829443,276,yes,limited,11733.1,70.69257059,296,Processed Foods,6,123700,405,10.54282329,412
-Campbell Soup Company,722200,267,yes,limited,8711,82.90666973,300,Processed Foods,5,197537,413,22.67673057,422
-"General Mills, Inc.",559000,253,no,moderate,18626.4,30.01116695,229,Processed Foods,4,69236,395,3.717089722,392
-The J. M. Smucker Company,328442,221,no,limited,8002.7,41.04139853,263,Processed Foods,3,23912,375,2.987991553,385
-The Hershey Company,290840,213,yes,no assurances,8408.35,34.58942599,249,Processed Foods,2,0,1,0,1
-"McCormick & Company, Incorporated",119280,158,no,no assurances,5870.8,20.31750358,187,Processed Foods,1,0,1,0,1
-"Lamb Weston Holdings, Inc.",,413,no report,no 2020 GHG data,3510.3,,413,Processed Foods,10,478238,425,136.2384981,441
-Halliburton Company,2692612,328,no,no assurances,12859,209.3951318,329,Oil & Gas – Services,3,79442,396,6.177929855,402
-Schlumberger Limited,1636000,308,no,no assurances,21369,76.55950208,299,Oil & Gas – Services,2,0,1,0,1
-Baker Hughes Company,684385,265,no,limited,20062,34.11349816,246,Oil & Gas – Services,1,0,1,0,1
-NOV Inc.,,413,no report,no 2020 GHG data,5456,,413,Oil & Gas – Services,4,0,1,0,1
-Marathon Petroleum Corporation,40180000,405,yes,limited,70458,570.2688126,359,Oil & Gas – Refining & Marketing,3,32016178,490,454.4008913,466
-Phillips 66,30100000,399,no,no assurances,64935,463.5404635,349,Oil & Gas – Refining & Marketing,2,28933657,488,445.5787634,465
-Valero Energy Corporation,27500000,397,no,no assurances,59067,465.5729934,350,Oil & Gas – Refining & Marketing,1,23474041,483,397.4138013,462
-"Kinder Morgan, Inc.",18700000,388,yes,limited,13805,1354.581673,378,Oil & Gas – Midstream,3,11473790,471,831.1329229,474
-"The Williams Companies, Inc.",11930000,371,yes,limited,8418,1417.201235,383,Oil & Gas – Midstream,2,10074614,469,1196.79425,478
-"ONEOK, Inc.",6300000,358,no,limited,9600.25,656.2329106,364,Oil & Gas – Midstream,1,3640860,454,379.2463738,460
-Exxon Mobil Corporation,100930000,412,yes,limited,182075,554.332006,358,Oil & Gas – Exploration & Production,12,42582820,494,233.8751613,446
-Chevron Corporation,57000000,409,no,reasonable,95842,594.7288245,361,Oil & Gas – Exploration & Production,11,22445606,482,234.1938399,447
-Occidental Petroleum Corporation,23123207,391,no,reasonable,16489,1402.341379,381,Oil & Gas – Exploration & Production,10,9798363,467,594.2363394,470
-ConocoPhillips,16200000,381,yes,limited,22772,711.3999649,367,Oil & Gas – Exploration & Production,9,9187289,465,403.4467328,463
-APA Corporation,6770000,360,no,no assurances,4968,1362.721417,380,Oil & Gas – Exploration & Production,8,0,1,0,1
-"EOG Resources, Inc.",4900000,349,no,limited,10505.19,466.436114,351,Oil & Gas – Exploration & Production,7,5343231,456,508.6277354,468
-Marathon Oil Corporation,4440000,346,no,no assurances,3271,1357.383063,379,Oil & Gas – Exploration & Production,6,5811397,458,1776.642311,480
-Devon Energy Corporation,4230000,344,no,no assurances,5365,788.443616,369,Oil & Gas – Exploration & Production,5,2906584,451,541.767754,469
-Cabot Oil & Gas Corporation,4050000,341,no,limited,1507.74,2686.13952,397,Oil & Gas – Exploration & Production,4,530870,426,352.0965153,459
-Hess Corporation,3353482,332,no,limited,5092,658.5785546,365,Oil & Gas – Exploration & Production,3,3581050,453,703.269835,471
-Pioneer Natural Resources Company,1739532,310,no,no assurances,8080,215.2886139,330,Oil & Gas – Exploration & Production,2,2383190,448,294.9492574,453
-"Diamondback Energy, Inc.",1473576,303,no,limited,2939,501.3868663,355,Oil & Gas – Exploration & Production,1,1419920,442,483.1303164,467
-The Coca-Cola Company,4770000,347,no,limited,33433,142.6734065,316,Non-Alcoholic Beverages,3,0,1,0,1
-"PepsiCo, Inc.",4410104,345,no,limited,71311,61.84324999,289,Non-Alcoholic Beverages,2,355556,420,4.985990941,396
-Monster Beverage Corporation,8600,24,no,no assurances,4780.36,1.799027688,54,Non-Alcoholic Beverages,1,0,1,0,1
-Walmart Inc.,16430000,384,no,limited,562839,29.19129627,227,Multiline and Specialty Retailers & Distributors,14,0,1,0,1
-"Lowe's Companies, Inc.",1902000,316,no,limited,94344,20.16026456,186,Multiline and Specialty Retailers & Distributors,13,0,1,0,1
-Target Corporation,1883429,315,yes,limited,98143,19.19066057,183,Multiline and Specialty Retailers & Distributors,12,0,1,0,1
-"The Home Depot, Inc.",1821000,312,no,no assurances,141350,12.88291475,160,Multiline and Specialty Retailers & Distributors,11,0,1,0,1
-Dollar General Corporation,1623033,307,no,no assurances,33699.35,48.16214556,275,Multiline and Specialty Retailers & Distributors,10,0,1,0,1
-"Dollar Tree, Inc.",1359055,299,no,no assurances,25702.2,52.87699107,281,Multiline and Specialty Retailers & Distributors,9,0,1,0,1
-"The TJX Companies, Inc.",542645,250,no,limited,37814.74,14.35009205,169,Multiline and Specialty Retailers & Distributors,8,0,1,0,1
-"Best Buy Co., Inc.",401179,232,no,type unknown,50337,7.969863123,122,Multiline and Specialty Retailers & Distributors,7,0,1,0,1
-Tractor Supply Company,249031,205,no,no assurances,11453.5,21.74278605,197,Multiline and Specialty Retailers & Distributors,6,0,1,0,1
-"Ross Stores, Inc.",226714,196,no,type unknown,15204.97,14.91051939,170,Multiline and Specialty Retailers & Distributors,5,0,1,0,1
-"AutoZone, Inc.",221037,194,no,no assurances,14262.07,15.49824114,173,Multiline and Specialty Retailers & Distributors,4,0,1,0,1
-LKQ Corporation,202503,188,yes,no assurances,11798.68,17.16319114,178,Multiline and Specialty Retailers & Distributors,3,0,1,0,1
-"Ulta Beauty, Inc.",114426,155,no,no assurances,6917.26,16.54209904,176,Multiline and Specialty Retailers & Distributors,2,0,1,0,1
-"W.W. Grainger, Inc.",103096,143,no,limited,11880,8.678114478,126,Multiline and Specialty Retailers & Distributors,1,0,1,0,1
-Fastenal Company,,413,no report,no 2020 GHG data,5697.3,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
-Costco Wholesale Corporation,,413,no report,no 2020 GHG data,186637,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
-"Advance Auto Parts, Inc.",,413,no,no assurances,10738.81,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
-Genuine Parts Company,,413,no report,no 2020 GHG data,16909.62,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
-"CarMax, Inc.",,413,no report,no 2020 GHG data,24588.77,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
-"O'Reilly Automotive, Inc.",,413,no report,no 2020 GHG data,12218.91,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
-Pool Corporation,,413,no report,no 2020 GHG data,4320.08,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
-FirstEnergy Corp.,15860888,380,no,no assurances,10624,1492.92997,385,Metals & Mining,3,27852435,486,2621.652391,489
-Freeport-McMoRan Inc.,7115819,362,no,reasonable,16250,437.8965538,346,Metals & Mining,2,451096,424,27.75975385,425
-Newmont Corporation,3455480,334,no,moderate,11788,293.1353919,341,Metals & Mining,1,1114027,437,94.50517475,439
-Abbott Laboratories,906100,279,no,limited,37338,24.26750228,209,Medical Equipment & Supplies,17,113543,402,3.040950238,387
-Baxter International Inc.,611000,255,no,reasonable,11817,51.70517052,279,Medical Equipment & Supplies,16,0,1,0,1
-Thermo Fisher Scientific Inc.,510411,246,no,moderate,35894,14.2199532,168,Medical Equipment & Supplies,15,0,1,0,1
-"Becton, Dickinson and Company",433451,240,no,no assurances,18861,22.98133715,201,Medical Equipment & Supplies,14,0,1,0,1
-Danaher Corporation,312860,216,no,no assurances,24799,12.61583128,156,Medical Equipment & Supplies,13,0,1,0,1
-Medtronic plc,270969,208,no,no assurances,30117,8.997210878,129,Medical Equipment & Supplies,12,0,1,0,1
-Stryker Corporation,143526,166,no,reasonable,14716,9.753057896,138,Medical Equipment & Supplies,11,0,1,0,1
-"West Pharmaceutical Services, Inc.",120859,159,yes,no assurances,2326.1,51.95778341,280,Medical Equipment & Supplies,10,0,1,0,1
-"The Cooper Companies, Inc.",107900,148,no,no assurances,2659.8,40.56695992,261,Medical Equipment & Supplies,9,0,1,0,1
-Boston Scientific Corporation,53731,100,no,no assurances,10122,5.308338273,90,Medical Equipment & Supplies,8,0,1,0,1
-"Agilent Technologies, Inc.",52666,98,no,moderate,5817,9.053807805,131,Medical Equipment & Supplies,7,0,1,0,1
-Edwards Lifesciences Corporation,46215,88,yes,limited,4474.2,10.32922087,141,Medical Equipment & Supplies,6,0,1,0,1
-Dentsply Sirona Inc.,38600,77,yes,no assurances,3495,11.04434907,147,Medical Equipment & Supplies,5,0,1,0,1
-"Illumina, Inc.",36573,72,no,limited,3473,10.53066513,144,Medical Equipment & Supplies,4,0,1,0,1
-Mettler-Toledo International Inc.,26445,61,no,limited,3240.41,8.161004317,123,Medical Equipment & Supplies,3,0,1,0,1
-ResMed Inc.,23028,51,no,no assurances,3091.07,7.449847464,115,Medical Equipment & Supplies,2,0,1,0,1
-Waters Corporation,22156,49,no,no assurances,2508.97,8.830715393,127,Medical Equipment & Supplies,1,0,1,0,1
-"Abiomed, Inc.",,413,no report,no 2020 GHG data,847.52,,413,Medical Equipment & Supplies,18,0,1,0,1
-"Hologic, Inc.",,413,no report,no 2020 GHG data,5317.2,,413,Medical Equipment & Supplies,18,0,1,0,1
-"IDEXX Laboratories, Inc.",,413,no report,no 2020 GHG data,2858.03,,413,Medical Equipment & Supplies,18,0,1,0,1
-"DexCom, Inc.",,413,no report,no 2020 GHG data,2026.6,,413,Medical Equipment & Supplies,18,0,1,0,1
-"Zimmer Biomet Holdings, Inc.",,413,no report,no 2020 GHG data,7088.1,,413,Medical Equipment & Supplies,18,0,1,0,1
-"Bio-Rad Laboratories, Inc.",,413,no report,no 2020 GHG data,2700.78,,413,Medical Equipment & Supplies,18,0,1,0,1
-STERIS plc,,413,no report,no 2020 GHG data,3107.52,,413,Medical Equipment & Supplies,18,0,1,0,1
-"Intuitive Surgical, Inc.",,413,no report,no 2020 GHG data,4551,,413,Medical Equipment & Supplies,18,0,1,0,1
-Teleflex Incorporated,,413,no report,no 2020 GHG data,2540.44,,413,Medical Equipment & Supplies,18,0,1,0,1
-"Align Technology, Inc.",,413,no report,no 2020 GHG data,2815.75,,413,Medical Equipment & Supplies,18,0,1,0,1
-"PerkinElmer, Inc.",,413,no report,no 2020 GHG data,4438.04,,413,Medical Equipment & Supplies,18,0,1,0,1
-The Walt Disney Company,1342649,297,no,limited,58348,23.01105436,202,Media & Entertainment,2,107929,400,1.849746349,380
-ViacomCBS Inc.,166430,173,no,no assurances,26198,6.352775021,99,Media & Entertainment,1,0,1,0,1
-Fox Corporation,,413,no report,no 2020 GHG data,12437,,413,Media & Entertainment,3,0,1,0,1
-"Discovery, Inc.",,413,no report,no 2020 GHG data,10780,,413,Media & Entertainment,3,0,1,0,1
-News Corporation,,413,no report,no 2020 GHG data,8815,,413,Media & Entertainment,3,0,1,0,1
-"Tyson Foods, Inc.",10005000,367,yes,no assurances,43242,231.372277,333,"Meat, Poultry & Dairy",2,1804812,446,41.73747745,431
-Hormel Foods Corporation,1469043,302,no,no assurances,9869.33,148.849314,318,"Meat, Poultry & Dairy",1,61277,391,6.208830792,403
-UnitedHealth Group Incorporated,173228,177,yes,moderate,262916,0.658872035,21,Managed Care,5,0,1,0,1
-Centene Corporation,153236,169,yes,no assurances,108147,1.416923262,43,Managed Care,4,0,1,0,1
-Cigna Corporation,136321,164,no,limited,163141,0.835602332,27,Managed Care,3,0,1,0,1
-"Anthem, Inc.",103991,144,no,no assurances,124632,0.834384428,26,Managed Care,2,0,1,0,1
-Humana Inc.,100499,140,no,limited,78888,1.27394534,38,Managed Care,1,0,1,0,1
-"Live Nation Entertainment, Inc.",,413,no report,no 2020 GHG data,786.09,,413,Leisure Facilities,1,0,1,0,1
-Nucor Corporation,10100000,368,no,no assurances,21532.46,469.0592714,352,Iron & Steel Producers,1,5554873,457,257.9767012,450
-Morgan Stanley,181400,181,no,limited,54643,3.319729883,72,Investment Banking & Brokerage,3,0,1,0,1
-JPMorgan Chase & Co.,73757,117,no,limited,118484,0.622505992,19,Investment Banking & Brokerage,2,0,1,0,1
-"The Goldman Sachs Group, Inc.",13701,34,no,limited,51430,0.266400933,9,Investment Banking & Brokerage,1,16617,371,0.323099358,370
-"Raymond James Financial, Inc.",,413,no report,no 2020 GHG data,8461,,413,Investment Banking & Brokerage,4,0,1,0,1
-The Charles Schwab Corporation,,413,no report,no 2020 GHG data,13789,,413,Investment Banking & Brokerage,4,0,1,0,1
-Alphabet Inc.,950109,282,yes,limited,196682,4.830686082,88,Internet Media & Services,5,19992,372,0.101646312,369
-Booking Holdings Inc.,44367,82,no,no assurances,5649,7.853956452,121,Internet Media & Services,4,0,1,0,1
-"Facebook, Inc.",37594,74,no,limited,94399,0.398245744,12,Internet Media & Services,3,0,1,0,1
-"Netflix, Inc.",31024,66,no,limited,26391.65,1.175523319,36,Internet Media & Services,2,0,1,0,1
-"Expedia Group, Inc.",24833,56,no,limited,4236,5.862370161,94,Internet Media & Services,1,0,1,0,1
-"Twitter, Inc.",,413,no report,no 2020 GHG data,3944.73,,413,Internet Media & Services,6,0,1,0,1
-"Marsh & McLennan Companies, Inc.",101072,142,no,no assurances,17656,5.724512913,93,Insurance,15,0,1,0,1
-"MetLife, Inc.",85601,130,no,no assurances,65094,1.315036716,39,Insurance,14,0,1,0,1
-The Allstate Corporation,80123,123,no,limited,47376,1.691214961,47,Insurance,13,0,1,0,1
-"American International Group, Inc.",77262,120,no,no assurances,43155,1.790337157,51,Insurance,12,0,1,0,1
-"Prudential Financial, Inc.",59014,105,no,limited,60576,0.97421421,30,Insurance,11,0,1,0,1
-Chubb Limited,51701,97,no,type unknown,38386,1.346871255,40,Insurance,10,0,1,0,1
-Aon plc,51223,96,no,no assurances,11372,4.504308829,85,Insurance,9,0,1,0,1
-"The Travelers Companies, Inc.",35408,71,yes,limited,32386,1.093311925,35,Insurance,8,0,1,0,1
-"Principal Financial Group, Inc.",26259,60,yes,limited,13398.9,1.959787744,55,Insurance,7,0,1,0,1
-Cincinnati Financial Corporation,24408,54,no,no assurances,9862,2.47495437,61,Insurance,6,0,1,0,1
-Unum Group,22618,50,yes,limited,13363,1.692584001,48,Insurance,5,0,1,0,1
-Aflac Incorporated,12121,31,no,limited,22854,0.530366675,16,Insurance,4,0,1,0,1
-"The Hartford Financial Services Group, Inc.",8771,25,yes,limited,20837,0.420933916,13,Insurance,3,0,1,0,1
-Lincoln National Corporation,8492,23,no,moderate,17548,0.483929793,15,Insurance,2,0,1,0,1
-W. R. Berkley Corporation,1097,4,yes,no assurances,8445.18,0.12989658,2,Insurance,1,0,1,0,1
-The Progressive Corporation,,413,no report,no 2020 GHG data,44759.6,,413,Insurance,16,0,1,0,1
-Loews Corporation,,413,no report,no 2020 GHG data,13072,,413,Insurance,16,2660914,449,203.5582925,444
-Willis Towers Watson Public Limited Company,,413,no report,no 2020 GHG data,9476,,413,Insurance,16,0,1,0,1
-"Assurant, Inc.",,413,no report,no 2020 GHG data,10072.8,,413,Insurance,16,0,1,0,1
-"Everest Re Group, Ltd.",,413,no report,no 2020 GHG data,10335.97,,413,Insurance,16,0,1,0,1
-Globe Life Inc.,,413,no report,no 2020 GHG data,4871.43,,413,Insurance,16,0,1,0,1
-Berkshire Hathaway Inc.,,413,no report,no 2020 GHG data,248844,,413,Insurance,16,64545297,497,259.3805637,451
-Caterpillar Inc.,1461000,301,no,limited,43000,33.97674419,244,Industrial Machinery & Goods,12,596462,427,13.8712093,416
-Cummins Inc.,594529,254,no,limited,20892,28.45725637,222,Industrial Machinery & Goods,11,0,1,0,1
-Illinois Tool Works Inc.,458900,242,no,limited,12890,35.60124127,253,Industrial Machinery & Goods,10,9104,369,0.706283941,373
-"United Rentals, Inc.",402519,234,no,no assurances,8462,47.56783266,273,Industrial Machinery & Goods,9,0,1,0,1
-Westinghouse Air Brake Technologies Corporation,305095,215,no,limited,7456.4,40.91719865,262,Industrial Machinery & Goods,8,0,1,0,1
-"Stanley Black & Decker, Inc.",246837,203,no,moderate,15602.3,15.8205521,174,Industrial Machinery & Goods,7,0,1,0,1
-PACCAR Inc,239039,198,no,limited,19412.3,12.31379074,155,Industrial Machinery & Goods,6,0,1,0,1
-Ingersoll Rand Inc.,116997,157,no,limited,5576.5,20.98036403,191,Industrial Machinery & Goods,5,0,1,0,1
-Pentair plc,98398,135,no,no assurances,3173.7,31.00419069,234,Industrial Machinery & Goods,4,0,1,0,1
-Dover Corporation,87842,133,yes,moderate,6895.72,12.73862628,158,Industrial Machinery & Goods,3,0,1,0,1
-Xylem Inc.,63817,111,no,limited,5009,12.74046716,159,Industrial Machinery & Goods,2,0,1,0,1
-IDEX Corporation,36880,73,yes,no assurances,2409.22,15.30785898,171,Industrial Machinery & Goods,1,0,1,0,1
-Snap-on Incorporated,,413,no report,no 2020 GHG data,4117.3,,413,Industrial Machinery & Goods,13,0,1,0,1
-Parker-Hannifin Corporation,,413,no report,no 2020 GHG data,13549.37,,413,Industrial Machinery & Goods,13,0,1,0,1
-Kimberly-Clark Corporation,3370838,333,no,limited,18874,178.5969058,326,Household & Personal Products,7,1111952,436,58.91448554,434
-The Procter & Gamble Company,2625000,326,yes,limited,74870,35.060772,251,Household & Personal Products,6,1752006,445,23.40064111,423
-Colgate-Palmolive Company,442230,241,no,limited,16718,26.45232683,217,Household & Personal Products,5,0,1,0,1
-Newell Brands Inc.,372119,228,no,no assurances,9787,38.02176356,257,Household & Personal Products,4,0,1,0,1
-The Clorox Company,259543,207,no,limited,7522,34.50452007,248,Household & Personal Products,3,0,1,0,1
-"Church & Dwight Co., Inc.",100986,141,no,no assurances,4969.5,20.32115907,188,Household & Personal Products,2,0,1,0,1
-The Estée Lauder Companies Inc.,81100,125,yes,limited,14709,5.51363111,91,Household & Personal Products,1,0,1,0,1
-"Marriott International, Inc.",5166032,352,no,limited,1771,2917.014116,398,Hotels & Lodging,3,0,1,0,1
-Hilton Worldwide Holdings Inc.,1718234,309,no,limited,1298,1323.755008,376,Hotels & Lodging,2,0,1,0,1
-"Caesars Entertainment, Inc.",810187,275,no,limited,4692,172.6741262,324,Hotels & Lodging,1,56406,389,12.02173913,414
-Lennar Corporation,,413,no report,no 2020 GHG data,24451.86,,413,Home Builders,4,0,1,0,1
-"D.R. Horton, Inc.",,413,no report,no 2020 GHG data,24170.7,,413,Home Builders,4,0,1,0,1
-"PulteGroup, Inc.",,413,no report,no 2020 GHG data,11470.89,,413,Home Builders,4,0,1,0,1
-"NVR, Inc.",,413,no report,no 2020 GHG data,8017.52,,413,Home Builders,4,0,1,0,1
-"Cardinal Health, Inc.",421300,238,yes,limited,156570,2.690809223,64,Health Care Distributors,4,0,1,0,1
-McKesson Corporation,255341,206,no,no assurances,238228,1.071834545,31,Health Care Distributors,3,0,1,0,1
-AmerisourceBergen Corporation,113218,153,no,moderate,196282.27,0.576812159,18,Health Care Distributors,2,0,1,0,1
-"Henry Schein, Inc.",27519,62,no,no assurances,10615.23,2.592407324,63,Health Care Distributors,1,0,1,0,1
-Laboratory Corporation of America Holdings,332078,222,no,no assurances,15316.2,21.68148758,196,Health Care Delivery,3,36946,384,2.41221713,384
-DaVita Inc.,221829,195,no,limited,11529.37,19.24034011,184,Health Care Delivery,2,0,1,0,1
-Quest Diagnostics Incorporated,183858,182,no,no assurances,10335,17.78984035,181,Health Care Delivery,1,0,1,0,1
-"HCA Healthcare, Inc.",,413,no report,no 2020 GHG data,52649,,413,Health Care Delivery,4,0,1,0,1
-"Universal Health Services, Inc.",,413,no report,no 2020 GHG data,11742.22,,413,Health Care Delivery,4,0,1,0,1
-Corning Incorporated,2800000,329,no,no assurances,12202,229.4705786,332,Hardware,12,210342,415,17.23832159,419
-Seagate Technology Holdings plc,1199080,294,no,limited,10185,117.7299951,311,Hardware,11,0,1,0,1
-Western Digital Corporation,976035,284,no,limited,16289,59.91988458,288,Hardware,10,0,1,0,1
-"Cisco Systems, Inc.",202859,189,no,limited,48846,4.153031978,81,Hardware,9,0,1,0,1
-HP Inc.,171000,176,no,limited,61075,2.799836267,65,Hardware,8,0,1,0,1
-"Motorola Solutions, Inc.",79246,122,yes,limited,7532,10.5212427,143,Hardware,7,0,1,0,1
-"NetApp, Inc.",63505,110,no,no assurances,5744,11.0558844,148,Hardware,6,0,1,0,1
-"Juniper Networks, Inc.",52726,99,yes,no assurances,4521.5,11.66117439,152,Hardware,5,0,1,0,1
-Apple Inc.,47430,90,no,reasonable,325406,0.145756378,5,Hardware,4,0,1,0,1
-"F5 Networks, Inc.",14642,36,no,no assurances,2467.97,5.932811177,95,Hardware,3,0,1,0,1
-Zebra Technologies Corporation,11500,30,no,limited,4743,2.424625764,59,Hardware,2,0,1,0,1
-"Arista Networks, Inc.",5099,15,no,no assurances,2462.05,2.071038362,57,Hardware,1,0,1,0,1
-Garmin Ltd.,,413,no report,no 2020 GHG data,4402.79,,413,Hardware,13,0,1,0,1
-NiSource Inc.,7303463,364,no,no assurances,4621.8,1580.220477,388,Gas Utilities & Distributors,2,9973179,468,2157.85603,482
-Sempra Energy,6851000,361,yes,reasonable,11600,590.6034483,360,Gas Utilities & Distributors,1,3561041,452,306.9862931,455
-Atmos Energy Corporation,,413,no report,no 2020 GHG data,3201.46,,413,Gas Utilities & Distributors,3,1006969,435,314.5343062,457
-Weyerhaeuser Company,1020000,288,no,no assurances,8310,122.7436823,313,Forestry Management,1,35996,382,4.331648616,394
-The Kroger Co.,5275844,354,no,no assurances,132247,39.89386527,260,Food Retailers & Distributors,2,0,1,0,1
-Sysco Corporation,1088973,289,yes,limited,44027.51,24.73392204,211,Food Retailers & Distributors,1,0,1,0,1
-SBA Communications Corporation,24300,52,no,no assurances,2114.81,11.49039394,151,Engineering & Construction Services,1,0,1,0,1
-"Quanta Services, Inc.",,413,no report,no 2020 GHG data,11142.16,,413,Engineering & Construction Services,2,0,1,0,1
-Honeywell International Inc.,2218536,323,no,limited,32628,67.99485105,295,Electrical & Electronic Equipment,17,731027,431,22.40489763,421
-General Electric Company,2080000,321,no,no assurances,77248,26.92626346,218,Electrical & Electronic Equipment,16,789177,433,10.21614799,411
-Eaton Corporation plc,900557,277,yes,reasonable,17761,50.70418332,278,Electrical & Electronic Equipment,15,0,1,0,1
-Johnson Controls International plc,779167,271,no,limited,22232,35.04709428,250,Electrical & Electronic Equipment,14,0,1,0,1
-Emerson Electric Co.,765742,269,no,no assurances,17064,44.87470699,269,Electrical & Electronic Equipment,13,0,1,0,1
-TE Connectivity Ltd.,558285,252,yes,limited,13069,42.7182646,266,Electrical & Electronic Equipment,12,0,1,0,1
-Carrier Global Corporation,391750,231,yes,no assurances,18267,21.44577654,194,Electrical & Electronic Equipment,11,0,1,0,1
-Trane Technologies plc,348770,226,no,limited,12831,27.18182527,220,Electrical & Electronic Equipment,10,0,1,0,1
-Amphenol Corporation,337758,223,no,no assurances,9114,37.05924951,255,Electrical & Electronic Equipment,9,0,1,0,1
-Otis Worldwide Corporation,209000,191,no,no assurances,13198,15.83573269,175,Electrical & Electronic Equipment,8,0,1,0,1
-A. O. Smith Corporation,164253,172,yes,no assurances,3027.4,54.25546674,283,Electrical & Electronic Equipment,7,0,1,0,1
-"AMETEK, Inc.",110000,152,no,no assurances,4553.55,24.15697642,207,Electrical & Electronic Equipment,6,0,1,0,1
-"Rockwell Automation, Inc.",108100,149,no,no assurances,6305.4,17.14403527,177,Electrical & Electronic Equipment,5,0,1,0,1
-Allegion plc,99492,138,no,no assurances,2739.5,36.3175762,254,Electrical & Electronic Equipment,4,0,1,0,1
-"Keysight Technologies, Inc.",87206,132,no,no assurances,4632,18.82685665,182,Electrical & Electronic Equipment,3,0,1,0,1
-Fortive Corporation,60585,108,yes,no assurances,4785.5,12.66011911,157,Electrical & Electronic Equipment,2,0,1,0,1
-Trimble Inc.,9700,27,yes,no assurances,3241.9,2.99207255,68,Electrical & Electronic Equipment,1,0,1,0,1
-Generac Holdings Inc.,,413,no report,no 2020 GHG data,2816.72,,413,Electrical & Electronic Equipment,18,0,1,0,1
-The Southern Company,75279857,411,no,no assurances,21267,3539.749706,405,Electric Utilities & Power Generators,22,87486577,500,4113.724409,496
-Duke Energy Corporation,74979700,410,no,high,23654,3169.852879,402,Electric Utilities & Power Generators,21,85956926,499,3633.927708,493
-"American Electric Power Company, Inc.",49713300,408,no,high,15452.1,3217.252024,403,Electric Utilities & Power Generators,20,69794576,498,4516.834346,498
-The AES Corporation,43478267,407,no,limited,9957,4366.603093,407,Electric Utilities & Power Generators,19,19586036,479,1967.061966,481
-"NextEra Energy, Inc.",43326682,406,yes,limited,17110,2532.24325,394,Electric Utilities & Power Generators,18,44600926,496,2606.716891,488
-Xcel Energy Inc.,37065176,403,yes,no assurances,12256,3024.247389,399,Electric Utilities & Power Generators,17,43084156,495,3515.352154,492
-"Dominion Energy, Inc.",33268960,401,no,limited,14104,2358.831537,393,Electric Utilities & Power Generators,16,35583561,492,2522.941081,486
-Entergy Corporation,33064307,400,no,limited,10531.3,3139.622554,400,Electric Utilities & Power Generators,15,36267972,493,3443.826688,490
-"NRG Energy, Inc.",27726002,398,no,limited,15165,1828.288955,389,Electric Utilities & Power Generators,14,33406387,491,2202.860996,483
-Ameren Corporation,26025341,396,yes,limited,5661,4597.30454,409,Electric Utilities & Power Generators,13,24314880,484,4295.156333,497
-PPL Corporation,25096952,395,no,no assurances,7665,3274.227267,404,Electric Utilities & Power Generators,12,28493455,487,3717.345727,494
-DTE Energy Company,24837180,394,no,high,12933,1920.450012,391,Electric Utilities & Power Generators,11,30757388,489,2378.209851,484
-"WEC Energy Group, Inc.",20241000,390,no,no assurances,7824.5,2586.874561,395,Electric Utilities & Power Generators,10,20016080,480,2558.128954,487
-CMS Energy Corporation,15128573,378,no,limited,6899,2192.864618,392,Electric Utilities & Power Generators,9,16816630,478,2437.546021,485
-Exelon Corporation,12970146,375,no,reasonable,34182,379.4437423,344,Electric Utilities & Power Generators,8,8591771,463,251.3536657,449
-Alliant Energy Corporation,12628477,373,no,no assurances,3401,3713.165834,406,Electric Utilities & Power Generators,7,13709269,476,4030.952367,495
-Pinnacle West Capital Corporation,11374086,370,no,reasonable,3621.53,3140.68529,401,Electric Utilities & Power Generators,6,12628739,473,3487.128092,491
-Public Service Enterprise Group Incorporated,10376800,369,yes,limited,9711,1068.561425,373,Electric Utilities & Power Generators,5,9210755,466,948.4867676,476
-"CenterPoint Energy, Inc.",5295843,355,yes,no assurances,7798,679.1283662,366,Electric Utilities & Power Generators,4,397227,422,50.9395999,432
-"Consolidated Edison, Inc.",3660000,337,no,no assurances,12689,288.4388053,339,Electric Utilities & Power Generators,3,2805163,450,221.0704547,445
-Edison International,2200000,322,no,no assurances,13748,160.0232761,321,Electric Utilities & Power Generators,2,1241056,440,90.27174862,438
-Eversource Energy,685493,266,no,limited,9356.54,73.26351408,297,Electric Utilities & Power Generators,1,153537,409,16.40959158,417
-"Evergy, Inc.",,413,no,no assurances,5408.6,,413,Electric Utilities & Power Generators,23,26494543,485,4898.595385,500
-"Amazon.com, Inc.",14888000,377,no,reasonable,419130,35.52119867,252,E-commerce,3,0,1,0,1
-eBay Inc.,66562,112,yes,limited,11165,5.96166592,96,E-commerce,2,0,1,0,1
-"Etsy, Inc.",298,2,no,limited,2048.22,0.145492183,4,E-commerce,1,0,1,0,1
-"Walgreens Boots Alliance, Inc.",1853000,313,no,limited,142507,13.00287003,162,Drug Retailers,2,0,1,0,1
-CVS Health Corporation,1142764,292,no,limited,270115,4.230657313,83,Drug Retailers,1,0,1,0,1
-Carnival Corporation & plc,6298244,357,no,limited,140,44987.45714,412,Cruise Lines,3,0,1,0,1
-Royal Caribbean Group,2502144,325,no,limited,218.07,11474.04045,410,Cruise Lines,2,0,1,0,1
-Norwegian Cruise Line Holdings Ltd.,1446237,300,no,limited,36.13,40028.70191,411,Cruise Lines,1,0,1,0,1
-International Paper Company,12400000,372,no,no assurances,20591,602.2048468,362,Containers & Packaging,6,6149848,459,298.6667962,454
-WestRock Company,9206494,365,yes,limited,17547.1,524.6732509,356,Containers & Packaging,5,6808157,461,387.9932866,461
-Packaging Corporation of America,3110000,331,no,no assurances,6756.7,460.2838664,348,Containers & Packaging,4,1583107,444,234.3018041,448
-Amcor plc,1961274,319,yes,limited,12549.5,156.2830392,319,Containers & Packaging,3,0,1,0,1
-Ball Corporation,1112399,290,no,limited,12121,91.77452355,301,Containers & Packaging,2,0,1,0,1
-Sealed Air Corporation,465009,243,no,no assurances,4996.4,93.06880954,302,Containers & Packaging,1,0,1,0,1
-Discover Financial Services,40167,79,no,no assurances,8033,5.000248973,89,Consumer Finance,4,0,1,0,1
-American Express Company,22084,48,no,limited,33407,0.661059059,22,Consumer Finance,3,0,1,0,1
-Synchrony Financial,17385,38,no,no assurances,6715,2.588979896,62,Consumer Finance,2,0,1,0,1
-Capital One Financial Corporation,7198,18,no,limited,24369,0.295375272,11,Consumer Finance,1,0,1,0,1
-"Martin Marietta Materials, Inc.",5176000,353,no,no assurances,4463,1159.75801,374,Construction Materials,2,3939578,455,882.7196953,475
-Vulcan Materials Company,965246,283,no,no assurances,4875.93,197.9614145,328,Construction Materials,1,0,1,0,1
-Truist Financial Corporation,203576,190,no,moderate,21086,9.654557526,136,Commercial Banks,14,0,1,0,1
-U.S. Bancorp,193138,185,no,limited,20765,9.301131712,134,Commercial Banks,13,0,1,0,1
-"The PNC Financial Services Group, Inc.",170574,175,no,no assurances,15075,11.31502488,150,Commercial Banks,12,0,1,0,1
-Wells Fargo & Company,86017,131,no,limited,63718,1.349963903,41,Commercial Banks,11,29976,377,0.470447911,371
-Citigroup Inc.,82299,127,no,limited,64838,1.269301953,37,Commercial Banks,10,0,1,0,1
-Regions Financial Corporation,76837,119,no,limited,5667,13.55867302,165,Commercial Banks,9,0,1,0,1
-Bank of America Corporation,61075,109,no,reasonable,80883,0.75510305,23,Commercial Banks,8,0,1,0,1
-Huntington Bancshares Incorporated,60201,107,no,no assurances,4475,13.45273743,164,Commercial Banks,7,0,1,0,1
-KeyCorp,48703,94,no,no assurances,6402,7.607466417,117,Commercial Banks,6,0,1,0,1
-"Citizens Financial Group, Inc.",42650,81,no,reasonable,6031,7.071795722,112,Commercial Banks,5,0,1,0,1
-M&T Bank Corporation,39563,78,no,no assurances,5410.59,7.312141559,114,Commercial Banks,4,0,1,0,1
-Comerica Incorporated,38025,75,no,limited,2931,12.97338792,161,Commercial Banks,3,0,1,0,1
-Fifth Third Bancorp,12995,32,no,limited,7411,1.753474565,49,Commercial Banks,2,0,1,0,1
-SVB Financial Group,7340,19,no,no assurances,4549.39,1.613403116,45,Commercial Banks,1,0,1,0,1
-"People's United Financial, Inc.",,413,no report,no 2020 GHG data,1912.6,,413,Commercial Banks,15,0,1,0,1
-"Zions Bancorporation, National Association",,413,no report,no 2020 GHG data,2800,,413,Commercial Banks,15,0,1,0,1
-First Republic Bank,,413,no report,no 2020 GHG data,4055.13,,413,Commercial Banks,15,0,1,0,1
-Linde plc,37216000,404,no,limited,27747,1341.262118,377,Chemicals,18,7983736,462,287.7333045,452
-Dow Inc.,34760000,402,no,limited,40654,855.0204162,371,Chemicals,17,16409523,477,403.6385841,464
-"Air Products and Chemicals, Inc.",24183886,393,no,limited,9262.5,2610.945857,396,Chemicals,16,12683848,474,1369.376302,479
-LyondellBasell Industries N.V.,24100000,392,no,reasonable,29341,821.3762312,370,Chemicals,15,9110668,464,310.5097986,456
-"CF Industries Holdings, Inc.",18689037,387,no,no assurances,4201,4448.711497,408,Chemicals,14,20066539,481,4776.610093,499
-Eastman Chemical Company,6372993,359,no,no assurances,8641,737.5295683,368,Chemicals,13,6334831,460,733.1131813,472
-"DuPont de Nemours, Inc.",5148000,351,yes,limited,20703,248.6596145,335,Chemicals,12,1116805,438,53.94411438,433
+Teledyne Technologies Incorporated,105739,146,no,no assurances,3107.3,34.02922151,245,Aerospace & Defense,8,0,1,0,1
+Valero Energy Corporation,27500000,397,no,no assurances,59067,465.5729934,350,Oil & Gas – Refining & Marketing,2,23474041,483,397.4138013,462
 The Mosaic Company,4920000,350,yes,limited,9180.7,535.9068481,357,Chemicals,11,1255351,441,136.7380483,442
-3M Company,4850000,348,no,moderate,32960,147.1480583,317,Chemicals,10,1188192,439,36.04951456,429
-Celanese Corporation,3646965,336,yes,reasonable,5993,608.5374604,363,Chemicals,9,2100703,447,350.5261138,458
-"Corteva, Inc.",980000,285,no,no assurances,14439,67.87173627,294,Chemicals,8,117617,404,8.145785719,407
-Albemarle Corporation,935000,280,no,no assurances,3219.36,290.4303961,340,Chemicals,7,242639,416,75.36870682,436
-"PPG Industries, Inc.",789236,272,no,limited,14338,55.0450551,284,Chemicals,6,144905,407,10.10636072,410
-The Sherwin-Williams Company,627265,258,no,no assurances,18871,33.23962694,242,Chemicals,5,0,1,0,1
-Avery Dennison Corporation,402220,233,yes,limited,7299.8,55.10013973,285,Chemicals,4,0,1,0,1
-Ecolab Inc.,340004,224,no,limited,11654.6,29.1733736,226,Chemicals,3,0,1,0,1
-International Flavors & Fragrances Inc.,247272,204,no,limited,6202.24,39.86817666,259,Chemicals,2,36254,383,5.845307502,400
-FMC Corporation,150615,167,yes,limited,4587.7,32.83017634,241,Chemicals,1,0,1,0,1
-Las Vegas Sands Corp.,541756,249,no,limited,3391,159.7629018,320,Casinos & Gaming,3,0,1,0,1
-"Wynn Resorts, Limited",412810,235,no,no assurances,1867.93,220.9986456,331,Casinos & Gaming,2,0,1,0,1
-MGM Resorts International,199686,187,no,limited,4352.19,45.88172851,271,Casinos & Gaming,1,138029,406,31.71483782,426
-"Penn National Gaming, Inc.",,413,no report,no 2020 GHG data,3737.5,,413,Casinos & Gaming,4,0,1,0,1
-"Mohawk Industries, Inc.",2626945,327,no,no assurances,9935.46,264.4009437,337,Building Products & Furnishings,3,337741,419,33.99349401,428
-"Fortune Brands Home & Security, Inc.",323817,220,yes,no assurances,6458.6,50.13733626,277,Building Products & Furnishings,2,0,1,0,1
-Masco Corporation,180000,180,no,no assurances,7577,23.756104,206,Building Products & Furnishings,1,0,1,0,1
-"Leggett & Platt, Incorporated",,413,no report,no 2020 GHG data,4385.6,,413,Building Products & Furnishings,4,82485,397,18.80814484,420
-Pfizer Inc.,1350000,298,no,limited,46407,29.09043894,225,Biotechnology & Pharmaceuticals,17,252419,417,5.43924408,397
-"Merck & Co., Inc.",993800,286,no,limited,48017,20.69683654,190,Biotechnology & Pharmaceuticals,16,368933,421,7.683382969,405
-Johnson & Johnson,747669,268,no,limited,84214,8.878203149,128,Biotechnology & Pharmaceuticals,15,0,1,0,1
-Eli Lilly and Company,671230,263,yes,limited,25485.6,26.33761811,216,Biotechnology & Pharmaceuticals,14,0,1,0,1
-Viatris Inc.,659000,262,yes,no assurances,13757.1,47.9025376,274,Biotechnology & Pharmaceuticals,13,0,1,0,1
-Zoetis Inc.,298206,214,yes,no assurances,7012,42.52795208,265,Biotechnology & Pharmaceuticals,12,0,1,0,1
-Bristol-Myers Squibb Company,278040,209,no,no assurances,42810,6.494744219,103,Biotechnology & Pharmaceuticals,11,84259,398,1.968208363,381
-Amgen Inc.,243000,201,no,limited,25164,9.656652361,137,Biotechnology & Pharmaceuticals,10,35994,381,1.430376729,376
-"Catalent, Inc.",220000,193,no,no assurances,3757.4,58.55112578,287,Biotechnology & Pharmaceuticals,9,0,1,0,1
-Perrigo Company plc,153918,170,no,no assurances,4990,30.84529058,233,Biotechnology & Pharmaceuticals,8,0,1,0,1
-"Charles River Laboratories International, Inc.",130362,161,no,no assurances,3041.44,42.86193382,267,Biotechnology & Pharmaceuticals,7,0,1,0,1
-"Regeneron Pharmaceuticals, Inc.",81100,126,no,limited,9010.9,9.000210856,130,Biotechnology & Pharmaceuticals,6,0,1,0,1
-Biogen Inc.,57736,104,no,limited,12604.3,4.580658981,86,Biotechnology & Pharmaceuticals,5,29570,376,2.346024769,383
-IQVIA Holdings Inc.,49355,95,no,type unknown,12014,4.108123856,80,Biotechnology & Pharmaceuticals,4,0,1,0,1
-Vertex Pharmaceuticals Incorporated,13449,33,no,limited,6414.88,2.096531814,58,Biotechnology & Pharmaceuticals,3,0,1,0,1
-"Alexion Pharmaceuticals, Inc.",11264,28,no,reasonable,6261.6,1.798901239,53,Biotechnology & Pharmaceuticals,2,0,1,0,1
-Incyte Corporation,7848,21,no,no assurances,2702.91,2.903537299,67,Biotechnology & Pharmaceuticals,1,0,1,0,1
-"Gilead Sciences, Inc.",,413,no report,no 2020 GHG data,25564,,413,Biotechnology & Pharmaceuticals,18,0,1,0,1
-AbbVie Inc.,,413,no report,no 2020 GHG data,50195,,413,Biotechnology & Pharmaceuticals,18,154326,410,3.074529336,389
-Organon & Co.,,413,no report,no 2020 GHG data,7822,,413,Biotechnology & Pharmaceuticals,18,0,1,0,1
-General Motors Company,3813946,338,no,limited,122250,31.19792229,235,Automobiles,2,676789,430,5.536106339,398
-Ford Motor Company,3572034,335,no,limited,129052,27.67902861,221,Automobiles,1,633370,428,4.907866596,395
-"Tesla, Inc.",,413,no report,no 2020 GHG data,35940,,413,Automobiles,3,23613,374,0.657011686,372
-BorgWarner Inc.,342520,225,yes,no assurances,11895,28.79529214,223,Auto Parts,2,0,1,0,1
-Aptiv PLC,322870,219,no,limited,13863,23.29005266,203,Auto Parts,1,0,1,0,1
-State Street Corporation,74469,118,no,limited,11545,6.450324816,102,Asset Management & Custody Activities,8,0,1,0,1
-"Franklin Resources, Inc.",38349,76,no,no assurances,6937.7,5.527624429,92,Asset Management & Custody Activities,7,0,1,0,1
-Northern Trust Corporation,25761,59,no,limited,6062.5,4.249237113,84,Asset Management & Custody Activities,6,0,1,0,1
-"T. Rowe Price Group, Inc.",21457,46,no,limited,6570.9,3.265458309,71,Asset Management & Custody Activities,5,0,1,0,1
-Invesco Ltd.,9117,26,yes,no assurances,6206.4,1.468967517,44,Asset Management & Custody Activities,4,0,1,0,1
-The Bank of New York Mellon Corporation,8359,22,no,limited,15537,0.53800605,17,Asset Management & Custody Activities,3,0,1,0,1
-"BlackRock, Inc.",4289,13,no,limited,16893,0.253892145,8,Asset Management & Custody Activities,2,0,1,0,1
-"Ameriprise Financial, Inc.",1640,5,no,limited,12287,0.133474404,3,Asset Management & Custody Activities,1,0,1,0,1
-Whirlpool Corporation,648571,260,yes,limited,20489,31.65459515,238,Appliance Manufacturing,1,22836,373,1.11454927,374
-Cintas Corporation,466629,244,no,no assurances,6900.26,67.62484312,293,"Apparel, Accessories & Footwear",7,0,1,0,1
-"The Gap, Inc.",240724,200,no,limited,15684,15.34838052,172,"Apparel, Accessories & Footwear",6,0,1,0,1
-Hanesbrands Inc.,173774,178,yes,limited,6969.31,24.93417569,213,"Apparel, Accessories & Footwear",5,0,1,0,1
-Ralph Lauren Corporation,106628,147,no,no assurances,4400.8,24.22923105,208,"Apparel, Accessories & Footwear",4,0,1,0,1
-PVH Corp.,80888,124,no,no assurances,7867.9,10.28076107,140,"Apparel, Accessories & Footwear",3,0,1,0,1
-V.F. Corporation,72058,116,no,limited,9238.83,7.799472444,120,"Apparel, Accessories & Footwear",2,0,1,0,1
-"Tapestry, Inc.",59367,106,no,no assurances,4845.7,12.25148069,154,"Apparel, Accessories & Footwear",1,0,1,0,1
-"L Brands, Inc.",,413,no report,no 2020 GHG data,13217,,413,"Apparel, Accessories & Footwear",8,0,1,0,1
-"Under Armour, Inc.",,413,no report,no 2020 GHG data,4801.62,,413,"Apparel, Accessories & Footwear",8,0,1,0,1
-"NIKE, Inc.",,413,no report,no 2020 GHG data,44538,,413,"Apparel, Accessories & Footwear",8,0,1,0,1
-Molson Coors Beverage Company,1017929,287,no,limited,9449.6,107.7219142,309,Alcoholic Beverages,1,30167,378,3.192410261,390
-"Constellation Brands, Inc.",,413,no report,no 2020 GHG data,8614.9,,413,Alcoholic Beverages,2,0,1,0,1
-Brown-Forman Corporation,,413,no report,no 2020 GHG data,3461,,413,Alcoholic Beverages,2,57438,390,16.59578157,418
-American Airlines Group Inc.,20067000,389,no,limited,12830,1564.068589,387,Airlines,5,42300,385,3.296960249,391
-"Delta Air Lines, Inc.",17815645,386,yes,no assurances,12653,1408.017466,382,Airlines,4,1501650,443,118.6793646,440
-"United Airlines Holdings, Inc.",15660450,379,no,limited,10597,1477.819194,384,Airlines,3,0,1,0,1
-Southwest Airlines Co.,12630318,374,no,moderate,6866,1839.545296,390,Airlines,2,0,1,0,1
-"Alaska Air Group, Inc.",4154003,343,no,no assurances,2727,1523.286762,386,Airlines,1,0,1,0,1
-"United Parcel Service, Inc.",16500000,385,no,reasonable,89501,184.3554821,327,Air Freight & Logistics,3,0,1,0,1
+KeyCorp,48703,94,no,no assurances,6402,7.607466417,117,Commercial Banks,8,0,1,0,1
+"PPG Industries, Inc.",789236,272,no,limited,14338,55.0450551,284,Chemicals,5,144905,407,10.10636072,410
 "Expeditors International of Washington, Inc.",54452,101,no,no assurances,11572.16,4.705430965,87,Air Freight & Logistics,2,0,1,0,1
-"C.H. Robinson Worldwide, Inc.",27796,63,no,no assurances,17205.97,1.615485788,46,Air Freight & Logistics,1,0,1,0,1
-FedEx Corporation,,413,no report,no 2020 GHG data,83959,,413,Air Freight & Logistics,4,0,1,0,1
-Archer-Daniels-Midland Company,16230000,382,no,limited,68278,237.7046779,334,Agricultural Products,1,12388843,472,181.4470693,443
-Raytheon Technologies Corporation,1557479,306,no,limited,60478,25.75281921,214,Aerospace & Defense,10,0,1,0,1
-The Boeing Company,1185000,293,yes,limited,56467,20.98570847,192,Aerospace & Defense,9,172670,412,3.05789222,388
-Howmet Aerospace Inc.,800000,274,no,no assurances,4834,165.4944146,322,Aerospace & Defense,8,0,1,0,1
-Lockheed Martin Corporation,790535,273,no,limited,66005,11.97689569,153,Aerospace & Defense,7,114741,403,1.738368305,378
-General Dynamics Corporation,680600,264,no,limited,38565,17.64812654,180,Aerospace & Defense,6,0,1,0,1
-Textron Inc.,511242,247,no,no assurances,11753,43.49885136,268,Aerospace & Defense,5,66577,394,5.664681358,399
-Northrop Grumman Corporation,414904,237,yes,limited,37336,11.11270624,149,Aerospace & Defense,4,112718,401,3.019016499,386
-"L3Harris Technologies, Inc.",317855,218,no,no assurances,18135,17.52715743,179,Aerospace & Defense,3,0,1,0,1
-Teledyne Technologies Incorporated,105739,146,no,no assurances,3107.3,34.02922151,245,Aerospace & Defense,2,0,1,0,1
-TransDigm Group Incorporated,99641,139,yes,no assurances,4496,22.16214413,199,Aerospace & Defense,1,0,1,0,1
-"Huntington Ingalls Industries, Inc.",,413,no report,no 2020 GHG data,9376,,413,Aerospace & Defense,11,55380,388,5.906569966,401
-"The Interpublic Group of Companies, Inc.",55531,103,no,no assurances,8120.1,6.838708883,108,Advertising & Marketing,2,0,1,0,1
+The Bank of New York Mellon Corporation,8359,22,no,limited,15537,0.53800605,17,Asset Management & Custody Activities,3,0,1,0,1
+Citigroup Inc.,82299,127,no,limited,64838,1.269301953,37,Commercial Banks,2,0,1,0,1
+"The Cooper Companies, Inc.",107900,148,no,no assurances,2659.8,40.56695992,261,Medical Equipment & Supplies,15,0,1,0,1
+"Tapestry, Inc.",59367,106,no,no assurances,4845.7,12.25148069,154,"Apparel, Accessories & Footwear",3,0,1,0,1
+"UDR, Inc.",42453,80,yes,limited,1241.52,34.19437464,247,Real Estate,11,0,1,0,1
+"L Brands, Inc.",,413,no report,no 2020 GHG data,13217,,413,"Apparel, Accessories & Footwear",8,0,1,0,1
+Eaton Corporation plc,900557,277,yes,reasonable,17761,50.70418332,278,Electrical & Electronic Equipment,15,0,1,0,1
+Atmos Energy Corporation,,413,no report,no 2020 GHG data,3201.46,,413,Gas Utilities & Distributors,3,1006969,435,314.5343062,457
+Oracle Corporation,429577,239,no,no assurances,40479,10.6123422,145,Software & IT Services,27,0,1,0,1
+Johnson Controls International plc,779167,271,no,limited,22232,35.04709428,250,Electrical & Electronic Equipment,10,0,1,0,1
 Omnicom Group Inc.,44961,85,no,no assurances,13191.1,3.408434475,73,Advertising & Marketing,1,0,1,0,1
+"Abiomed, Inc.",,413,no report,no 2020 GHG data,847.52,,413,Medical Equipment & Supplies,18,0,1,0,1
+"Waste Management, Inc.",16319371,383,yes,limited,15601,1046.046471,372,Waste Management,1,12711114,475,814.7627716,473
+Ameren Corporation,26025341,396,yes,limited,5661,4597.30454,409,Electric Utilities & Power Generators,22,24314880,484,4295.156333,497
+"Ventas, Inc.",371234,227,no,limited,3713.67,99.96418637,305,Real Estate,18,0,1,0,1
+Northern Trust Corporation,25761,59,no,limited,6062.5,4.249237113,84,Asset Management & Custody Activities,6,0,1,0,1
+Baxter International Inc.,611000,255,no,reasonable,11817,51.70517052,279,Medical Equipment & Supplies,16,0,1,0,1
+"Hologic, Inc.",,413,no report,no 2020 GHG data,5317.2,,413,Medical Equipment & Supplies,18,0,1,0,1
+"Essex Property Trust, Inc.",47711,92,no,no assurances,1515.39,31.48430437,236,Real Estate,9,0,1,0,1
+Archer-Daniels-Midland Company,16230000,382,no,limited,68278,237.7046779,334,Agricultural Products,1,12388843,472,181.4470693,443
+"The Williams Companies, Inc.",11930000,371,yes,limited,8418,1417.201235,383,Oil & Gas – Midstream,3,10074614,469,1196.79425,478
+Regions Financial Corporation,76837,119,no,limited,5667,13.55867302,165,Commercial Banks,14,0,1,0,1
+Starbucks Corporation,627000,257,no,limited,23842.7,26.29735726,215,Restaurants,1,0,1,0,1
+"Tesla, Inc.",,413,no report,no 2020 GHG data,35940,,413,Automobiles,3,23613,374,0.657011686,372
+Textron Inc.,511242,247,no,no assurances,11753,43.49885136,268,Aerospace & Defense,9,66577,394,5.664681358,399
+General Electric Company,2080000,321,no,no assurances,77248,26.92626346,218,Electrical & Electronic Equipment,8,789177,433,10.21614799,411
+ConocoPhillips,16200000,381,yes,limited,22772,711.3999649,367,Oil & Gas – Exploration & Production,7,9187289,465,403.4467328,463
+"Merck & Co., Inc.",993800,286,no,limited,48017,20.69683654,190,Biotechnology & Pharmaceuticals,10,368933,421,7.683382969,405
+Garmin Ltd.,,413,no report,no 2020 GHG data,4402.79,,413,Hardware,13,0,1,0,1
+Capital One Financial Corporation,7198,18,no,limited,24369,0.295375272,11,Consumer Finance,1,0,1,0,1
+NortonLifeLock Inc.,19408,43,no,no assurances,2551,7.607996864,118,Software & IT Services,22,0,1,0,1
+"Live Nation Entertainment, Inc.",,413,no report,no 2020 GHG data,786.09,,413,Leisure Facilities,1,0,1,0,1
+Fastenal Company,,413,no report,no 2020 GHG data,5697.3,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
+Carrier Global Corporation,391750,231,yes,no assurances,18267,21.44577654,194,Electrical & Electronic Equipment,6,0,1,0,1
+"AMETEK, Inc.",110000,152,no,no assurances,4553.55,24.15697642,207,Electrical & Electronic Equipment,7,0,1,0,1
+The Southern Company,75279857,411,no,no assurances,21267,3539.749706,405,Electric Utilities & Power Generators,19,87486577,500,4113.724409,496
+Seagate Technology Holdings plc,1199080,294,no,limited,10185,117.7299951,311,Hardware,11,0,1,0,1
+Comerica Incorporated,38025,75,no,limited,2931,12.97338792,161,Commercial Banks,12,0,1,0,1
+IHS Markit Ltd.,,413,no report,no 2020 GHG data,4481.7,,413,Professional & Commercial Services,11,0,1,0,1
+Aptiv PLC,322870,219,no,limited,13863,23.29005266,203,Auto Parts,1,0,1,0,1
+Zoetis Inc.,298206,214,yes,no assurances,7012,42.52795208,265,Biotechnology & Pharmaceuticals,14,0,1,0,1
+3M Company,4850000,348,no,moderate,32960,147.1480583,317,Chemicals,8,1188192,439,36.04951456,429
+"Constellation Brands, Inc.",,413,no report,no 2020 GHG data,8614.9,,413,Alcoholic Beverages,2,0,1,0,1
+Exelon Corporation,12970146,375,no,reasonable,34182,379.4437423,344,Electric Utilities & Power Generators,4,8591771,463,251.3536657,449
+Raytheon Technologies Corporation,1557479,306,no,limited,60478,25.75281921,214,Aerospace & Defense,7,0,1,0,1
+Snap-on Incorporated,,413,no report,no 2020 GHG data,4117.3,,413,Industrial Machinery & Goods,13,0,1,0,1
+Cognizant Technology Solutions Corporation,108122,150,yes,limited,16828,6.425124792,101,Software & IT Services,16,0,1,0,1
+"American Water Works Company, Inc.",545111,251,yes,no assurances,3821,142.6618686,315,Water Utilities & Services,1,0,1,0,1
+"Penn National Gaming, Inc.",,413,no report,no 2020 GHG data,3737.5,,413,Casinos & Gaming,4,0,1,0,1
+Chevron Corporation,57000000,409,no,reasonable,95842,594.7288245,361,Oil & Gas – Exploration & Production,5,22445606,482,234.1938399,447
+"Quanta Services, Inc.",,413,no report,no 2020 GHG data,11142.16,,413,Engineering & Construction Services,2,0,1,0,1
+Otis Worldwide Corporation,209000,191,no,no assurances,13198,15.83573269,175,Electrical & Electronic Equipment,3,0,1,0,1
+HP Inc.,171000,176,no,limited,61075,2.799836267,65,Hardware,4,0,1,0,1
+"United Airlines Holdings, Inc.",15660450,379,no,limited,10597,1477.819194,384,Airlines,2,0,1,0,1
+Invesco Ltd.,9117,26,yes,no assurances,6206.4,1.468967517,44,Asset Management & Custody Activities,4,0,1,0,1
+Allegion plc,99492,138,no,no assurances,2739.5,36.3175762,254,Electrical & Electronic Equipment,11,0,1,0,1
+Bristol-Myers Squibb Company,278040,209,no,no assurances,42810,6.494744219,103,Biotechnology & Pharmaceuticals,6,84259,398,1.968208363,381
+Sysco Corporation,1088973,289,yes,limited,44027.51,24.73392204,211,Food Retailers & Distributors,1,0,1,0,1
+"Corteva, Inc.",980000,285,no,no assurances,14439,67.87173627,294,Chemicals,7,117617,404,8.145785719,407
+Brown-Forman Corporation,,413,no report,no 2020 GHG data,3461,,413,Alcoholic Beverages,2,57438,390,16.59578157,418
+QUALCOMM Incorporated,315526,217,no,no assurances,29409,10.72889252,146,Semiconductors,8,62144,392,2.113094631,382
+"Copart, Inc.",,413,no report,no 2020 GHG data,2469.54,,413,Professional & Commercial Services,11,0,1,0,1
+Newmont Corporation,3455480,334,no,moderate,11788,293.1353919,341,Metals & Mining,1,1114027,437,94.50517475,439
+Southwest Airlines Co.,12630318,374,no,moderate,6866,1839.545296,390,Airlines,5,0,1,0,1
+"Healthpeak Properties, Inc.",288724,212,no,limited,1719.1,167.9506719,323,Real Estate,22,0,1,0,1
+Albemarle Corporation,935000,280,no,no assurances,3219.36,290.4303961,340,Chemicals,10,242639,416,75.36870682,436
+"Ameriprise Financial, Inc.",1640,5,no,limited,12287,0.133474404,3,Asset Management & Custody Activities,1,0,1,0,1
+Adobe Inc.,44382,83,no,limited,14389,3.084439502,69,Software & IT Services,9,0,1,0,1
+"IDEXX Laboratories, Inc.",,413,no report,no 2020 GHG data,2858.03,,413,Medical Equipment & Supplies,18,0,1,0,1
+"Paycom Software, Inc.",,413,no report,no 2020 GHG data,871.26,,413,Software & IT Services,33,0,1,0,1
+"People's United Financial, Inc.",,413,no report,no 2020 GHG data,1912.6,,413,Commercial Banks,15,0,1,0,1
+UnitedHealth Group Incorporated,173228,177,yes,moderate,262916,0.658872035,21,Managed Care,1,0,1,0,1
+Abbott Laboratories,906100,279,no,limited,37338,24.26750228,209,Medical Equipment & Supplies,14,113543,402,3.040950238,387
+Eli Lilly and Company,671230,263,yes,limited,25485.6,26.33761811,216,Biotechnology & Pharmaceuticals,11,0,1,0,1
+Caterpillar Inc.,1461000,301,no,limited,43000,33.97674419,244,Industrial Machinery & Goods,9,596462,427,13.8712093,416
+Fox Corporation,,413,no report,no 2020 GHG data,12437,,413,Media & Entertainment,3,0,1,0,1
+"CF Industries Holdings, Inc.",18689037,387,no,no assurances,4201,4448.711497,408,Chemicals,18,20066539,481,4776.610093,499
+"American Electric Power Company, Inc.",49713300,408,no,high,15452.1,3217.252024,403,Electric Utilities & Power Generators,17,69794576,498,4516.834346,498
+"Host Hotels & Resorts, Inc.",237299,197,no,limited,942,251.9097665,336,Real Estate,23,0,1,0,1
+"Marriott International, Inc.",5166032,352,no,limited,1771,2917.014116,398,Hotels & Lodging,3,0,1,0,1
+Lincoln National Corporation,8492,23,no,moderate,17548,0.483929793,15,Insurance,3,0,1,0,1
+The Allstate Corporation,80123,123,no,limited,47376,1.691214961,47,Insurance,9,0,1,0,1
+"Juniper Networks, Inc.",52726,99,yes,no assurances,4521.5,11.66117439,152,Hardware,9,0,1,0,1
+Booking Holdings Inc.,44367,82,no,no assurances,5649,7.853956452,121,Internet Media & Services,5,0,1,0,1
+"Alexion Pharmaceuticals, Inc.",11264,28,no,reasonable,6261.6,1.798901239,53,Biotechnology & Pharmaceuticals,1,0,1,0,1
+Trimble Inc.,9700,27,yes,no assurances,3241.9,2.99207255,68,Electrical & Electronic Equipment,1,0,1,0,1
+The Kraft Heinz Company,1297152,296,yes,limited,26422,49.09363409,276,Processed Foods,5,46698,386,1.767390811,379
+"Akamai Technologies, Inc.",105138,145,no,limited,3276.56,32.08792148,239,Software & IT Services,31,0,1,0,1
+Moody's Corporation,1667,6,no,limited,5681,0.293434255,10,Professional & Commercial Services,1,0,1,0,1
+Duke Energy Corporation,74979700,410,no,high,23654,3169.852879,402,Electric Utilities & Power Generators,16,85956926,499,3633.927708,493
+The Sherwin-Williams Company,627265,258,no,no assurances,18871,33.23962694,242,Chemicals,3,0,1,0,1
+Edison International,2200000,322,no,no assurances,13748,160.0232761,321,Electric Utilities & Power Generators,2,1241056,440,90.27174862,438
+Lennar Corporation,,413,no report,no 2020 GHG data,24451.86,,413,Home Builders,4,0,1,0,1
+Global Payments Inc.,45832,87,no,no assurances,7509.97,6.10282065,97,Software & IT Services,14,0,1,0,1
+Dover Corporation,87842,133,yes,moderate,6895.72,12.73862628,158,Industrial Machinery & Goods,2,0,1,0,1
+"Delta Air Lines, Inc.",17815645,386,yes,no assurances,12653,1408.017466,382,Airlines,1,1501650,443,118.6793646,440
+CVS Health Corporation,1142764,292,no,limited,270115,4.230657313,83,Drug Retailers,1,0,1,0,1
+"DexCom, Inc.",,413,no report,no 2020 GHG data,2026.6,,413,Medical Equipment & Supplies,18,0,1,0,1
+Arthur J. Gallagher & Co.,47191,89,no,no assurances,7082.8,6.66276049,104,Professional & Commercial Services,9,0,1,0,1
+Public Storage,98457,136,no,no assurances,3036.07,32.42909419,240,Real Estate,10,0,1,0,1
+"C.H. Robinson Worldwide, Inc.",27796,63,no,no assurances,17205.97,1.615485788,46,Air Freight & Logistics,1,0,1,0,1
+KLA Corporation,,413,no report,no 2020 GHG data,6452.86,,413,Semiconductors,17,0,1,0,1
+"Motorola Solutions, Inc.",79246,122,yes,limited,7532,10.5212427,143,Hardware,7,0,1,0,1
+Realty Income Corporation,131,1,no,no assurances,1680.09,0.077972013,1,Real Estate,1,0,1,0,1
+"Ross Stores, Inc.",226714,196,no,type unknown,15204.97,14.91051939,170,Multiline and Specialty Retailers & Distributors,5,0,1,0,1
+IDEX Corporation,36880,73,yes,no assurances,2409.22,15.30785898,171,Industrial Machinery & Goods,4,0,1,0,1
+American Airlines Group Inc.,20067000,389,no,limited,12830,1564.068589,387,Airlines,4,42300,385,3.296960249,391
+The Progressive Corporation,,413,no report,no 2020 GHG data,44759.6,,413,Insurance,16,0,1,0,1
+"Broadridge Financial Solutions, Inc.",44547,84,no,no assurances,4824,9.234452736,133,Software & IT Services,25,0,1,0,1
+Loews Corporation,,413,no report,no 2020 GHG data,13072,,413,Insurance,16,2660914,449,203.5582925,444
+"ServiceNow, Inc.",20410,44,no,no assurances,4833.48,4.222630486,82,Software & IT Services,13,0,1,0,1
+Xylem Inc.,63817,111,no,limited,5009,12.74046716,159,Industrial Machinery & Goods,3,0,1,0,1
+"Gilead Sciences, Inc.",,413,no report,no 2020 GHG data,25564,,413,Biotechnology & Pharmaceuticals,18,0,1,0,1
+"Arista Networks, Inc.",5099,15,no,no assurances,2462.05,2.071038362,57,Hardware,2,0,1,0,1
+"Applied Materials, Inc.",151300,168,yes,limited,19827,7.631008221,119,Semiconductors,4,0,1,0,1
+BorgWarner Inc.,342520,225,yes,no assurances,11895,28.79529214,223,Auto Parts,2,0,1,0,1
+Costco Wholesale Corporation,,413,no report,no 2020 GHG data,186637,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
+"Enphase Energy, Inc.",,413,no report,no 2020 GHG data,870.63,,413,Solar Technology & Project Developers,1,0,1,0,1
+Westinghouse Air Brake Technologies Corporation,305095,215,no,limited,7456.4,40.91719865,262,Industrial Machinery & Goods,11,0,1,0,1
+Philip Morris International Inc.,412999,236,no,reasonable,29126,14.17973632,167,Tobacco,2,0,1,0,1
+"Teradyne, Inc.",31653,67,no,no assurances,3198.72,9.895520708,139,Semiconductors,7,0,1,0,1
+"FLEETCOR Technologies, Inc.",,413,no report,no 2020 GHG data,2336.39,,413,Software & IT Services,33,0,1,0,1
+"Hasbro, Inc.",5895,17,no,moderate,5474.64,1.076783131,32,Toys & Sporting Goods,1,0,1,0,1
+Dentsply Sirona Inc.,38600,77,yes,no assurances,3495,11.04434907,147,Medical Equipment & Supplies,10,0,1,0,1
+"Under Armour, Inc.",,413,no report,no 2020 GHG data,4801.62,,413,"Apparel, Accessories & Footwear",8,0,1,0,1
+Campbell Soup Company,722200,267,yes,limited,8711,82.90666973,300,Processed Foods,9,197537,413,22.67673057,422
+"Amazon.com, Inc.",14888000,377,no,reasonable,419130,35.52119867,252,E-commerce,3,0,1,0,1
+"Maxim Integrated Products, Inc.",,413,no report,no 2020 GHG data,2458.04,,413,Semiconductors,17,33634,380,13.68325983,415
+FedEx Corporation,,413,no report,no 2020 GHG data,83959,,413,Air Freight & Logistics,4,0,1,0,1
+"The Home Depot, Inc.",1821000,312,no,no assurances,141350,12.88291475,160,Multiline and Specialty Retailers & Distributors,3,0,1,0,1
+IQVIA Holdings Inc.,49355,95,no,type unknown,12014,4.108123856,80,Biotechnology & Pharmaceuticals,4,0,1,0,1
+"Cboe Global Markets, Inc.",11325,29,yes,no assurances,3516.4,3.220623365,70,Security & Commodity Exchanges,2,0,1,0,1
+Accenture plc,176928,179,no,limited,47949.38,3.689891298,77,Software & IT Services,10,0,1,0,1
+"Republic Services, Inc.",13453373,376,no,limited,10196.1,1319.462638,375,Waste Management,2,10363032,470,1016.372142,477
+"Prudential Financial, Inc.",59014,105,no,limited,60576,0.97421421,30,Insurance,5,0,1,0,1
+"Advance Auto Parts, Inc.",,413,no,no assurances,10738.81,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
+"United Parcel Service, Inc.",16500000,385,no,reasonable,89501,184.3554821,327,Air Freight & Logistics,3,0,1,0,1
+Baker Hughes Company,684385,265,no,limited,20062,34.11349816,246,Oil & Gas – Services,1,0,1,0,1
+International Paper Company,12400000,372,no,no assurances,20591,602.2048468,362,Containers & Packaging,6,6149848,459,298.6667962,454
+"Mid-America Apartment Communities, Inc.",109001,151,no,no assurances,1684.89,64.69324407,291,Real Estate,15,0,1,0,1
+International Business Machines Corporation,621271,256,yes,limited,73779,8.420702368,124,Software & IT Services,23,0,1,0,1
+Hess Corporation,3353482,332,no,limited,5092,658.5785546,365,Oil & Gas – Exploration & Production,6,3581050,453,703.269835,471
+Pfizer Inc.,1350000,298,no,limited,46407,29.09043894,225,Biotechnology & Pharmaceuticals,12,252419,417,5.43924408,397
+"F5 Networks, Inc.",14642,36,no,no assurances,2467.97,5.932811177,95,Hardware,6,0,1,0,1
+Sealed Air Corporation,465009,243,no,no assurances,4996.4,93.06880954,302,Containers & Packaging,2,0,1,0,1
+Vornado Realty Trust,163187,171,no,limited,1557.6,104.7682332,307,Real Estate,19,0,1,0,1
+Electronic Arts Inc.,,413,no report,no 2020 GHG data,5629,,413,Software & IT Services,33,0,1,0,1
+Crown Castle International Corp. (REIT),77800,121,no,no assurances,5904,13.17750678,163,Real Estate,3,0,1,0,1
+"Regeneron Pharmaceuticals, Inc.",81100,126,no,limited,9010.9,9.000210856,130,Biotechnology & Pharmaceuticals,8,0,1,0,1
+Cerner Corporation,133884,162,no,no assurances,5481.83,24.42323093,210,Software & IT Services,30,0,1,0,1
+Illinois Tool Works Inc.,458900,242,no,limited,12890,35.60124127,253,Industrial Machinery & Goods,10,9104,369,0.706283941,373
+Nucor Corporation,10100000,368,no,no assurances,21532.46,469.0592714,352,Iron & Steel Producers,1,5554873,457,257.9767012,450
+Ecolab Inc.,340004,224,no,limited,11654.6,29.1733736,226,Chemicals,1,0,1,0,1
+Biogen Inc.,57736,104,no,limited,12604.3,4.580658981,86,Biotechnology & Pharmaceuticals,5,29570,376,2.346024769,383
+"The Interpublic Group of Companies, Inc.",55531,103,no,no assurances,8120.1,6.838708883,108,Advertising & Marketing,2,0,1,0,1
+Dow Inc.,34760000,402,no,limited,40654,855.0204162,371,Chemicals,15,16409523,477,403.6385841,464
+"D.R. Horton, Inc.",,413,no report,no 2020 GHG data,24170.7,,413,Home Builders,4,0,1,0,1
+"Tyson Foods, Inc.",10005000,367,yes,no assurances,43242,231.372277,333,"Meat, Poultry & Dairy",2,1804812,446,41.73747745,431
+Generac Holdings Inc.,,413,no report,no 2020 GHG data,2816.72,,413,Electrical & Electronic Equipment,18,0,1,0,1
+"Consolidated Edison, Inc.",3660000,337,no,no assurances,12689,288.4388053,339,Electric Utilities & Power Generators,3,2805163,450,221.0704547,445
+"Equinix, Inc. (REIT)",382800,230,no,no assurances,6114.63,62.60395151,290,Real Estate,14,0,1,0,1
+"Lumen Technologies, Inc.",2003874,320,no,limited,20513,97.68800273,304,Telecommunication Services,6,0,1,0,1
+Halliburton Company,2692612,328,no,no assurances,12859,209.3951318,329,Oil & Gas – Services,3,79442,396,6.177929855,402
+"Zimmer Biomet Holdings, Inc.",,413,no report,no 2020 GHG data,7088.1,,413,Medical Equipment & Supplies,18,0,1,0,1
+"Digital Realty Trust, Inc.",1866188,314,no,limited,4169,447.6344447,347,Real Estate,24,0,1,0,1
+Masco Corporation,180000,180,no,no assurances,7577,23.756104,206,Building Products & Furnishings,1,0,1,0,1
+"Agilent Technologies, Inc.",52666,98,no,moderate,5817,9.053807805,131,Medical Equipment & Supplies,6,0,1,0,1
+"Facebook, Inc.",37594,74,no,limited,94399,0.398245744,12,Internet Media & Services,1,0,1,0,1
+"Citizens Financial Group, Inc.",42650,81,no,reasonable,6031,7.071795722,112,Commercial Banks,6,0,1,0,1
+Kansas City Southern,1230000,295,no,limited,2606.9,471.8247727,353,Rail Transportation,3,0,1,0,1
+Devon Energy Corporation,4230000,344,no,no assurances,5365,788.443616,369,Oil & Gas – Exploration & Production,8,2906584,451,541.767754,469
+Unum Group,22618,50,yes,limited,13363,1.692584001,48,Insurance,10,0,1,0,1
+"Cadence Design Systems, Inc.",29244,65,no,no assurances,2800.96,10.44070604,142,Software & IT Services,26,0,1,0,1
+"McCormick & Company, Incorporated",119280,158,no,no assurances,5870.8,20.31750358,187,Processed Foods,1,0,1,0,1
+ViacomCBS Inc.,166430,173,no,no assurances,26198,6.352775021,99,Media & Entertainment,1,0,1,0,1
+Microsoft Corporation,287639,211,no,limited,159969,1.79809213,52,Software & IT Services,8,0,1,0,1
+"Huntington Ingalls Industries, Inc.",,413,no report,no 2020 GHG data,9376,,413,Aerospace & Defense,11,55380,388,5.906569966,401
+"DuPont de Nemours, Inc.",5148000,351,yes,limited,20703,248.6596145,335,Chemicals,9,1116805,438,53.94411438,433
+MGM Resorts International,199686,187,no,limited,4352.19,45.88172851,271,Casinos & Gaming,1,138029,406,31.71483782,426
+"Mondelez International, Inc.",1527318,305,no,reasonable,27112,56.33365299,286,Processed Foods,6,0,1,0,1
+Hormel Foods Corporation,1469043,302,no,no assurances,9869.33,148.849314,318,"Meat, Poultry & Dairy",1,61277,391,6.208830792,403
+AmerisourceBergen Corporation,113218,153,no,moderate,196282.27,0.576812159,18,Health Care Distributors,1,0,1,0,1
+"The PNC Financial Services Group, Inc.",170574,175,no,no assurances,15075,11.31502488,150,Commercial Banks,11,0,1,0,1
+Aflac Incorporated,12121,31,no,limited,22854,0.530366675,16,Insurance,4,0,1,0,1
+"Ulta Beauty, Inc.",114426,155,no,no assurances,6917.26,16.54209904,176,Multiline and Specialty Retailers & Distributors,7,0,1,0,1
+"Expedia Group, Inc.",24833,56,no,limited,4236,5.862370161,94,Internet Media & Services,4,0,1,0,1
+The Boeing Company,1185000,293,yes,limited,56467,20.98570847,192,Aerospace & Defense,5,172670,412,3.05789222,388
+Morgan Stanley,181400,181,no,limited,54643,3.319729883,72,Investment Banking & Brokerage,3,0,1,0,1
+CME Group Inc.,,413,no report,no 2020 GHG data,4602.6,,413,Security & Commodity Exchanges,4,0,1,0,1
+"Mohawk Industries, Inc.",2626945,327,no,no assurances,9935.46,264.4009437,337,Building Products & Furnishings,3,337741,419,33.99349401,428
+AT&T Inc.,5788258,356,no,moderate,172920,33.47361786,243,Telecommunication Services,5,0,1,0,1
+Honeywell International Inc.,2218536,323,no,limited,32628,67.99485105,295,Electrical & Electronic Equipment,17,731027,431,22.40489763,421
+Truist Financial Corporation,203576,190,no,moderate,21086,9.654557526,136,Commercial Banks,10,0,1,0,1
+"PayPal Holdings, Inc.",25000,58,yes,limited,22869,1.093182911,34,Software & IT Services,6,0,1,0,1
+Huntington Bancshares Incorporated,60201,107,no,no assurances,4475,13.45273743,164,Commercial Banks,13,0,1,0,1
+LKQ Corporation,202503,188,yes,no assurances,11798.68,17.16319114,178,Multiline and Specialty Retailers & Distributors,8,0,1,0,1
+PTC Inc.,,413,no report,no 2020 GHG data,1633.54,,413,Software & IT Services,33,0,1,0,1
+Exxon Mobil Corporation,100930000,412,yes,limited,182075,554.332006,358,Oil & Gas – Exploration & Production,4,42582820,494,233.8751613,446
+"The Travelers Companies, Inc.",35408,71,yes,limited,32386,1.093311925,35,Insurance,6,0,1,0,1
+Howmet Aerospace Inc.,800000,274,no,no assurances,4834,165.4944146,322,Aerospace & Defense,10,0,1,0,1
+CSX Corporation,3960944,339,yes,reasonable,10541,375.7654871,343,Rail Transportation,1,0,1,0,1
+Bank of America Corporation,61075,109,no,reasonable,80883,0.75510305,23,Commercial Banks,1,0,1,0,1
+Zebra Technologies Corporation,11500,30,no,limited,4743,2.424625764,59,Hardware,3,0,1,0,1
+"Citrix Systems, Inc.",21418,45,no,limited,3151.52,6.796085698,107,Software & IT Services,19,0,1,0,1
+Union Pacific Corporation,9280792,366,no,type unknown,19305,480.7455063,354,Rail Transportation,4,0,1,0,1
+Extra Space Storage Inc.,135770,163,no,no assurances,1406.89,96.50363568,303,Real Estate,17,0,1,0,1
+Verizon Communications Inc.,4090491,342,no,limited,129549,31.57485585,237,Telecommunication Services,4,0,1,0,1
+FMC Corporation,150615,167,yes,limited,4587.7,32.83017634,241,Chemicals,2,0,1,0,1
+"Dominion Energy, Inc.",33268960,401,no,limited,14104,2358.831537,393,Electric Utilities & Power Generators,10,35583561,492,2522.941081,486
+Fortive Corporation,60585,108,yes,no assurances,4785.5,12.66011911,157,Electrical & Electronic Equipment,2,0,1,0,1
+Mastercard Incorporated,3489,8,no,limited,15447,0.225869101,6,Software & IT Services,1,0,1,0,1
+"T. Rowe Price Group, Inc.",21457,46,no,limited,6570.9,3.265458309,71,Asset Management & Custody Activities,5,0,1,0,1
+"Evergy, Inc.",,413,no,no assurances,5408.6,,413,Electric Utilities & Power Generators,23,26494543,485,4898.595385,500
+AbbVie Inc.,,413,no report,no 2020 GHG data,50195,,413,Biotechnology & Pharmaceuticals,18,154326,410,3.074529336,389
+Kimco Realty Corporation,31792,68,yes,limited,1050.46,30.26483636,231,Real Estate,7,0,1,0,1
+"Bio-Rad Laboratories, Inc.",,413,no report,no 2020 GHG data,2700.78,,413,Medical Equipment & Supplies,18,0,1,0,1
+"Simon Property Group, Inc.",184871,183,yes,limited,4491.73,41.15808386,264,Real Estate,12,0,1,0,1
+TransDigm Group Incorporated,99641,139,yes,no assurances,4496,22.16214413,199,Aerospace & Defense,6,0,1,0,1
+"HCA Healthcare, Inc.",,413,no report,no 2020 GHG data,52649,,413,Health Care Delivery,4,0,1,0,1
+M&T Bank Corporation,39563,78,no,no assurances,5410.59,7.312141559,114,Commercial Banks,7,0,1,0,1
+The Walt Disney Company,1342649,297,no,limited,58348,23.01105436,202,Media & Entertainment,2,107929,400,1.849746349,380
+Sempra Energy,6851000,361,yes,reasonable,11600,590.6034483,360,Gas Utilities & Distributors,1,3561041,452,306.9862931,455
+The Estée Lauder Companies Inc.,81100,125,yes,limited,14709,5.51363111,91,Household & Personal Products,1,0,1,0,1
+Quest Diagnostics Incorporated,183858,182,no,no assurances,10335,17.78984035,181,Health Care Delivery,1,0,1,0,1
+Duke Realty Corporation,,413,no report,no 2020 GHG data,1068.07,,413,Real Estate,25,0,1,0,1
+"Universal Health Services, Inc.",,413,no report,no 2020 GHG data,11742.22,,413,Health Care Delivery,4,0,1,0,1
+"West Pharmaceutical Services, Inc.",120859,159,yes,no assurances,2326.1,51.95778341,280,Medical Equipment & Supplies,17,0,1,0,1
+Xcel Energy Inc.,37065176,403,yes,no assurances,12256,3024.247389,399,Electric Utilities & Power Generators,13,43084156,495,3515.352154,492
+"Martin Marietta Materials, Inc.",5176000,353,no,no assurances,4463,1159.75801,374,Construction Materials,2,3939578,455,882.7196953,475
+Johnson & Johnson,747669,268,no,limited,84214,8.878203149,128,Biotechnology & Pharmaceuticals,7,0,1,0,1
+LyondellBasell Industries N.V.,24100000,392,no,reasonable,29341,821.3762312,370,Chemicals,14,9110668,464,310.5097986,456
+CMS Energy Corporation,15128573,378,no,limited,6899,2192.864618,392,Electric Utilities & Power Generators,9,16816630,478,2437.546021,485
+NiSource Inc.,7303463,364,no,no assurances,4621.8,1580.220477,388,Gas Utilities & Distributors,2,9973179,468,2157.85603,482
+"Roper Technologies, Inc.",,413,no report,no 2020 GHG data,5705,,413,Software & IT Services,33,0,1,0,1
+Fifth Third Bancorp,12995,32,no,limited,7411,1.753474565,49,Commercial Banks,5,0,1,0,1
+"Discovery, Inc.",,413,no report,no 2020 GHG data,10780,,413,Media & Entertainment,3,0,1,0,1
+Carnival Corporation & plc,6298244,357,no,limited,140,44987.45714,412,Cruise Lines,3,0,1,0,1
+Walmart Inc.,16430000,384,no,limited,562839,29.19129627,227,Multiline and Specialty Retailers & Distributors,12,0,1,0,1
+"Xilinx, Inc.",21876,47,no,no assurances,3147.6,6.950057186,109,Semiconductors,3,0,1,0,1
+DISH Network Corporation,,413,no report,no 2020 GHG data,16773.9,,413,Telecommunication Services,7,0,1,0,1
+Amgen Inc.,243000,201,no,limited,25164,9.656652361,137,Biotechnology & Pharmaceuticals,9,35994,381,1.430376729,376
+"CenterPoint Energy, Inc.",5295843,355,yes,no assurances,7798,679.1283662,366,Electric Utilities & Power Generators,5,397227,422,50.9395999,432
+Monster Beverage Corporation,8600,24,no,no assurances,4780.36,1.799027688,54,Non-Alcoholic Beverages,1,0,1,0,1
+"Netflix, Inc.",31024,66,no,limited,26391.65,1.175523319,36,Internet Media & Services,2,0,1,0,1
+ResMed Inc.,23028,51,no,no assurances,3091.07,7.449847464,115,Medical Equipment & Supplies,2,0,1,0,1
+McKesson Corporation,255341,206,no,no assurances,238228,1.071834545,31,Health Care Distributors,2,0,1,0,1
+Vulcan Materials Company,965246,283,no,no assurances,4875.93,197.9614145,328,Construction Materials,1,0,1,0,1
+Aon plc,51223,96,no,no assurances,11372,4.504308829,85,Insurance,14,0,1,0,1
+"Darden Restaurants, Inc.",,413,no report,no 2020 GHG data,7196.1,,413,Restaurants,5,0,1,0,1
+Federal Realty Investment Trust,18027,41,no,no assurances,813.86,22.15000123,198,Real Estate,5,0,1,0,1
+CDW Corporation,17899,40,no,no assurances,18915.8,0.946245995,29,Software & IT Services,5,0,1,0,1
+"Principal Financial Group, Inc.",26259,60,yes,limited,13398.9,1.959787744,55,Insurance,12,0,1,0,1
+Cabot Oil & Gas Corporation,4050000,341,no,limited,1507.74,2686.13952,397,Oil & Gas – Exploration & Production,12,530870,426,352.0965153,459
+"NetApp, Inc.",63505,110,no,no assurances,5744,11.0558844,148,Hardware,8,0,1,0,1
+DaVita Inc.,221829,195,no,limited,11529.37,19.24034011,184,Health Care Delivery,2,0,1,0,1
+Newell Brands Inc.,372119,228,no,no assurances,9787,38.02176356,257,Household & Personal Products,6,0,1,0,1
+Visa Inc.,13923,35,no,limited,21354,0.652008991,20,Software & IT Services,4,0,1,0,1
+Cigna Corporation,136321,164,no,limited,163141,0.835602332,27,Managed Care,3,0,1,0,1
+"NRG Energy, Inc.",27726002,398,no,limited,15165,1828.288955,389,Electric Utilities & Power Generators,7,33406387,491,2202.860996,483
+"Fortune Brands Home & Security, Inc.",323817,220,yes,no assurances,6458.6,50.13733626,277,Building Products & Furnishings,2,0,1,0,1
+"The TJX Companies, Inc.",542645,250,no,limited,37814.74,14.35009205,169,Multiline and Specialty Retailers & Distributors,4,0,1,0,1
+Edwards Lifesciences Corporation,46215,88,yes,limited,4474.2,10.32922087,141,Medical Equipment & Supplies,8,0,1,0,1
+The Western Union Company,,413,no report,no 2020 GHG data,4855,,413,Software & IT Services,33,0,1,0,1
+Linde plc,37216000,404,no,limited,27747,1341.262118,377,Chemicals,16,7983736,462,287.7333045,452
+"Altria Group, Inc.",280968,210,no,limited,20675,13.58974607,166,Tobacco,1,87832,399,4.248222491,393
+"Raymond James Financial, Inc.",,413,no report,no 2020 GHG data,8461,,413,Investment Banking & Brokerage,4,0,1,0,1
+W. R. Berkley Corporation,1097,4,yes,no assurances,8445.18,0.12989658,2,Insurance,1,0,1,0,1
+Willis Towers Watson Public Limited Company,,413,no report,no 2020 GHG data,9476,,413,Insurance,16,0,1,0,1
+A. O. Smith Corporation,164253,172,yes,no assurances,3027.4,54.25546674,283,Electrical & Electronic Equipment,16,0,1,0,1
+American Tower Corporation (REIT),627705,259,yes,no assurances,8206.9,76.48503089,298,Real Estate,16,0,1,0,1
+Ralph Lauren Corporation,106628,147,no,no assurances,4400.8,24.22923105,208,"Apparel, Accessories & Footwear",5,0,1,0,1
+"Fiserv, Inc.",,413,no report,no 2020 GHG data,14838,,413,Software & IT Services,33,0,1,0,1
+"Analog Devices, Inc.",140623,165,no,no assurances,6202.3,22.67271819,200,Semiconductors,9,52234,387,8.421714525,408
+"Jack Henry & Associates, Inc.",34924,70,yes,no assurances,1718.48,23.3258461,204,Software & IT Services,29,0,1,0,1
+NOV Inc.,,413,no report,no 2020 GHG data,5456,,413,Oil & Gas – Services,4,0,1,0,1
+"Dollar Tree, Inc.",1359055,299,no,no assurances,25702.2,52.87699107,281,Multiline and Specialty Retailers & Distributors,14,0,1,0,1
+"AvalonBay Communities, Inc.",68828,114,no,limited,2249.75,30.59362151,232,Real Estate,8,0,1,0,1
+"W.W. Grainger, Inc.",103096,143,no,limited,11880,8.678114478,126,Multiline and Specialty Retailers & Distributors,2,0,1,0,1
+Robert Half International Inc.,17552,39,no,no assurances,5000.69,3.509915632,75,Professional & Commercial Services,7,0,1,0,1
+Genuine Parts Company,,413,no report,no 2020 GHG data,16909.62,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
+Hanesbrands Inc.,173774,178,yes,limited,6969.31,24.93417569,213,"Apparel, Accessories & Footwear",6,0,1,0,1
+"CarMax, Inc.",,413,no report,no 2020 GHG data,24588.77,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
+Eversource Energy,685493,266,no,limited,9356.54,73.26351408,297,Electric Utilities & Power Generators,1,153537,409,16.40959158,417
+NVIDIA Corporation,68753,113,no,limited,19256,3.570471541,76,Semiconductors,2,0,1,0,1
+Entergy Corporation,33064307,400,no,limited,10531.3,3139.622554,400,Electric Utilities & Power Generators,14,36267972,493,3443.826688,490
+Pentair plc,98398,135,no,no assurances,3173.7,31.00419069,234,Industrial Machinery & Goods,8,0,1,0,1
+"Gartner, Inc.",3949,11,yes,no assurances,4184.55,0.943709598,28,Professional & Commercial Services,2,0,1,0,1
+The J. M. Smucker Company,328442,221,no,limited,8002.7,41.04139853,263,Processed Foods,4,23912,375,2.987991553,385
+Intuit Inc.,4230,12,no,no assurances,8888,0.475922592,14,Software & IT Services,3,0,1,0,1
+"The Gap, Inc.",240724,200,no,limited,15684,15.34838052,172,"Apparel, Accessories & Footwear",4,0,1,0,1
+"Kinder Morgan, Inc.",18700000,388,yes,limited,13805,1354.581673,378,Oil & Gas – Midstream,2,11473790,471,831.1329229,474
+"Cisco Systems, Inc.",202859,189,no,limited,48846,4.153031978,81,Hardware,5,0,1,0,1
+Royal Caribbean Group,2502144,325,no,limited,218.07,11474.04045,410,Cruise Lines,1,0,1,0,1
+"PepsiCo, Inc.",4410104,345,no,limited,71311,61.84324999,289,Non-Alcoholic Beverages,2,355556,420,4.985990941,396
+"MetLife, Inc.",85601,130,no,no assurances,65094,1.315036716,39,Insurance,7,0,1,0,1
+WestRock Company,9206494,365,yes,limited,17547.1,524.6732509,356,Containers & Packaging,5,6808157,461,387.9932866,461
+STERIS plc,,413,no report,no 2020 GHG data,3107.52,,413,Medical Equipment & Supplies,18,0,1,0,1
+JPMorgan Chase & Co.,73757,117,no,limited,118484,0.622505992,19,Investment Banking & Brokerage,2,0,1,0,1
+Packaging Corporation of America,3110000,331,no,no assurances,6756.7,460.2838664,348,Containers & Packaging,4,1583107,444,234.3018041,448
+Wells Fargo & Company,86017,131,no,limited,63718,1.349963903,41,Commercial Banks,3,29976,377,0.470447911,371
+"Leidos Holdings, Inc.",48550,93,no,type unknown,12723,3.815923917,79,Software & IT Services,12,0,1,0,1
+Celanese Corporation,3646965,336,yes,reasonable,5993,608.5374604,363,Chemicals,12,2100703,447,350.5261138,458
+"Monolithic Power Systems, Inc.",,413,no report,no 2020 GHG data,933.13,,413,Semiconductors,17,0,1,0,1
+TE Connectivity Ltd.,558285,252,yes,limited,13069,42.7182646,266,Electrical & Electronic Equipment,13,0,1,0,1
+Intel Corporation,2882000,330,no,limited,77712,37.08564958,256,Semiconductors,11,735842,432,9.468833642,409
+Synchrony Financial,17385,38,no,no assurances,6715,2.588979896,62,Consumer Finance,3,0,1,0,1
+"PulteGroup, Inc.",,413,no report,no 2020 GHG data,11470.89,,413,Home Builders,4,0,1,0,1
+"Charter Communications, Inc.",1474549,304,no,no assurances,48881,30.16609726,230,Telecommunication Services,3,0,1,0,1
+Eastman Chemical Company,6372993,359,no,no assurances,8641,737.5295683,368,Chemicals,13,6334831,460,733.1131813,472
+Waters Corporation,22156,49,no,no assurances,2508.97,8.830715393,127,Medical Equipment & Supplies,4,0,1,0,1
+The Hershey Company,290840,213,yes,no assurances,8408.35,34.58942599,249,Processed Foods,3,0,1,0,1
+Microchip Technology Incorporated,653748,261,no,no assurances,5438.4,120.2096205,312,Semiconductors,14,413034,423,75.94770521,437
+"Illumina, Inc.",36573,72,no,limited,3473,10.53066513,144,Medical Equipment & Supplies,9,0,1,0,1
+"Etsy, Inc.",298,2,no,limited,2048.22,0.145492183,4,E-commerce,1,0,1,0,1
+Ford Motor Company,3572034,335,no,limited,129052,27.67902861,221,Automobiles,1,633370,428,4.907866596,395
+"J.B. Hunt Transport Services, Inc.",1764625,311,no,limited,9973.9,176.9242724,325,Road Transportation,1,0,1,0,1
+Lockheed Martin Corporation,790535,273,no,limited,66005,11.97689569,153,Aerospace & Defense,2,114741,403,1.738368305,378
+"ANSYS, Inc.",16045,37,no,no assurances,1739.54,9.223702818,132,Software & IT Services,24,0,1,0,1
+Cincinnati Financial Corporation,24408,54,no,no assurances,9862,2.47495437,61,Insurance,13,0,1,0,1
+"General Mills, Inc.",559000,253,no,moderate,18626.4,30.01116695,229,Processed Foods,2,69236,395,3.717089722,392
+"Activision Blizzard, Inc.",,413,no report,no 2020 GHG data,8573,,413,Software & IT Services,33,0,1,0,1
+"United Rentals, Inc.",402519,234,no,no assurances,8462,47.56783266,273,Industrial Machinery & Goods,12,0,1,0,1
+"Catalent, Inc.",220000,193,no,no assurances,3757.4,58.55112578,287,Biotechnology & Pharmaceuticals,17,0,1,0,1
+Alphabet Inc.,950109,282,yes,limited,196682,4.830686082,88,Internet Media & Services,3,19992,372,0.101646312,369
+"Yum! Brands, Inc.",169860,174,yes,limited,5875,28.91234043,224,Restaurants,3,0,1,0,1
+SVB Financial Group,7340,19,no,no assurances,4549.39,1.613403116,45,Commercial Banks,4,0,1,0,1
+Tractor Supply Company,249031,205,no,no assurances,11453.5,21.74278605,197,Multiline and Specialty Retailers & Distributors,11,0,1,0,1
+"Assurant, Inc.",,413,no report,no 2020 GHG data,10072.8,,413,Insurance,16,0,1,0,1
+Organon & Co.,,413,no report,no 2020 GHG data,7822,,413,Biotechnology & Pharmaceuticals,18,0,1,0,1
+"Zions Bancorporation, National Association",,413,no report,no 2020 GHG data,2800,,413,Commercial Banks,15,0,1,0,1
+"NVR, Inc.",,413,no report,no 2020 GHG data,8017.52,,413,Home Builders,4,0,1,0,1
+The Charles Schwab Corporation,,413,no report,no 2020 GHG data,13789,,413,Investment Banking & Brokerage,4,0,1,0,1
+"WEC Energy Group, Inc.",20241000,390,no,no assurances,7824.5,2586.874561,395,Electric Utilities & Power Generators,12,20016080,480,2558.128954,487
+"Walgreens Boots Alliance, Inc.",1853000,313,no,limited,142507,13.00287003,162,Drug Retailers,2,0,1,0,1
+Viatris Inc.,659000,262,yes,no assurances,13757.1,47.9025376,274,Biotechnology & Pharmaceuticals,16,0,1,0,1
+MarketAxess Holdings Inc.,,413,no report,no 2020 GHG data,715.61,,413,Professional & Commercial Services,11,0,1,0,1
+Target Corporation,1883429,315,yes,limited,98143,19.19066057,183,Multiline and Specialty Retailers & Distributors,9,0,1,0,1
+SBA Communications Corporation,24300,52,no,no assurances,2114.81,11.49039394,151,Engineering & Construction Services,1,0,1,0,1
+Pioneer Natural Resources Company,1739532,310,no,no assurances,8080,215.2886139,330,Oil & Gas – Exploration & Production,1,2383190,448,294.9492574,453
+"salesforce.com, inc.",85000,129,no,limited,22350,3.803131991,78,Software & IT Services,11,0,1,0,1
+Centene Corporation,153236,169,yes,no assurances,108147,1.416923262,43,Managed Care,5,0,1,0,1
+"Marsh & McLennan Companies, Inc.",101072,142,no,no assurances,17656,5.724512913,93,Insurance,15,0,1,0,1
+PPL Corporation,25096952,395,no,no assurances,7665,3274.227267,404,Electric Utilities & Power Generators,18,28493455,487,3717.345727,494
+Thermo Fisher Scientific Inc.,510411,246,no,moderate,35894,14.2199532,168,Medical Equipment & Supplies,12,0,1,0,1
+"T-Mobile US, Inc.",1911386,317,yes,limited,77043,24.80934024,212,Telecommunication Services,2,0,1,0,1
+Lam Research Corporation,113483,154,no,no assurances,13272.84,8.550016425,125,Semiconductors,5,0,1,0,1
+General Motors Company,3813946,338,no,limited,122250,31.19792229,235,Automobiles,2,676789,430,5.536106339,398
+"Rockwell Automation, Inc.",108100,149,no,no assurances,6305.4,17.14403527,177,Electrical & Electronic Equipment,4,0,1,0,1
+"CBRE Group, Inc.",83100,128,no,reasonable,23875.91,3.480495613,74,Real Estate Services,1,0,1,0,1
+"Everest Re Group, Ltd.",,413,no report,no 2020 GHG data,10335.97,,413,Insurance,16,0,1,0,1
+"Alaska Air Group, Inc.",4154003,343,no,no assurances,2727,1523.286762,386,Airlines,3,0,1,0,1
+Phillips 66,30100000,399,no,no assurances,64935,463.5404635,349,Oil & Gas – Refining & Marketing,1,28933657,488,445.5787634,465
+First Republic Bank,,413,no report,no 2020 GHG data,4055.13,,413,Commercial Banks,15,0,1,0,1
+"Old Dominion Freight Line, Inc.",1140641,291,no,no assurances,4154.28,274.5700819,338,Road Transportation,2,0,1,0,1
+"Alexandria Real Estate Equities, Inc.",212154,192,no,no assurances,1948.01,108.9080652,310,Real Estate,21,0,1,0,1
+The Clorox Company,259543,207,no,limited,7522,34.50452007,248,Household & Personal Products,4,0,1,0,1
+"VeriSign, Inc.",,413,no report,no 2020 GHG data,1276.15,,413,Software & IT Services,33,0,1,0,1
+Mettler-Toledo International Inc.,26445,61,no,limited,3240.41,8.161004317,123,Medical Equipment & Supplies,3,0,1,0,1
+The Procter & Gamble Company,2625000,326,yes,limited,74870,35.060772,251,Household & Personal Products,5,1752006,445,23.40064111,423
+MSCI Inc.,3624,9,no,limited,1757.03,2.062571498,56,Professional & Commercial Services,5,0,1,0,1
+"Automatic Data Processing, Inc.",98901,137,no,limited,14645.2,6.753134133,106,Software & IT Services,18,0,1,0,1
+Humana Inc.,100499,140,no,limited,78888,1.27394534,38,Managed Care,4,0,1,0,1
+"Keysight Technologies, Inc.",87206,132,no,no assurances,4632,18.82685665,182,Electrical & Electronic Equipment,5,0,1,0,1
+"Leggett & Platt, Incorporated",,413,no report,no 2020 GHG data,4385.6,,413,Building Products & Furnishings,4,82485,397,18.80814484,420
+Welltower Inc.,469011,245,no,limited,4399.43,106.6072196,308,Real Estate,20,0,1,0,1
+Danaher Corporation,312860,216,no,no assurances,24799,12.61583128,156,Medical Equipment & Supplies,11,0,1,0,1
+Northrop Grumman Corporation,414904,237,yes,limited,37336,11.11270624,149,Aerospace & Defense,1,112718,401,3.019016499,386
+Colgate-Palmolive Company,442230,241,no,limited,16718,26.45232683,217,Household & Personal Products,3,0,1,0,1
+"Micron Technology, Inc.",7141289,363,no,limited,23503,303.8458495,342,Semiconductors,16,649698,429,27.64319449,424
+General Dynamics Corporation,680600,264,no,limited,38565,17.64812654,180,Aerospace & Defense,4,0,1,0,1
+"Fidelity National Information Services, Inc.",89428,134,no,no assurances,12697,7.04323856,111,Software & IT Services,21,0,1,0,1
+Laboratory Corporation of America Holdings,332078,222,no,no assurances,15316.2,21.68148758,196,Health Care Delivery,3,36946,384,2.41221713,384
+The AES Corporation,43478267,407,no,limited,9957,4366.603093,407,Electric Utilities & Power Generators,21,19586036,479,1967.061966,481
+"Church & Dwight Co., Inc.",100986,141,no,no assurances,4969.5,20.32115907,188,Household & Personal Products,2,0,1,0,1
+Iron Mountain Incorporated,187413,184,yes,limited,4160.58,45.04492162,270,Software & IT Services,32,0,1,0,1
+"Lamb Weston Holdings, Inc.",,413,no report,no 2020 GHG data,3510.3,,413,Processed Foods,10,478238,425,136.2384981,441
+Stryker Corporation,143526,166,no,reasonable,14716,9.753057896,138,Medical Equipment & Supplies,7,0,1,0,1
+Medtronic plc,270969,208,no,no assurances,30117,8.997210878,129,Medical Equipment & Supplies,5,0,1,0,1
+"Prologis, Inc.",3841,10,no,limited,4884.5,0.786365032,25,Real Estate,2,0,1,0,1
+Western Digital Corporation,976035,284,no,limited,16289,59.91988458,288,Hardware,10,0,1,0,1
+"Skyworks Solutions, Inc.",128198,160,no,no assurances,4375.3,29.30039083,228,Semiconductors,10,31360,379,7.167508514,404
+International Flavors & Fragrances Inc.,247272,204,no,limited,6202.24,39.86817666,259,Chemicals,4,36254,383,5.845307502,400
+Kellogg Company,904000,278,yes,limited,13942,64.84005164,292,Processed Foods,7,166564,411,11.94692297,413
+"Conagra Brands, Inc.",829443,276,yes,limited,11733.1,70.69257059,296,Processed Foods,8,123700,405,10.54282329,412
+"Tyler Technologies, Inc.",7626,20,no,no assurances,1134.92,6.719416347,105,Software & IT Services,17,0,1,0,1
+DXC Technology Company,380880,229,no,limited,17729,21.4834452,195,Software & IT Services,28,0,1,0,1
+McDonald's Corporation,528793,248,no,no assurances,19618,26.95448058,219,Restaurants,2,0,1,0,1
+Globe Life Inc.,,413,no report,no 2020 GHG data,4871.43,,413,Insurance,16,0,1,0,1
+S&P Global Inc.,18780,42,no,limited,7672,2.447862357,60,Professional & Commercial Services,6,0,1,0,1
+Whirlpool Corporation,648571,260,yes,limited,20489,31.65459515,238,Appliance Manufacturing,1,22836,373,1.11454927,374
+FirstEnergy Corp.,15860888,380,no,no assurances,10624,1492.92997,385,Metals & Mining,3,27852435,486,2621.652391,489
+"L3Harris Technologies, Inc.",317855,218,no,no assurances,18135,17.52715743,179,Aerospace & Defense,3,0,1,0,1
+"NIKE, Inc.",,413,no report,no 2020 GHG data,44538,,413,"Apparel, Accessories & Footwear",8,0,1,0,1
+Equifax Inc.,27940,64,no,no assurances,4382.6,6.375211062,100,Professional & Commercial Services,8,0,1,0,1
+eBay Inc.,66562,112,yes,limited,11165,5.96166592,96,E-commerce,2,0,1,0,1
+Las Vegas Sands Corp.,541756,249,no,limited,3391,159.7629018,320,Casinos & Gaming,2,0,1,0,1
+"Henry Schein, Inc.",27519,62,no,no assurances,10615.23,2.592407324,63,Health Care Distributors,3,0,1,0,1
+"Intuitive Surgical, Inc.",,413,no report,no 2020 GHG data,4551,,413,Medical Equipment & Supplies,18,0,1,0,1
+PVH Corp.,80888,124,no,no assurances,7867.9,10.28076107,140,"Apparel, Accessories & Footwear",2,0,1,0,1
+Teleflex Incorporated,,413,no report,no 2020 GHG data,2540.44,,413,Medical Equipment & Supplies,18,0,1,0,1
+"O'Reilly Automotive, Inc.",,413,no report,no 2020 GHG data,12218.91,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
+"Diamondback Energy, Inc.",1473576,303,no,limited,2939,501.3868663,355,Oil & Gas – Exploration & Production,3,1419920,442,483.1303164,467
+Weyerhaeuser Company,1020000,288,no,no assurances,8310,122.7436823,313,Forestry Management,1,35996,382,4.331648616,394
+"Charles River Laboratories International, Inc.",130362,161,no,no assurances,3041.44,42.86193382,267,Biotechnology & Pharmaceuticals,15,0,1,0,1
+"Nasdaq, Inc.",4511,14,no,no assurances,5926,0.761221735,24,Security & Commodity Exchanges,1,0,1,0,1
+Hewlett Packard Enterprise Company,193748,186,no,limited,27557,7.030808869,110,Software & IT Services,20,0,1,0,1
+Norfolk Southern Corporation,3963111,340,no,limited,9803,404.2753239,345,Rail Transportation,2,13967,370,1.424767928,375
+Public Service Enterprise Group Incorporated,10376800,369,yes,limited,9711,1068.561425,373,Electric Utilities & Power Generators,6,9210755,466,948.4867676,476
+Pool Corporation,,413,no report,no 2020 GHG data,4320.08,,413,Multiline and Specialty Retailers & Distributors,15,0,1,0,1
+"Paychex, Inc.",5746,16,no,no assurances,4056.8,1.4163873,42,Software & IT Services,7,0,1,0,1
+"Air Products and Chemicals, Inc.",24183886,393,no,limited,9262.5,2610.945857,396,Chemicals,17,12683848,474,1369.376302,479
+Comcast Corporation,2222593,324,no,limited,104160,21.33825845,193,Telecommunication Services,1,0,1,0,1
+Cummins Inc.,594529,254,no,limited,20892,28.45725637,222,Industrial Machinery & Goods,7,0,1,0,1
+"American International Group, Inc.",77262,120,no,no assurances,43155,1.790337157,51,Insurance,11,0,1,0,1
+IPG Photonics Corporation,69016,115,no,no assurances,1297.07,53.20915602,282,Semiconductors,12,0,1,0,1
+"Best Buy Co., Inc.",401179,232,no,type unknown,50337,7.969863123,122,Multiline and Specialty Retailers & Distributors,1,0,1,0,1
+Vertex Pharmaceuticals Incorporated,13449,33,no,limited,6414.88,2.096531814,58,Biotechnology & Pharmaceuticals,2,0,1,0,1
+U.S. Bancorp,193138,185,no,limited,20765,9.301131712,134,Commercial Banks,9,0,1,0,1
+V.F. Corporation,72058,116,no,limited,9238.83,7.799472444,120,"Apparel, Accessories & Footwear",1,0,1,0,1
+Berkshire Hathaway Inc.,,413,no report,no 2020 GHG data,248844,,413,Insurance,16,64545297,497,259.3805637,451
+"The Goldman Sachs Group, Inc.",13701,34,no,limited,51430,0.266400933,9,Investment Banking & Brokerage,1,16617,371,0.323099358,370
+NXP Semiconductors N.V.,948481,281,no,no assurances,9158,103.5685739,306,Semiconductors,13,297794,418,32.51736187,427
+Incyte Corporation,7848,21,no,no assurances,2702.91,2.903537299,67,Biotechnology & Pharmaceuticals,3,0,1,0,1
+"Autodesk, Inc.",970,3,no,limited,3894,0.249101181,7,Software & IT Services,2,0,1,0,1
+"Rollins, Inc.",,413,no report,no 2020 GHG data,2208.87,,413,Professional & Commercial Services,11,0,1,0,1
+"Caesars Entertainment, Inc.",810187,275,no,limited,4692,172.6741262,324,Hotels & Lodging,1,56406,389,12.02173913,414
+"Anthem, Inc.",103991,144,no,no assurances,124632,0.834384428,26,Managed Care,2,0,1,0,1
+"The Hartford Financial Services Group, Inc.",8771,25,yes,limited,20837,0.420933916,13,Insurance,2,0,1,0,1
+News Corporation,,413,no report,no 2020 GHG data,8815,,413,Media & Entertainment,3,0,1,0,1
+"Boston Properties, Inc.",55249,102,no,limited,2693.78,20.50984119,189,Real Estate,4,0,1,0,1
+"NextEra Energy, Inc.",43326682,406,yes,limited,17110,2532.24325,394,Electric Utilities & Power Generators,11,44600926,496,2606.716891,488
+"Franklin Resources, Inc.",38349,76,no,no assurances,6937.7,5.527624429,92,Asset Management & Custody Activities,7,0,1,0,1
+"Advanced Micro Devices, Inc.",32251,69,no,limited,11422,2.823586062,66,Semiconductors,1,0,1,0,1
+"EOG Resources, Inc.",4900000,349,no,limited,10505.19,466.436114,351,Oil & Gas – Exploration & Production,2,5343231,456,508.6277354,468
+Alliant Energy Corporation,12628477,373,no,no assurances,3401,3713.165834,406,Electric Utilities & Power Generators,20,13709269,476,4030.952367,495
+Parker-Hannifin Corporation,,413,no report,no 2020 GHG data,13549.37,,413,Industrial Machinery & Goods,13,0,1,0,1
+"Take-Two Interactive Software, Inc.",,413,no report,no 2020 GHG data,3372.77,,413,Software & IT Services,33,0,1,0,1
+"Synopsys, Inc.",24993,57,no,limited,3984.22,6.272996973,98,Software & IT Services,15,0,1,0,1
+"Domino's Pizza, Inc.",,413,no report,no 2020 GHG data,4228.01,,413,Restaurants,5,0,1,0,1
+Trane Technologies plc,348770,226,no,limited,12831,27.18182527,220,Electrical & Electronic Equipment,9,0,1,0,1
+"Stanley Black & Decker, Inc.",246837,203,no,moderate,15602.3,15.8205521,174,Industrial Machinery & Goods,5,0,1,0,1
+The Kroger Co.,5275844,354,no,no assurances,132247,39.89386527,260,Food Retailers & Distributors,2,0,1,0,1
+Deere & Company,766000,270,yes,type unknown,39800,19.24623116,185,Resource Transformation,1,63353,393,1.59178392,377
+"Align Technology, Inc.",,413,no report,no 2020 GHG data,2815.75,,413,Medical Equipment & Supplies,18,0,1,0,1
+Ball Corporation,1112399,290,no,limited,12121,91.77452355,301,Containers & Packaging,1,0,1,0,1
+Chubb Limited,51701,97,no,type unknown,38386,1.346871255,40,Insurance,8,0,1,0,1
+Ingersoll Rand Inc.,116997,157,no,limited,5576.5,20.98036403,191,Industrial Machinery & Goods,6,0,1,0,1
+State Street Corporation,74469,118,no,limited,11545,6.450324816,102,Asset Management & Custody Activities,8,0,1,0,1
+Norwegian Cruise Line Holdings Ltd.,1446237,300,no,limited,36.13,40028.70191,411,Cruise Lines,2,0,1,0,1
+"PerkinElmer, Inc.",,413,no report,no 2020 GHG data,4438.04,,413,Medical Equipment & Supplies,18,0,1,0,1
+Dollar General Corporation,1623033,307,no,no assurances,33699.35,48.16214556,275,Multiline and Specialty Retailers & Distributors,13,0,1,0,1
+"Twitter, Inc.",,413,no report,no 2020 GHG data,3944.73,,413,Internet Media & Services,6,0,1,0,1
+The Coca-Cola Company,4770000,347,no,limited,33433,142.6734065,316,Non-Alcoholic Beverages,3,0,1,0,1
+Equity Residential,116821,156,no,limited,2487,46.97265782,272,Real Estate,13,0,1,0,1
+"Intercontinental Exchange, Inc.",47522,91,no,no assurances,6274,7.574434173,116,Security & Commodity Exchanges,3,0,1,0,1
+"ONEOK, Inc.",6300000,358,no,limited,9600.25,656.2329106,364,Oil & Gas – Midstream,1,3640860,454,379.2463738,460
+Amcor plc,1961274,319,yes,limited,12549.5,156.2830392,319,Containers & Packaging,3,0,1,0,1
+Hilton Worldwide Holdings Inc.,1718234,309,no,limited,1298,1323.755008,376,Hotels & Lodging,2,0,1,0,1
+Marathon Oil Corporation,4440000,346,no,no assurances,3271,1357.383063,379,Oil & Gas – Exploration & Production,9,5811397,458,1776.642311,480
+Schlumberger Limited,1636000,308,no,no assurances,21369,76.55950208,299,Oil & Gas – Services,2,0,1,0,1
+Emerson Electric Co.,765742,269,no,no assurances,17064,44.87470699,269,Electrical & Electronic Equipment,14,0,1,0,1
+Pinnacle West Capital Corporation,11374086,370,no,reasonable,3621.53,3140.68529,401,Electric Utilities & Power Generators,15,12628739,473,3487.128092,491
+Apple Inc.,47430,90,no,reasonable,325406,0.145756378,5,Hardware,1,0,1,0,1
+Molson Coors Beverage Company,1017929,287,no,limited,9449.6,107.7219142,309,Alcoholic Beverages,1,30167,378,3.192410261,390
+Jacobs Engineering Group Inc.,24329,53,yes,limited,13709.45,1.77461532,50,Professional & Commercial Services,4,0,1,0,1
+Boston Scientific Corporation,53731,100,no,no assurances,10122,5.308338273,90,Medical Equipment & Supplies,1,0,1,0,1
+"Wynn Resorts, Limited",412810,235,no,no assurances,1867.93,220.9986456,331,Casinos & Gaming,3,0,1,0,1
+Freeport-McMoRan Inc.,7115819,362,no,reasonable,16250,437.8965538,346,Metals & Mining,2,451096,424,27.75975385,425
+PACCAR Inc,239039,198,no,limited,19412.3,12.31379074,155,Industrial Machinery & Goods,1,0,1,0,1
+Nielsen Holdings plc,45362,86,no,limited,6311,7.18776739,113,Professional & Commercial Services,10,0,1,0,1
+Occidental Petroleum Corporation,23123207,391,no,reasonable,16489,1402.341379,381,Oil & Gas – Exploration & Production,11,9798363,467,594.2363394,470
+Avery Dennison Corporation,402220,233,yes,limited,7299.8,55.10013973,285,Chemicals,6,0,1,0,1
+"Cardinal Health, Inc.",421300,238,yes,limited,156570,2.690809223,64,Health Care Distributors,4,0,1,0,1
+Amphenol Corporation,337758,223,no,no assurances,9114,37.05924951,255,Electrical & Electronic Equipment,12,0,1,0,1
+Broadcom Inc.,240722,199,no,no assurances,25553,9.420498572,135,Semiconductors,6,204888,414,8.018158338,406
+"Verisk Analytics, Inc.",3039,7,no,limited,2820.9,1.07731575,33,Professional & Commercial Services,3,0,1,0,1
+Cintas Corporation,466629,244,no,no assurances,6900.26,67.62484312,293,"Apparel, Accessories & Footwear",7,0,1,0,1
+Marathon Petroleum Corporation,40180000,405,yes,limited,70458,570.2688126,359,Oil & Gas – Refining & Marketing,3,32016178,490,454.4008913,466
+Perrigo Company plc,153918,170,no,no assurances,4990,30.84529058,233,Biotechnology & Pharmaceuticals,13,0,1,0,1
+"Chipotle Mexican Grill, Inc.",244164,202,no,type unknown,6315.44,38.66143927,258,Restaurants,4,0,1,0,1
+Regency Centers Corporation,24682,55,no,limited,1039.22,23.75050519,205,Real Estate,6,0,1,0,1
+American Express Company,22084,48,no,limited,33407,0.661059059,22,Consumer Finance,2,0,1,0,1
+"Lowe's Companies, Inc.",1902000,316,no,limited,94344,20.16026456,186,Multiline and Specialty Retailers & Distributors,10,0,1,0,1
+Kimberly-Clark Corporation,3370838,333,no,limited,18874,178.5969058,326,Household & Personal Products,7,1111952,436,58.91448554,434
+"BlackRock, Inc.",4289,13,no,limited,16893,0.253892145,8,Asset Management & Custody Activities,2,0,1,0,1
+Discover Financial Services,40167,79,no,no assurances,8033,5.000248973,89,Consumer Finance,4,0,1,0,1
+"Fortinet, Inc.",,413,no report,no 2020 GHG data,2727,,413,Software & IT Services,33,0,1,0,1
+"AutoZone, Inc.",221037,194,no,no assurances,14262.07,15.49824114,173,Multiline and Specialty Retailers & Distributors,6,0,1,0,1
+"Qorvo, Inc.",,413,no,no assurances,4015.31,,413,Semiconductors,17,145144,408,36.14764489,430
+Corning Incorporated,2800000,329,no,no assurances,12202,229.4705786,332,Hardware,12,210342,415,17.23832159,419
+DTE Energy Company,24837180,394,no,high,12933,1920.450012,391,Electric Utilities & Power Generators,8,30757388,489,2378.209851,484
+APA Corporation,6770000,360,no,no assurances,4968,1362.721417,380,Oil & Gas – Exploration & Production,10,0,1,0,1
+Texas Instruments Incorporated,1916743,318,yes,limited,15421,124.2943389,314,Semiconductors,15,967875,434,62.76343947,435
+"Becton, Dickinson and Company",433451,240,no,no assurances,18861,22.98133715,201,Medical Equipment & Supplies,13,0,1,0,1
