@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Lynn LoPucki">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <title>The Stakeholder Takeover Project</title>
+    <link rel="stylesheet" href="css/stakeholdertakeover.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.dataTables.css">
+    <link rel="stylesheet" href="css/fixedHeader.dataTables.min.css">
+    <style>
+      @media print { #TransparencyTable { width: 1000px; transform: scale(0.9); } }
+      #TransparencyTable { width: 1500px; }
+      .columnGroupBorders tr td:nth-of-type(1) { border-left: 1px solid #000; border-right: 1px solid #000; }
+      .columnGroupBorders tr td:nth-of-type(3) { border-right: 1px solid #000; }
+      .columnGroupBorders tr td:nth-of-type(8) { border-right: 1px solid #000; }
+      .columnGroupBorders tr td:nth-of-type(10) { border-right: 1px solid #000; }
+      .columnGroupBorders tr td:nth-of-type(11) { border-right: 1px solid #000; }
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.fixedHeader.min.js"></script>
+    <script src="js/jquery.csv.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      var RawData = `
+Company Name,Transparency score,Scope1+2Reported,BiogenicReported,BoundaryFirm,GwpAssessment,CalendarYearAll,DaysGhgToRelease,GhgReport,Scope3Reported,GhgPermaLink
+Raytheon Technologies Corporation,9,yes,no,Operational Control,"IPCC AR4, AR5",yes,125,yes,yes,https://perma.cc/RH2T-ZFNW
+"The Interpublic Group of Companies, Inc.",9,yes,no,Operational Control,IPCC AR5,yes,214,yes,yes,https://perma.cc/PUX5-LB5K
+Dow Inc.,9,yes,no,Operational Control,IPCC AR6,yes,166,yes,yes,https://perma.cc/69WE-65LM
+Dover Corporation,9,yes,no,Operational Control,IPCC AR5,yes,164,yes,yes,https://perma.cc/5BQ7-696Q
+"Dominion Energy, Inc.",9,yes,no,Operational Control,IPCC AR4,yes,332,yes,yes,https://perma.cc/2DNF-FLJW
+"The PNC Financial Services Group, Inc.",9,yes,no,Operational Control,eGRID,yes,159,yes,yes,https://perma.cc/R7ZT-WT3B
+"Republic Services, Inc.",9,yes,no,Operational Control,IPCC AR4,yes,206,yes,yes,https://perma.cc/ZC69-5N72
+Devon Energy Corporation,9,yes,no,Operational Control,IPCC AR4,yes,215,yes,yes,https://perma.cc/B2B6-3U6A
+Chevron Corporation,9,yes,no,Operational Control,IPCC AR4,yes,122,yes,yes,https://perma.cc/LP8N-Z3U6
+Cummins Inc.,9,yes,no,Operational Control,IPCC AR4,yes,194,yes,yes,https://perma.cc/Y2PP-VX9B
+Eaton Corporation plc,9,yes,no,Operational Control,IPCC AR6,yes,167,yes,yes,https://perma.cc/PL5R-VSRC
+Constellation Energy Corporation,9,yes,no,Operational Control,eGRID,yes,243,yes,yes,https://perma.cc/ZHE3-H5PW
+Illinois Tool Works Inc.,9,yes,no,Operational Control,eGRID; UK-BEIS,yes,83,yes,yes,https://perma.cc/EQ5E-W92Q
+Trane Technologies plc,9,yes,no,Operational Control,IPCC AR5,yes,88,yes,yes,https://perma.cc/DX46-LZK7
+Entergy Corporation,9,yes,no,Operational Control,IPCC AR4,yes,129,yes,yes,https://perma.cc/83TE-K9K2
+Cognizant Technology Solutions Corporation,9,yes,no,Operational Control,IPCC AR4,yes,140,yes,yes,https://perma.cc/3G7D-RLSN
+Quest Diagnostics Incorporated,9,yes,no,Operational Control,eGRID,yes,185,yes,yes, https://perma.cc/75DU-6TGU
+"Church & Dwight Co., Inc.",9,yes,no,Operational Control,GHG Protocol/IEA v15,yes,110,yes,yes,https://perma.cc/EH8T-QM82
+"Marriott International, Inc.",9,yes,no,Operational Control,IPCC AR4,yes,228,yes,yes,https://perma.cc/7PLF-QN4E
+DaVita Inc.,9,yes,no,Operational Control,eGRID,yes,103,yes,yes,https://perma.cc/JG5D-BTPK
+Exelon Corporation,9,yes,no,Operational Control,IPCC AR4,yes,143,yes,yes,https://perma.cc/8VPW-DCK8
+Huntington Bancshares Incorporated,9,yes,no,Operational Control,eGRID,yes,243,yes,yes,https://perma.cc/MWC6-V6CX
+"Simon Property Group, Inc.",9,yes,no,Operational Control,IPCC AR5,yes,257,yes,yes,https://perma.cc/6FTK-PF24
+"Host Hotels & Resorts, Inc.",9,yes,no,Operational Control,IPCC AR5,yes,208,yes,yes,https://perma.cc/DDF7-BY5B
+Hilton Worldwide Holdings Inc.,9,yes,no,Operational Control,eGRID,yes,117,yes,yes,https://perma.cc/9E29-FX8G
+Hess Corporation,9,yes,no,Operational Control,IPCC AR4,yes,181,yes,yes,https://perma.cc/2JS4-RDLU
+International Flavors & Fragrances Inc.,9,yes,no,Operational Control,IPCC AR5,yes,151,yes,yes,https://perma.cc/4838-2VPR
+"Hasbro, Inc.",9,yes,no,Operational Control,eGRID,yes,340,yes,yes,https://perma.cc/GD6X-EJQQ
+"Fidelity National Information Services, Inc.",9,yes,no,Operational Control,IPCC AR6,yes,215,yes,yes,https://perma.cc/AC63-CCRZ
+"DuPont de Nemours, Inc.",9,yes,no,Operational Control,IPCC AR5,yes,116,yes,yes,https://perma.cc/J6YN-B2X7
+Schlumberger Limited,9,yes,no,Operational Control,IPCC AR5,yes,193,yes,yes,https://perma.cc/AWK2-UQRR
+Eastman Chemical Company,9,yes,no,Operational Control,IPCC AR5,yes,223,yes,yes,https://perma.cc/2APB-SEC7
+"Evergy, Inc.",9,yes,no,Operational Control,"IPCC AR5, AR6",yes,195,yes,yes,https://perma.cc/2G2V-5GEF
+"Everest Re Group, Ltd.",9,yes,no,Operational Control,IPCC AR5,yes,98,yes,yes,https://perma.cc/3TZE-3YWB
+Johnson & Johnson,9,yes,no,Operational Control,IPCC AR5,yes,159,yes,yes,https://perma.cc/6S8B-5555
+Keurig Dr Pepper Inc.,9,yes,no,Operational Control,eGRID,yes,172,yes,yes,https://perma.cc/Q7JA-6VCU
+KeyCorp,9,yes,no,Operational Control,eGRID,yes,105,yes,yes,https://perma.cc/J8LC-9WA4
+Kimco Realty Corporation,9,yes,no,Operational Control,IPCC AR5,yes,166,yes,yes,https://perma.cc/5P8C-24NG
+Ecolab Inc.,9,yes,no,Operational Control,IPCC AR5,yes,147,yes,yes,https://perma.cc/W52K-U66K
+Comerica Incorporated,9,yes,no,Operational Control,IPCC AR4,yes,152,yes,yes,https://perma.cc/LD3D-KB4E
+Federal Realty Investment Trust,9,yes,no,Operational Control,eGRID,yes,143,yes,yes,https://perma.cc/KY9V-QEGZ
+"NRG Energy, Inc.",9,yes,no,Operational Control,IPCC AR5,yes,136,yes,yes,https://perma.cc/JXD8-KUHL
+Ball Corporation,9,yes,no,Operational Control,IPCC AR5,yes,70,yes,yes,https://perma.cc/ZWA4-WNDY
+Baker Hughes Company,9,yes,no,Operational Control,IPCC AR5,yes,175,yes,yes,https://perma.cc/4MTL-ABBF
+"Netflix, Inc.",9,yes,no,Operational Control,IPCC AR5,yes,132,yes,yes,https://perma.cc/ES5R-DFCB
+Newmont Corporation,9,yes,no,Operational Control,IPCC AR5,yes,189,yes,yes,https://perma.cc/ECF2-E6Z3
+Pinnacle West Capital Corporation,9,yes,no,Operational Control,IPCC AR5,yes,160,yes,yes,https://perma.cc/ZVF6-PVRK
+NiSource Inc.,9,yes,no,Operational Control,IPCC AR4,yes,181,yes,yes,https://perma.cc/DAB6-JC3Q
+Norfolk Southern Corporation,9,yes,no,Operational Control,IPCC AR4,yes,227,yes,yes,https://perma.cc/BUC7-ZN69
+"Advanced Micro Devices, Inc.",9,yes,no,Operational Control,"IPCC AR5, AR6",yes,220,yes,yes,https://perma.cc/2W84-DWV5
+Wells Fargo & Company,9,yes,no,Operational Control,eGRID,yes,258,yes,yes,https://perma.cc/E7L9-QEQW
+Vornado Realty Trust,9,yes,no,Operational Control,IPCC AR5,yes,98,yes,yes,https://perma.cc/GC2D-WL8E
+Northrop Grumman Corporation,9,yes,no,Operational Control,IPCC AR5,yes,38,yes,yes,https://perma.cc/HW3Y-CD4P
+Nielsen Holdings plc,9,yes,no,Operational Control,IPCC AR4,yes,138,yes,yes, https://perma.cc/D8M8-ZHWX
+"PayPal Holdings, Inc.",9,yes,no,Operational Control,IPCC AR6,yes,112,yes,yes,https://perma.cc/MQ7U-RGPM
+Whirlpool Corporation,9,yes,no,Operational Control,eGRID,yes,62,yes,yes,https://perma.cc/2UE7-CLZQ
+ON Semiconductor Corporation,9,yes,no,Operational Control,IPCC AR6,yes,178,yes,yes,https://perma.cc/BD72-8U7P
+"Altria Group, Inc.",9,yes,no,Operational Control,IPCC AR5,yes,73,yes,yes,https://perma.cc/6RJY-UJVA
+Alphabet Inc.,9,yes,no,Operational Control,IPCC AR4,yes,158,yes,yes,https://perma.cc/AAZ4-L5C3
+"Yum! Brands, Inc.",9,yes,no,Operational Control,IPCC AR5,yes,182,yes,yes,https://perma.cc/S2EG-VQF3
+Zebra Technologies Corporation,9,yes,no,Operational Control,IPCC AR6,yes,215,yes,yes,https://perma.cc/57CZ-L4A5
+"ONEOK, Inc.",9,yes,no,Operational Control,eGRID,yes,210,yes,yes,https://perma.cc/DFT6-9RX5
+Albemarle Corporation,9,yes,no,Operational Control,IPCC AR5,yes,153,yes,yes,https://perma.cc/RF5W-2GYW
+3M Company,9,yes,no,Operational Control,IPCC AR5,yes,94,yes,yes,https://perma.cc/ZLL4-A9CR
+"Mondelez International, Inc.",9,yes,no,Operational Control,IPCC AR6,yes,84,yes,yes,https://perma.cc/HHZ4-SQR2
+MSCI Inc.,9,yes,no,Operational Control,IPCC AR5,yes,160,yes,yes,https://perma.cc/7WSP-BFBX
+Moody's Corporation,9,yes,no,Operational Control,IPCC AR5,yes,73,yes,yes,https://perma.cc/3B3C-9SRK
+"Nasdaq, Inc.",9,yes,no,Operational Control,IPCC AR6,yes,154,yes,yes,https://perma.cc/5N52-BDWY
+"BlackRock, Inc.",9,yes,no,Operational Control,IPCC AR5,yes,207,yes,yes,https://perma.cc/93TP-GELH
+"Ventas, Inc.",9,yes,no,Operational Control,IPCC AR6,yes,256,yes,yes,https://perma.cc/KP3J-NG4V
+"Cadence Design Systems, Inc.",9,yes,no,Operational Control,IPCC AR5,yes,117,yes,yes,https://perma.cc/K2HD-93VS
+Valero Energy Corporation,9,yes,no,Operational Control,IPCC AR5,yes,181,yes,yes,https://perma.cc/7Z8P-QA4T
+"Verisk Analytics, Inc.",9,yes,no,Operational Control,IPCC AR4,yes,207,yes,yes,https://perma.cc/QK6E-J8C2
+"Caesars Entertainment, Inc.",9,yes,no,Operational Control,IPCC AR4,yes,206,yes,yes,https://perma.cc/AFL4-U8C4
+Marathon Petroleum Corporation,8,yes,no,Operational Control,not reported,yes,179,yes,yes,https://perma.cc/D4MK-MQPP
+Occidental Petroleum Corporation,8,yes,no,Operational Control,IPCC AR4,yes,216,yes,no,https://perma.cc/9YJQ-JM4Y
+"J.B. Hunt Transport Services, Inc.",8,yes,no,Operational Control,not reported,yes,199,yes,yes,https://perma.cc/BX39-LX4X
+Iron Mountain Incorporated,8,yes,no,Operational Control,not reported,yes,105,yes,yes,https://perma.cc/Q4TG-GXN6
+International Paper Company,8,yes,no,Operational Control,eGRID,yes,181,yes,yes,https://perma.cc/8K3A-46D9
+"MetLife, Inc.",8,yes,no,Operational Control,not reported,yes,153,yes,yes,https://perma.cc/DAK6-YUDD
+International Business Machines Corporation,8,yes,no,Operational Control,not reported,yes,147,yes,yes,https://perma.cc/H3QP-CJ29
+"Marsh & McLennan Companies, Inc.",8,yes,no,Operational Control,not reported,yes,96,yes,yes,https://perma.cc/5QP9-NDCG
+Mastercard Incorporated,8,yes,no,Operational Control,not reported,yes,83,yes,yes,https://perma.cc/89UN-J46H
+Intel Corporation,8,yes,no,Operational Control,not reported,yes,105,yes,yes,https://perma.cc/7N5A-W4VU
+Ingersoll Rand Inc.,8,yes,no,Operational Control,not reported,yes,173,yes,yes,https://perma.cc/9UWW-Z4EA
+"Merck & Co., Inc.",8,yes,no,Operational Control,not reported,yes,231,yes,yes,https://perma.cc/E7X2-8U8W
+Mettler-Toledo International Inc.,8,yes,no,Operational Control,not reported,yes,116,yes,yes,https://perma.cc/CVB7-DD87
+"Juniper Networks, Inc.",8,yes,no,Operational Control,IPCC AR5,yes,263,yes,yes,https://perma.cc/25G9-CFL5
+Lincoln National Corporation,8,yes,no,Operational Control,not reported,yes,220,yes,yes,https://perma.cc/DY99-44PV
+Linde plc,8,yes,no,Operational Control,IPCC AR5,yes,156,yes,yes,https://perma.cc/XA5S-7CPX
+LKQ Corporation,8,yes,no,Operational Control,not reported,yes,140,yes,yes,https://perma.cc/CV6T-294R
+"Meta Platforms, Inc.",8,yes,no,Operational Control,not reported,yes,174,yes,yes,https://perma.cc/6ARB-N2PB
+Lockheed Martin Corporation,8,yes,no,Operational Control,not reported,yes,91,yes,yes,https://perma.cc/UBM5-VNU8
+Marathon Oil Corporation,8,yes,no,Operational Control,IPCC AR4,yes,276,yes,yes,https://perma.cc/22XH-KUQ4
+Norwegian Cruise Line Holdings Ltd.,8,yes,no,Operational Control,not reported,yes,158,yes,yes,https://perma.cc/F5E4-DRVD
+KLA Corporation,8,yes,no,Operational Control,IPCC AR6,no,181,yes,yes,https://perma.cc/Q5Z6-SFGE
+MGM Resorts International,8,yes,no,Operational Control,IPCC AR4,yes,208,yes,no,https://perma.cc/Y28W-8ED4
+Northern Trust Corporation,8,yes,no,Operational Control,"IPCC AR4, AR5",yes,206,yes,yes,https://perma.cc/AC9N-HQRQ
+JPMorgan Chase & Co.,8,yes,no,Operational Control,not reported,yes,137,yes,yes,https://perma.cc/DZ6F-4PXR
+Johnson Controls International plc,8,yes,no,Operational Control,IPCC AR4,no,130,yes,yes,https://perma.cc/4WEF-LZTT
+Molson Coors Beverage Company,8,yes,no,Operational Control,not reported,yes,222,yes,yes,https://perma.cc/YMQ9-QT3Y
+Jacobs Engineering Group Inc.,8,yes,no,Operational Control,IPCC AR5,no,252,yes,yes,https://perma.cc/66XT-S2XU
+Las Vegas Sands Corp.,8,yes,no,Operational Control,not reported,yes,77,yes,yes,https://perma.cc/7258-HGUQ
+M&T Bank Corporation,8,yes,no,Operational Control,eGRID,yes,103,yes,yes,https://perma.cc/9X5M-KXEM
+"Assurant, Inc.",8,yes,no,Operational Control,not reported,yes,103,yes,yes,https://perma.cc/D2AZ-NFWU
+"Charter Communications, Inc.",8,yes,no,Operational Control,eGRID,yes,79,yes,yes,https://perma.cc/7VZ4-WSCL
+"Charles River Laboratories International, Inc.",8,yes,no,Operational Control,not reported,yes,117,yes,yes,https://perma.cc/MR3X-CGEQ
+Ceridian HCM Holding Inc.,8,yes,no,Operational Control,not reported,yes,104,yes,yes,https://perma.cc/7VRB-F3SC
+Centene Corporation,8,yes,no,Operational Control,IPCC AR4,yes,279,yes,yes,https://perma.cc/89TJ-LETV
+Celanese Corporation,8,yes,no,Operational Control,IPCC AR5,yes,213,yes,no,https://perma.cc/L4QE-XALF
+"CBRE Group, Inc.",8,yes,no,Operational Control,not reported,yes,140,yes,yes,https://perma.cc/9FRA-7UFM
+"C.H. Robinson Worldwide, Inc.",8,yes,no,Operational Control,not reported,yes,161,yes,yes,https://perma.cc/LKS5-3YPY
+"Broadridge Financial Solutions, Inc.",8,yes,no,Operational Control,IPCC AR4,no,28,yes,yes,https://perma.cc/U9TF-W8NR
+"Boston Properties, Inc.",8,yes,no,Operational Control,not reported,yes,105,yes,yes,https://perma.cc/KR2Q-YCYP
+Biogen Inc.,8,yes,no,Operational Control,not reported,yes,139,yes,yes,https://perma.cc/CV29-PEE2
+Baxter International Inc.,8,yes,no,Operational Control,not reported,yes,129,yes,yes,https://perma.cc/WET6-SURH
+"EOG Resources, Inc.",8,yes,no,Operational Control,IPCC AR4,yes,279,yes,no,https://perma.cc/YN4H-PKTV
+"AvalonBay Communities, Inc.",8,yes,no,Operational Control,not reported,yes,180,yes,yes,https://perma.cc/B3H7-4G75
+CMS Energy Corporation,8,yes,no,Operational Control,IPCC AR6,yes,222,yes,no,https://perma.cc/V52S-G83Z
+Aptiv PLC,8,yes,no,Operational Control,not reported,yes,236,yes,yes,https://perma.cc/YC3J-D938
+Apple Inc.,8,yes,no,Operational Control,IPCC AR5,no,163,yes,yes,https://perma.cc/Y2FX-4CNA
+Amphenol Corporation,8,yes,no,Operational Control,2006 IPCC Guidelines,yes,104,yes,yes,https://perma.cc/UDD2-V6Y4
+Amgen Inc.,8,yes,no,Operational Control,not reported,yes,95,yes,yes,https://perma.cc/PRM3-LWR6
+Abbott Laboratories,8,yes,no,Operational Control,not reported,yes,180,yes,yes,https://perma.cc/MVU3-4MRN
+American Tower Corporation,8,yes,no,Operational Control,IPCC AR6,yes,200,yes,yes,https://perma.cc/8YV9-6XEG
+American Express Company,8,yes,no,Operational Control,not reported,yes,167,yes,yes,https://perma.cc/6W6E-QPUA
+American Airlines Group Inc.,8,yes,no,Operational Control,not reported,yes,178,yes,yes,https://perma.cc/V4R9-W5WJ
+Ameren Corporation,8,yes,no,Operational Control,IPCC AR4,yes,207,yes,yes,https://perma.cc/C5MH-TZKD
+Amcor plc,8,yes,no,Operational Control,eGRID2020,no,138,yes,yes,https://perma.cc/MK69-W7FY
+"Amazon.com, Inc.",8,yes,no,Operational Control,not reported,yes,175,yes,yes,https://perma.cc/7R34-M2VW
+Alliant Energy Corporation,8,yes,no,Operational Control,IPCC AR5,yes,196,yes,no,https://perma.cc/PXX5-Q2J3
+Bank of America Corporation,8,yes,no,Operational Control,not reported,yes,203,yes,yes,https://perma.cc/L2RW-JE25
+Elevance Health Inc.,8,yes,no,Operational Control,not reported,yes,130,yes,yes,https://perma.cc/774J-52DG
+Humana Inc.,8,yes,no,Operational Control,not reported,yes,91,yes,yes,https://perma.cc/F73M-DH68
+HP Inc.,8,yes,no,Operational Control,IPCC AR2,no,193,yes,yes,https://perma.cc/XKE9-XRNM
+Howmet Aerospace Inc.,8,yes,no,Operational Control,IPCC AR4,yes,96,yes,yes,https://perma.cc/MWR5-JMGK
+Honeywell International Inc.,8,yes,no,Operational Control,not reported,yes,258,yes,yes,https://perma.cc/9HK9-B2J4
+"Healthpeak Properties, Inc.",8,yes,no,Operational Control,IPCC AR5,yes,166,yes,no,https://perma.cc/Y59J-843G
+Halliburton Company,8,yes,no,Operational Control,not reported,yes,95,yes,yes,https://perma.cc/CY9M-EY2M
+Freeport-McMoRan Inc.,8,yes,no,Operational Control,not reported,yes,131,yes,yes,https://perma.cc/6QBS-KFMC
+Fifth Third Bancorp,8,yes,no,Operational Control,not reported,yes,126,yes,yes,https://perma.cc/5TFY-CM77
+"Expeditors International of Washington, Inc.",8,yes,no,Operational Control,eGRID,yes,111,yes,yes,https://perma.cc/M6YH-3ZU5
+"Etsy, Inc.",8,yes,no,Operational Control,not reported,yes,98,yes,yes,https://perma.cc/QG72-MEYK
+Equity Residential,8,yes,no,Operational Control,IPCC AR5,yes,153,yes,yes,https://perma.cc/T8MW-NSR9
+Oracle Corporation,8,yes,no,Operational Control,IPCC AR4,no,235,yes,yes,https://perma.cc/AD3B-RKGT
+"Chipotle Mexican Grill, Inc.",8,yes,no,Operational Control,not reported,yes,140,yes,yes,https://perma.cc/Y5GF-2WU9
+Eli Lilly and Company,8,yes,no,Operational Control,IPCC AR5,yes,245,yes,no,https://perma.cc/NB4N-7PVF
+Cigna Corporation,8,yes,no,Operational Control,IPCC AR5,yes,202,yes,no,https://perma.cc/TB36-X7MN
+Edwards Lifesciences Corporation,8,yes,no,Operational Control,not reported,yes,156,yes,yes,https://perma.cc/7EGC-MJYA
+Edison International,8,yes,no,Operational Control,eGRID,yes,152,yes,yes,https://perma.cc/YEG2-4NJK
+eBay Inc.,8,yes,no,Operational Control,not reported,yes,115,yes,yes,https://perma.cc/9MQB-EF93
+"Digital Realty Trust, Inc.",8,yes,no,Operational Control,not reported,yes,179,yes,yes,https://perma.cc/3SWK-AABB
+"Diamondback Energy, Inc.",8,yes,no,Operational Control,IPCC AR4,yes,269,yes,no,https://perma.cc/L9E4-QVPR
+"Delta Air Lines, Inc.",8,yes,no,Operational Control,IPCC AR5,yes,124,yes,yes,https://perma.cc/F3FJ-RFBB
+CVS Health Corporation,8,yes,no,Operational Control,not reported,yes,137,yes,yes,https://perma.cc/RR8N-WPRZ
+CSX Corporation,8,yes,no,Operational Control,not reported,yes,175,yes,yes,https://perma.cc/TP5W-K8RH
+Coterra Energy Inc.,8,yes,no,Operational Control,EPA,yes,307,yes,no,https://perma.cc/F6JT-74BS
+"Corteva, Inc.",8,yes,no,Operational Control,eGRID,yes,164,yes,yes,https://perma.cc/H3UU-YQQX
+ConocoPhillips,8,yes,no,Operational Control,IPCC AR4,yes,228,yes,no,https://perma.cc/373K-XV3R
+"Illumina, Inc.",8,yes,no,Operational Control,not reported,yes,90,yes,yes,https://perma.cc/SC8K-4TL2
+"Enphase Energy, Inc.",8,yes,no,Operational Control,IPCC,yes,145,yes,yes,https://perma.cc/S2L5-MYW2
+"Regeneron Pharmaceuticals, Inc.",8,yes,no,Operational Control,not reported,yes,101,yes,yes,https://perma.cc/Q22J-WBKK
+"ServiceNow, Inc.",8,yes,no,Operational Control,not reported,yes,70,yes,yes,https://perma.cc/89TK-VNQY
+"T-Mobile US, Inc.",8,yes,no,Operational Control,IPCC AR5,yes,98,yes,yes,https://perma.cc/54VY-YGKR
+Verizon Communications Inc.,8,yes,no,Operational Control,IPCC AR4,yes,227,yes,yes,https://perma.cc/B2QZ-TXQV
+Synchrony Financial,8,yes,no,Operational Control,eGRID,yes,91,yes,yes,https://perma.cc/HEG8-SRPV
+PPL Corporation,8,yes,no,Operational Control,IPCC AR4,yes,108,yes,yes,https://perma.cc/L8H3-YRBR
+U.S. Bancorp,8,yes,no,Operational Control,not reported,yes,172,yes,yes,https://perma.cc/72C6-GEEV
+"Principal Financial Group, Inc.",8,yes,no,Operational Control,eGRID,yes,213,yes,yes,https://perma.cc/3DNE-XEE4
+Robert Half International Inc.,8,yes,no,Operational Control,not reported,yes,207,yes,yes,https://perma.cc/7VHK-M7LK
+"SolarEdge Technologies, Inc.",8,yes,no,Operational Control,eGrid 2020,yes,285,yes,yes,https://perma.cc/D6TS-NDDC
+"The Travelers Companies, Inc.",8,yes,no,Operational Control,not reported,yes,147,yes,yes,https://perma.cc/74VN-SCB7
+The Progressive Corporation,8,yes,no,Operational Control,IPCC AR4,yes,242,yes,no,https://perma.cc/C87G-B438
+Visa Inc.,8,yes,no,Operational Control,IPCC AR4,no,119,yes,yes,https://perma.cc/2EF2-RZGL
+Welltower Inc.,8,yes,no,Operational Control,not reported,yes,178,yes,yes,https://perma.cc/M24H-FJ92
+"Waste Management, Inc.",8,yes,no,Operational Control,not reported,yes,174,yes,yes,https://perma.cc/NU9S-EAL3
+Regency Centers Corporation,8,yes,no,Operational Control,not reported,yes,140,yes,yes,https://perma.cc/UT4J-W2G5
+"Stanley Black & Decker, Inc.",8,yes,no,Operational Control,not reported,yes,166,yes,yes,https://perma.cc/79FB-W988
+"W.W. Grainger, Inc.",8,yes,no,Operational Control,eGRID,yes,165,yes,no,https://perma.cc/AB53-TKPN
+Seagate Technology Holdings plc,8,yes,no,Operational Control,IPCC AR5,no,203,yes,yes,https://perma.cc/TK87-BX2K
+State Street Corporation,8,yes,no,Operational Control,not reported,yes,110,yes,yes,https://perma.cc/K6M9-HBWV
+Ralph Lauren Corporation,8,yes,no,Operational Control,IPCC AR6,no,83,yes,yes,https://perma.cc/5QTS-GZRL
+Truist Financial Corporation,8,yes,no,Operational Control,IPCC AR5,yes,105,yes,yes,https://perma.cc/E3HK-A9NG
+SVB Financial Group,8,yes,no,Operational Control,not reported,yes,195,yes,yes,https://perma.cc/Q46V-4GC3
+"Synopsys, Inc.",8,yes,no,Operational Control,IPCC AR5,no,122,yes,yes,https://perma.cc/7CYB-JY7M
+Southwest Airlines Co.,8,yes,no,Operational Control,IPCC AR5,yes,97,yes,yes,https://perma.cc/A9Q8-ZR9W
+Weyerhaeuser Company,8,yes,no,Operational Control,eGRID,yes,136,yes,yes,https://perma.cc/B5VP-2XUS
+The Coca-Cola Company,8,yes,no,Operational Control,IPCC AR6,yes,158,yes,yes,https://perma.cc/ZL5C-BMTZ
+The Boeing Company,8,yes,no,Operational Control,not reported,yes,166,yes,yes,https://perma.cc/PG3J-WULD
+The Bank of New York Mellon Corporation,8,yes,no,Operational Control,not reported,yes,130,yes,yes,https://perma.cc/AT9H-FBFW
+"Salesforce, Inc.",8,yes,no,Operational Control,eGRID,no,67,yes,yes,https://perma.cc/CH7S-FT2B
+Paramount Global,8,yes,no,Operational Control,not reported,yes,202,yes,yes,https://perma.cc/5EB5-59ZC
+Xylem Inc.,8,yes,no,Operational Control,not reported,yes,161,yes,yes,https://perma.cc/E3DY-CR8W
+Sealed Air Corporation,8,yes,no,Operational Control,IPCC AR4,yes,299,yes,no,https://perma.cc/W84P-W7EE
+"United Parcel Service, Inc.",8,yes,no,Operational Control,eGRID,yes,209,yes,yes,https://perma.cc/T8BD-3B6K
+"The Hartford Financial Services Group, Inc.",8,yes,no,Operational Control,IPCC AR5,yes,202,yes,no,https://perma.cc/VMP7-RWS2
+Packaging Corporation of America,8,yes,no,Operational Control,eGRID,yes,180,yes,yes,https://perma.cc/9AZ2-T4QS
+The Southern Company,8,yes,no,Operational Control,eGRID,yes,213,yes,no,https://perma.cc/RCD9-S5P7
+The Clorox Company,8,yes,no,Operational Control,IPCC AR4,no,244,yes,yes,https://perma.cc/X7VC-WWHK
+The Hershey Company,8,yes,no,Operational Control,eGRID,yes,136,yes,yes,https://perma.cc/XY4Z-CS2U
+Pfizer Inc.,8,yes,no,Operational Control,IPCC AR5,yes,139,yes,no,https://perma.cc/3J8Z-8696
+V.F. Corporation,8,yes,no,Operational Control,IPCC AR5,no,166,yes,yes,https://perma.cc/YF45-LCJ9
+The Kraft Heinz Company,8,yes,no,Operational Control,eGRID,yes,181,yes,no,https://perma.cc/WD7F-78VE
+Philip Morris International Inc.,8,yes,no,Operational Control,not reported,yes,136,yes,yes,https://perma.cc/YP5K-UB63
+The J. M. Smucker Company,8,yes,no,Operational Control,eGRID,no,203,yes,yes,https://perma.cc/8GCW-5VG6
+UnitedHealth Group Incorporated,8,yes,no,Operational Control,not reported,yes,164,yes,yes,https://perma.cc/ZEV3-WNL2
+Western Digital Corporation,8,yes,no,Operational Control,IPCC AR5,no,127,yes,yes,https://perma.cc/2UMN-448L
+Textron Inc.,8,yes,no,Operational Control,IPCC AR5,yes,207,yes,yes,https://perma.cc/8E74-XT9H
+"Intercontinental Exchange, Inc.",7,yes,no,Operational Control,not reported,yes,210,yes,yes,https://perma.cc/CZ2F-48SH
+"CenterPoint Energy, Inc.",7,yes,no,Operational Control,not reported,yes,230,yes,yes,https://perma.cc/UUH8-W86W
+Invesco Ltd.,7,yes,no,Operational Control,not reported,yes,194,yes,yes,https://perma.cc/979F-WXB5
+"United Airlines Holdings, Inc.",7,yes,no,Operational Control,not reported,yes,,yes,yes,https://perma.cc/7T7Y-9EVJ
+Chubb Limited,7,yes,no,Operational Control,not reported,yes,333,yes,yes,https://perma.cc/4E5S-ZMZV
+Citigroup Inc.,7,yes,no,Operational Control,not reported,yes,96,yes,yes,https://perma.cc/UF46-6QDP
+"Citizens Financial Group, Inc.",7,yes,no,Operational Control,not reported,yes,178,yes,no,https://perma.cc/4J9U-S6ED
+Incyte Corporation,7,yes,no,Operational Control,not reported,yes,290,yes,yes,https://perma.cc/FZB6-NCLK
+Hormel Foods Corporation,7,yes,no,Operational Control,IPCC AR2,no,290,yes,yes,https://perma.cc/Q8TS-N8PF
+"CF Industries Holdings, Inc.",7,yes,no,Operational Control,not reported,yes,89,yes,yes,https://perma.cc/43M6-QYZ9
+Sempra Energy,7,yes,no,Operational Control,not reported,yes,137,yes,yes,https://perma.cc/3XQ4-UK3
+CME Group Inc.,7,yes,no,Operational Control,not reported,yes,175,yes,yes,https://perma.cc/DX52-SZ9H
+Starbucks Corporation,7,yes,no,no boundary data,IPCC AR4,no,184,yes,yes,https://perma.cc/9EXK-HSFG
+"Expedia Group, Inc.",7,yes,no,Operational Control,not reported,yes,259,yes,yes,https://perma.cc/G7G4-A9NW
+FMC Corporation,7,yes,no,Operational Control,not reported,yes,143,yes,yes,https://perma.cc/5ASK-3R2D
+"Fiserv, Inc.",7,yes,no,Operational Control,not reported,yes,133,yes,yes,https://perma.cc/SMK7-ED5T
+The Sherwin-Williams Company,7,yes,no,Operational Control,not reported,yes,164,yes,yes,https://perma.cc/7YB9-3C89
+Target Corporation,7,yes,no,Operational Control,IPCC AR4,no,165,yes,yes,https://perma.cc/3XUM-UCKF
+The Mosaic Company,7,yes,no,Operational Control,not reported,yes,201,yes,no,https://perma.cc/3J4H-ANUR
+The Kroger Co.,7,yes,no,Operational Control,IPCC AR5,no,215,yes,yes,https://perma.cc/RLR7-S5ET
+Corning Incorporated,7,yes,no,Operational Control,IPCC AR6,yes,95,yes,no,https://perma.cc/R5JG-HPK9
+Duke Realty Corporation,7,yes,no,Operational Control,not reported,yes,174,yes,yes,https://perma.cc/5MFK-7Q9J
+Fortive Corporation,7,yes,no,Operational Control,not reported,yes,168,yes,no,https://perma.cc/6TGJ-75AU
+DXC Technology Company,7,yes,no,Operational Control,"IPCC AR5, AR6",no,161,yes,no,https://perma.cc/WNG2-EJE8
+Eversource Energy,7,yes,no,Operational Control,not reported,yes,136,yes,no,https://perma.cc/E4HU-GKLE
+Texas Instruments Incorporated,7,yes,no,Operational Control,IPCC AR4,yes,166,yes,no,https://perma.cc/769L-S9HX
+"Equinix, Inc.",7,yes,no,Operational Control,not reported,yes,118,yes,yes,https://perma.cc/DV6Y-HAME
+Equifax Inc.,7,yes,no,Operational Control,not reported,yes,82,yes,yes,https://perma.cc/3KFC-NAXJ
+The Allstate Corporation,7,yes,no,Operational Control,not reported,yes,142,yes,yes,https://perma.cc/8PKX-6QKW
+Duke Energy Corporation,7,yes,no,Operational Control,not reported,yes,137,yes,yes,https://perma.cc/MXA2-KADH
+Caterpillar Inc.,7,yes,no,Operational Control,eGRID,yes,111,yes,no,https://perma.cc/4YYW-NKLJ
+"Henry Schein, Inc.",7,yes,no,Operational Control,not reported,yes,230,yes,yes,https://perma.cc/AD7N-CG83
+Trimble Inc.,7,yes,no,Operational Control,not reported,yes,242,yes,yes,https://perma.cc/TVL6-V6TE
+"T. Rowe Price Group, Inc.",7,yes,no,Operational Control,not reported,yes,264,yes,yes,https://perma.cc/7SQ3-ZJ9B
+Colgate-Palmolive Company,7,yes,no,Operational Control,not reported,yes,172,yes,no,https://perma.cc/RQ92-3GQB
+Globe Life Inc.,7,yes,no,Operational Control,not reported,yes,195,yes,yes,https://perma.cc/2X9J-W47Y
+Comcast Corporation,7,yes,no,Operational Control,IPCC AR4,yes,146,yes,no,https://perma.cc/WA53-EPY6
+Ford Motor Company,7,yes,no,Operational Control,not reported,yes,91,yes,yes,https://perma.cc/Z749-4U9J
+General Electric Company,7,yes,no,Operational Control,not reported,yes,192,yes,yes,https://perma.cc/V85K-49ZZ
+"Fortinet, Inc.",7,yes,no,Operational Control,not reported,yes,152,yes,no,https://perma.cc/W2QQ-9KH6
+Thermo Fisher Scientific Inc.,7,yes,no,Operational Control,not reported,yes,137,yes,no,https://perma.cc/7E56-9CU8
+"Gartner, Inc.",7,yes,no,Operational Control,not reported,yes,129,yes,yes,https://perma.cc/ZQR2-9MTY
+"The Williams Companies, Inc.",7,yes,no,Operational Control,IPCC AR4,yes,208,yes,no,https://perma.cc/D9MX-FUKS
+Crown Castle Inc.,7,yes,no,Operational Control,IPCC AR5,yes,202,yes,no,https://perma.cc/EHR7-R7R5
+"Franklin Resources, Inc.",7,yes,no,Operational Control,IPCC AR5,no,222,yes,yes,https://perma.cc/V2TQ-3SAU
+"The TJX Companies, Inc.",7,yes,no,Operational Control,not reported,no,266,yes,yes,https://perma.cc/32T7-98T3
+Hewlett Packard Enterprise Company,7,yes,no,Operational Control,not reported,no,165,yes,yes,https://perma.cc/UUW7-Z3BT
+"Consolidated Edison, Inc.",7,yes,no,Operational Control,not reported,yes,139,yes,yes,https://perma.cc/G3JT-MJHM
+Waters Corporation,7,yes,no,Operational Control,not reported,yes,322,yes,yes,https://perma.cc/T6UB-GWT5
+Accenture plc,7,yes,no,Operational Control,not reported,no,66,yes,yes,https://perma.cc/2QE8-822D
+"Motorola Solutions, Inc.",7,yes,no,Operational Control,not reported,yes,152,yes,yes,https://perma.cc/A5D4-HAHV
+Morgan Stanley,7,yes,no,Operational Control,not reported,yes,181,yes,yes,https://perma.cc/FHW7-ZQEE
+Monster Beverage Corporation,7,yes,no,Operational Control,eGRID,yes,287,yes,no,https://perma.cc/DY88-WNCL
+"Activision Blizzard, Inc.",7,yes,no,Operational Control,not reported,yes,231,yes,yes,https://perma.cc/P9KP-Z5LT
+"Prologis, Inc.",7,yes,no,Operational Control,not reported,yes,174,yes,yes,https://perma.cc/LM4Q-HDJN
+Aon plc,7,yes,no,Operational Control,not reported,yes,180,yes,yes,https://perma.cc/TLM4-9VAV
+Adobe Inc.,7,yes,no,Operational Control,not reported,no,135,yes,yes,https://perma.cc/28VN-J9RQ
+Pioneer Natural Resources Company,7,yes,no,Operational Control,not reported,yes,201,yes,no,https://perma.cc/QZ4E-HV24
+"Mid-America Apartment Communities, Inc.",7,yes,no,Operational Control,not reported,yes,180,yes,yes,https://perma.cc/R4QP-VTCB
+"Micron Technology, Inc.",7,yes,no,Operational Control,IPCC AR4,no,151,yes,no,https://perma.cc/X69V-6SFN
+"United Rentals, Inc.",7,yes,no,Operational Control,not reported,yes,207,yes,yes,https://perma.cc/QYZ5-NKWF
+"Analog Devices, Inc.",7,yes,no,Operational Control,eGRID,no,132,yes,no,https://perma.cc/WQ39-AJVG
+Public Storage,7,yes,no,Operational Control,not reported,yes,181,yes,no, https://perma.cc/Q2A8-L4CK
+"PulteGroup, Inc.",7,yes,no,Operational Control,not reported,yes,165,yes,yes, https://perma.cc/D6T3-CAAV
+"Prudential Financial, Inc.",7,yes,no,Operational Control,not reported,yes,151,yes,yes,https://perma.cc/LQ4G-ZCVB
+Nucor Corporation,7,yes,no,Operational Control,not reported,yes,157,yes,yes,https://perma.cc/4JJ7-FP45
+"Air Products and Chemicals, Inc.",7,yes,no,Operational Control,not reported,no,145,yes,yes,https://perma.cc/H9PS-ULFE
+"Alaska Air Group, Inc.",7,yes,no,Operational Control,not reported,yes,117,yes,yes,https://perma.cc/5MJD-DRPT
+"Alexandria Real Estate Equities, Inc.",7,yes,no,Operational Control,not reported,yes,180,yes,yes,https://perma.cc/SXH5-XFPM
+Xcel Energy Inc.,7,yes,no,Operational Control,not reported,yes,262,yes,yes,https://perma.cc/24PH-KQYB
+Omnicom Group Inc.,7,yes,no,Operational Control,not reported,yes,259,yes,yes,https://perma.cc/G3ZH-P6W2
+"Old Dominion Freight Line, Inc.",7,yes,no,Operational Control,not reported,yes,241,yes,yes,https://perma.cc/5C5S-85CC
+AbbVie Inc.,7,yes,no,Operational Control,not reported,yes,90,yes,no,https://perma.cc/VFQ7-VHPW
+NXP Semiconductors N.V.,7,yes,no,Operational Control,not reported,yes,95,yes,yes,https://perma.cc/R5A5-CQ9J
+Newell Brands Inc.,7,yes,no,Operational Control,not reported,yes,67,yes,no,https://perma.cc/XY4Z-VRM6
+"American Electric Power Company, Inc.",7,yes,no,Operational Control,IPCC AR5,yes,139,yes,yes,https://perma.cc/QB6P-88DH
+Pentair plc,7,yes,no,Operational Control,IPCC AR4,yes,111,yes,no,https://perma.cc/594R-84JR
+"American International Group, Inc.",7,yes,no,Operational Control,not reported,yes,141,yes,yes,https://perma.cc/L76X-BDCP
+"American Water Works Company, Inc.",7,yes,no,Operational Control,IPCC AR5,yes,123,yes,no,https://perma.cc/FJ8M-XU8L
+Phillips 66,7,yes,no,Operational Control,eGRID,yes,217,yes,yes,https://perma.cc/6EXH-SHBM
+"NextEra Energy, Inc.",7,yes,no,Operational Control,not reported,yes,158,yes,yes,https://perma.cc/2QLF-TYYY
+Microchip Technology Incorporated,7,yes,no,Operational Control,IPCC AR4,no,216,yes,yes,https://perma.cc/22KR-WRVR
+"Wynn Resorts, Limited",7,yes,no,Operational Control,IPCC AR4,yes,171,yes,no,https://perma.cc/M5TP-A459
+"Autodesk, Inc.",7,yes,no,Operational Control,not reported,no,73,yes,Yes,https://perma.cc/22PM-KNH3
+Lam Research Corporation,7,yes,no,Operational Control,not reported,no,173,yes,yes,https://perma.cc/C3VV-W5JL
+"L3Harris Technologies, Inc.",7,yes,no,Operational Control,not reported,yes,70,yes,yes,https://perma.cc/JB3L-G8KD
+Medtronic plc,7,yes,no,Operational Control,IPCC AR5,no,118,yes,no,https://perma.cc/26VS-LPM2
+Regions Financial Corporation,7,yes,no,Operational Control,not reported,yes,145,yes,yes,https://perma.cc/7RY5-BHHL
+"Kinder Morgan, Inc.",7,yes,no,Operational Control,IPCC AR5,yes,172,yes,no,https://perma.cc/S6XK-JSBS
+"Lumen Technologies, Inc.",7,yes,no,Operational Control,IPCC AR4,yes,308,yes,no,https://perma.cc/KGG9-G4UJ
+LyondellBasell Industries N.V.,7,yes,no,Operational Control,IPCC AR6,yes,101,yes,no,https://perma.cc/FSB4-RT7F
+"Best Buy Co., Inc.",7,yes,no,no boundary data,IPCC AR5,no,249,yes,yes,https://perma.cc/9QU9-F3T2
+Campbell Soup Company,7,yes,no,Operational Control,not reported,no,174,yes,yes,https://perma.cc/6WJK-A4F6
+VICI Properties Inc.,7,yes,no,Operational Control,not reported,yes,248,yes,yes,https://perma.cc/2ZT7-GUX4
+AT&T Inc.,7,yes,no,Operational Control,IPCC AR5,yes,119,yes,No,https://perma.cc/KYB2-5SAX
+"Applied Materials, Inc.",7,yes,no,Financial Control,IPCC AR5,no,256,yes,no,https://perma.cc/BL9B-J87J
+"Cboe Global Markets, Inc.",7,yes,no,Operational Control,IPCC AR5,yes,174,yes,no,https://perma.cc/Z5JX-KLYV
+S&P Global Inc.,7,yes,no,Operational Control,not reported,yes,145,yes,yes,https://perma.cc/B97M-GRM7
+McDonald's Corporation,7,yes,no,Operational Control,not reported,yes,235,yes,yes,https://perma.cc/GU7E-4K77
+Realty Income Corporation,7,yes,no,Operational Control,IPCC AR5,yes,138,yes,yes,https://perma.cc/BZ8S-H2U5
+Royal Caribbean Cruises Ltd.,7,yes,no,Operational Control,not reported,yes,109,yes,no,https://perma.cc/WM8W-EJQ6
+"Walgreens Boots Alliance, Inc.",7,yes,no,no boundary data,eGRID,no,153,yes,yes,https://perma.cc/YQP9-7FVP
+Archer-Daniels-Midland Company,7,yes,no,Operational Control,not reported,yes,122,yes,Yes,https://perma.cc/G7LG-VY5Z
+"Arista Networks, Inc.",7,yes,no,Operational Control,not reported,yes,119,yes,Yes,https://perma.cc/QWL6-PQQP
+Arthur J. Gallagher & Co.,7,yes,no,Operational Control,not reported,yes,349,yes,yes,https://perma.cc/3CV7-ZZMA
+"Agilent Technologies, Inc.",7,yes,no,Operational Control,not reported,no,192,yes,yes,https://perma.cc/7JG5-GFNH
+"The Goldman Sachs Group, Inc.",6,yes,no,Operational Control,not reported,yes,112,yes,yes,https://perma.cc/EZ4V-LMR4
+"Zimmer Biomet Holdings, Inc.",6,yes,no,Operational Control,not reported,yes,103,yes,no,https://perma.cc/6YAG-5RFF
+The Estée Lauder Companies Inc.,6,yes,no,Operational Control,IPCC AR5,no,304,yes,no,https://perma.cc/5834-3DEV
+Broadcom Inc.,6,yes,no,Operational Control,eGRID,no,107,yes,no,https://perma.cc/CG9A-54LZ
+WestRock Company,6,yes,no,Operational Control,IPCC AR5,no,218,yes,no,https://perma.cc/VX8Z-676Y
+"UDR, Inc.",6,yes,no,Operational Control,not reported,yes,179,yes,no,https://perma.cc/6FS5-92YJ
+BorgWarner Inc.,6,yes,no,Operational Control,not reported,yes,165,yes,no,https://perma.cc/NCN6-DWCK
+Camden Property Trust,6,yes,no,Operational Control,not reported,yes,348,yes,no,https://perma.cc/E56B-EVYC
+Cincinnati Financial Corporation,6,yes,no,Operational Control,not reported,yes,321,yes,no,https://perma.cc/C9FB-98QX
+APA Corporation,6,yes,no,Operational Control,not reported,yes,244,yes,no,https://perma.cc/5SBK-B3CG
+Tractor Supply Company,6,yes,no,no boundary data,not reported,yes,116,yes,yes,https://perma.cc/5WM8-N52W
+"ANSYS, Inc.",6,yes,no,Operational Control,not reported,yes,88,yes,no,https://perma.cc/5GS7-XQVG
+Walmart Inc.,6,yes,no,Operational Control,not reported,no,208,yes,yes,https://perma.cc/MC5H-NQV7
+Carrier Global Corporation,6,yes,no,Operational Control,not reported,yes,242,yes,no,https://perma.cc/PLW2-VVXG
+"WEC Energy Group, Inc.",6,yes,no,Operational Control,IPCC AR4,yes,231,yes,no,https://perma.cc/VNE2-EDJ3
+"West Pharmaceutical Services, Inc.",6,yes,no,Operational Control,eGRID,yes,160,yes,no,https://perma.cc/8FH6-B2CW
+Vulcan Materials Company,6,yes,no,Operational Control,not reported,yes,95,yes,no,https://perma.cc/HP6S-QM5R
+"Ameriprise Financial, Inc.",6,yes,no,Operational Control,not reported,yes,214,yes,no,https://perma.cc/XJJ2-RJH3
+Deere & Company,6,yes,no,no boundary data,not reported,no,110,yes,yes,https://perma.cc/5T89-3NG4
+"Tyson Foods, Inc.",6,yes,no,Operational Control,IPCC AR4,no,317,yes,no,https://perma.cc/DF4F-4BLJ
+Costco Wholesale Corporation,6,yes,no,no boundary data,IPCC AR6,no,320,yes,no,https://perma.cc/7F4G-2ETN
+Discover Financial Services,6,yes,no,Operational Control,not reported,yes,124,yes,no,https://perma.cc/ZRC2-MV77
+"Dollar Tree, Inc.",6,yes,no,Operational Control,not reported,no,157,yes,yes,https://perma.cc/D6PP-97CY
+"Becton, Dickinson and Company",6,yes,no,Operational Control,not reported,no,271,yes,yes,https://perma.cc/9B82-U4JJ
+AmerisourceBergen Corporation,6,yes,no,no boundary data,not reported,no,120,yes,yes,https://perma.cc/Q6PE-Y6BB
+"AutoZone, Inc.",6,yes,no,Operational Control,eGRID,no,422,yes,no,https://perma.cc/B7MK-VGEG
+Zoetis Inc.,6,yes,no,Operational Control,not reported,yes,157,yes,no,https://perma.cc/5E2E-35CJ
+TE Connectivity Ltd.,6,yes,no,Operational Control,IPCC AR5,no,241,yes,no,https://perma.cc/9N7R-5MN2
+FirstEnergy Corp.,6,yes,no,Operational Control,not reported,yes,153,yes,yes,https://perma.cc/3BUH-5GJZ
+Sysco Corporation,6,yes,no,Operational Control,not reported,no,147,yes,yes,https://perma.cc/A5X8-QWG9
+NVIDIA Corporation,6,yes,no,no boundary data,not reported,no,145,yes,yes,https://perma.cc/Z3JL-VFHX
+"Mohawk Industries, Inc.",6,yes,no,Operational Control,not reported,yes,195,yes,no,https://perma.cc/TCQ3-2LNV
+QUALCOMM Incorporated,6,yes,no,no boundary data,not reported,no,312,yes,yes,https://perma.cc/79AP-ZU28
+"Fortune Brands Home & Security, Inc.",6,yes,no,Operational Control,not reported,yes,109,yes,no,https://perma.cc/SDR8-H78V
+"Martin Marietta Materials, Inc.",6,yes,no,Operational Control,not reported,yes,117,yes,no,https://perma.cc/S4BG-9WKE
+Masco Corporation,6,yes,no,Operational Control,not reported,yes,292,yes,no,https://perma.cc/D5Q4-LHBU
+"Paychex, Inc.",6,yes,no,Financial Control,"IPCC AR4, AR5",no,72,yes,yes,https://perma.cc/L2EK-F8K8
+"PepsiCo, Inc.",6,yes,no,Operational Control,not reported,yes,187,yes,no,https://perma.cc/5NKE-M58Z
+"Quanta Services, Inc.",6,yes,no,Operational Control,not reported,yes,237,yes,no,https://perma.cc/T78P-T2R7
+General Motors Company,6,yes,no,Operational Control,not reported,yes,69,yes,no,https://perma.cc/T46V-RPDM
+"Ross Stores, Inc.",6,yes,no,no boundary data,not reported,no,209,yes,yes,https://perma.cc/NVR5-LBT3
+Genuine Parts Company,6,yes,no,Operational Control,not reported,yes,280,yes,no,https://perma.cc/2PC7-ZDTQ
+"Match Group, Inc.",6,yes,no,Operational Control,not reported,yes,111,yes,no,https://perma.cc/RKH5-27X4
+Global Payments Inc.,6,yes,no,Operational Control,not reported,yes,235,yes,no,https://perma.cc/N3TW-HGMA
+"Keysight Technologies, Inc.",6,yes,no,Operational Control,not reported,no,150,yes,no,https://perma.cc/5PES-4AE6
+"PPG Industries, Inc.",6,yes,no,Operational Control,not reported,yes,104,yes,no,https://perma.cc/AL6J-L56B
+"IDEXX Laboratories, Inc.",6,yes,no,Operational Control,not reported,yes,199,yes,no,https://perma.cc/7ZT7-HXTM
+IDEX Corporation,6,yes,no,Operational Control,not reported,yes,199,yes,no,https://perma.cc/H9V5-PY87
+NortonLifeLock Inc.,6,yes,no,no boundary data,not reported,no,150,yes,yes,https://perma.cc/A967-QGBK
+Extra Space Storage Inc.,6,yes,no,Operational Control,not reported,yes,178,yes,no,https://perma.cc/29H6-B3TV
+Kellogg Company,6,yes,no,Operational Control,not reported,yes,206,yes,no,https://perma.cc/5BAU-YWWD
+Emerson Electric Co.,6,yes,no,Operational Control,not reported,no,258,yes,yes,https://perma.cc/PS4C-FUW2
+"Essex Property Trust, Inc.",6,yes,no,Operational Control,not reported,yes,122,yes,no,https://perma.cc/KZ6F-2QYQ
+FactSet Research Systems Inc.,6,yes,no,Operational Control,not reported,no,317,yes,no,https://perma.cc/F7QP-BQJC
+"Tesla, Inc.",6,yes,no,Operational Control,IPCC AR5,yes,146,yes,no,https://perma.cc/9LH2-7LHH
+"Teradyne, Inc.",6,yes,no,Operational Control,IPCC AR4,yes,349,yes,no,https://perma.cc/WKX4-E4AZ
+Otis Worldwide Corporation,6,yes,no,Operational Control,not reported,no,79,yes,no,https://perma.cc/236E-23QX
+"Lowe's Companies, Inc.",6,yes,no,Operational Control,not reported,no,140,yes,no,https://perma.cc/Z5XV-TTAM
+Viatris Inc.,5,yes,no,Operational Control,not reported,yes,131,yes,no,https://perma.cc/82J2-LVU8
+"Take-Two Interactive Software, Inc.",5,yes,no,Operational Control,not reported,no,131,yes,no,https://perma.cc/8N9P-YEAX
+TransDigm Group Incorporated,5,yes,no,no boundary data,IPCC AR5,no,176,yes,no,https://perma.cc/THW3-ANAW
+A. O. Smith Corporation,5,yes,no,Operational Control,not reported,yes,230,yes,no,https://perma.cc/78DB-ELRA
+The AES Corporation,5,yes,no,no boundary data,not reported,no,78,yes,yes,https://perma.cc/VRF5-U37Z
+"McCormick & Company, Incorporated",5,yes,no,no boundary data,not reported,no,157,yes,yes,https://perma.cc/8Z6U-Z8DF
+"The Cooper Companies, Inc.",5,yes,no,Operational Control,not reported,no,129,yes,no,https://perma.cc/FH79-7M3F
+"Bio-Rad Laboratories, Inc.",5,yes,no,no boundary data,not reported,no,266,yes,yes,https://perma.cc/9FUV-S8HU
+Vertex Pharmaceuticals Incorporated,5,yes,no,no boundary data,not reported,no,195,yes,no,https://perma.cc/XHC5-HSCM
+Booking Holdings Inc.,5,yes,no,no boundary data,not reported,no,165,yes,yes,https://perma.cc/MF99-QXWT
+Organon & Co.,5,yes,no,Operational Control,not reported,yes,152,yes,no,https://perma.cc/Q2TZ-Y48H
+Boston Scientific Corporation,5,yes,no,Operational Control,not reported,yes,136,yes,no,https://perma.cc/JQ36-4NCD
+Dollar General Corporation,5,yes,no,no boundary data,eGRID,no,73,yes,no,https://perma.cc/BR6A-2Y8N
+Teledyne Technologies Incorporated,5,yes,no,no boundary data,not reported,yes,323,yes,no,https://perma.cc/45V6-4YP9
+"Paycom Software, Inc.",5,yes,no,Operational Control,not reported,yes,90,yes,no,https://perma.cc/NFA4-Y56B
+DENTSPLY SIRONA Inc.,5,yes,no,Operational Control,not reported,yes,349,yes,no,https://perma.cc/3XNY-XUR9
+Electronic Arts Inc.,5,yes,no,Operational Control,not reported,no,186,yes,no,https://perma.cc/G3WS-WVNA
+Intuit Inc.,4,yes,no,no boundary data,not reported,no,59,yes,yes,https://perma.cc/8TMU-2CTT
+"Skyworks Solutions, Inc.",4,yes,no,no boundary data,not reported,no,314,yes,no,https://perma.cc/56JN-NSC3
+PVH Corp.,4,yes,no,no boundary data,not reported,no,186,yes,no,https://perma.cc/7FZR-WETZ
+Bio-Techne Corporation,4,yes,no,Operational Control,not reported,no,258,yes,no,https://perma.cc/VQ2S-PPKY
+"Qorvo, Inc.",4,yes,no,no boundary data,not reported,no,106,yes,no,https://perma.cc/7GHM-N7BA
+"CarMax, Inc.",4,yes,no,no boundary data,not reported,no,87,yes,no,https://perma.cc/R8K4-G7LT
+Avery Dennison Corporation,4,yes,no,no boundary data,not reported,no,158,yes,no,https://perma.cc/2GXF-7Q3N
+"Rockwell Automation, Inc.",4,yes,no,no boundary data,not reported,no,125,yes,no,https://perma.cc/JYK9-H2FA
+"Catalent, Inc.",4,yes,no,Operational Control,not reported,no,68,yes,no,https://perma.cc/7ECL-ZYQA
+"The Home Depot, Inc.",4,yes,no,no boundary data,not reported,no,178,yes,no,https://perma.cc/WZ2K-HECG
+"Copart, Inc.",4,yes,no,no boundary data,not reported,no,87,yes,no,https://perma.cc/6GHU-2ZUS
+"F5, Inc.",4,yes,no,no boundary data,not reported,no,239,yes,no,https://perma.cc/ZH3E-YQ4T
+Parker-Hannifin Corporation,4,yes,no,no boundary data,not reported,no,83,yes,no,https://perma.cc/82CF-8A9Z
+The Walt Disney Company,4,yes,no,no boundary data,not reported,no,146,yes,no,https://perma.cc/4R7C-FA52
+"Hologic, Inc.",4,yes,no,no boundary data,not reported,no,138,yes,no,https://perma.cc/GEM3-KGU7
+"Align Technology, Inc.",0,no,no,no report,no report,no,,no,no,
+Willis Towers Watson Public Limited Company,0,no,no,no report,no report,no,,no,no,
+Atmos Energy Corporation,0,no,no,no report,no report,no,,no,no,
+MarketAxess Holdings Inc.,0,no,no,no report,no report,no,,no,no,
+"Automatic Data Processing, Inc.",0,no,no,no report,no report,no,,no,no,
+"Raymond James Financial, Inc.",0,no,no,no report,no report,no,,no,no,
+"NVR, Inc.",0,no,no,no report,no report,no,,no,no,
+Allegion plc,0,no,no,no report,no report,no,,no,no,
+W. R. Berkley Corporation,0,no,no,no report,no report,no,,no,no,
+Loews Corporation,0,no,no,no report,no report,no,,no,no,
+"Zions Bancorporation, National Association",0,no,no,no report,no report,no,,no,no,
+"Akamai Technologies, Inc.",0,no,no,no report,no report,no,,no,no,
+PACCAR Inc,0,no,no,no report,no report,no,,no,no,
+"Live Nation Entertainment, Inc.",0,no,no,no report,no report,no,,no,no,
+"Bath & Body Works, Inc.",0,no,no,no report,no report,no,,no,no,
+"O'Reilly Automotive, Inc.",0,no,no,no report,no report,no,,no,no,
+McKesson Corporation,0,no,no,no report,no report,no,,no,no,
+Aflac Incorporated,0,no,no,no report,no report,no,,no,no,
+"Molina Healthcare, Inc.",0,no,no,no report,no report,no,,no,no,
+"Monolithic Power Systems, Inc.",0,no,no,no report,no report,no,,no,no,
+"Moderna, Inc.",0,no,no,no report,no report,no,,no,no,
+"Abiomed, Inc.",0,no,no,no report,no report,no,,no,no,
+Microsoft Corporation,0,no,no,no report,no report,no,,no,no,
+PTC Inc.,0,no,no,no report,no report,no,,no,no,
+Public Service Enterprise Group Incorporated,0,no,no,no report,no report,no,,no,no,
+"Penn National Gaming, Inc.",0,no,no,no report,no report,no,,no,no,
+ResMed Inc.,0,no,no,no report,no report,no,,no,no,
+Pool Corporation,0,no,no,no report,no report,no,,no,no,
+"Warner Bros. Discovery, Inc.",0,no,no,no report,no report,no,,no,no,
+News Corporation,0,no,no,no report,no report,no,,no,no,
+"AMETEK, Inc.",0,no,no,no report,no report,no,,no,no,
+"NIKE, Inc.",0,no,no,no report,no report,no,,no,no,
+Nordson Corporation,0,no,no,no report,no report,no,,no,no,
+"PerkinElmer, Inc.",0,no,no,no report,no report,no,,no,no,
+"Advance Auto Parts, Inc.",0,no,no,no report,no report,no,,no,no,
+Westinghouse Air Brake Technologies Corporation,0,no,no,no report,no report,no,,no,no,
+"NetApp, Inc.",0,no,no,no report,no report,no,,no,no,
+"Darden Restaurants, Inc.",0,no,no,no report,no report,no,,no,no,
+Stryker Corporation,0,no,no,no report,no report,no,,no,no,
+"Citrix Systems, Inc.",0,no,no,no report,no report,no,,no,no,
+"HCA Healthcare, Inc.",0,no,no,no report,no report,no,,no,no,
+"Conagra Brands, Inc.",0,no,no,no report,no report,no,,no,no,
+"Gilead Sciences, Inc.",0,no,no,no report,no report,no,,no,no,
+"Constellation Brands, Inc.",0,no,no,no report,no report,no,,no,no,
+"General Mills, Inc.",0,no,no,no report,no report,no,,no,no,
+General Dynamics Corporation,0,no,no,no report,no report,no,,no,no,
+Generac Holdings Inc.,0,no,no,no report,no report,no,,no,no,
+Garmin Ltd.,0,no,no,no report,no report,no,,no,no,
+"Tapestry, Inc.",0,no,no,no report,no report,no,,no,no,
+Fox Corporation,0,no,no,no report,no report,no,,no,no,
+"Roper Technologies, Inc.",0,no,no,no report,no report,no,,no,no,
+Danaher Corporation,0,no,no,no report,no report,no,,no,no,
+Cintas Corporation,0,no,no,no report,no report,no,,no,no,
+"FLEETCOR Technologies, Inc.",0,no,no,no report,no report,no,,no,no,
+First Republic Bank,0,no,no,no report,no report,no,,no,no,
+"DexCom, Inc.",0,no,no,no report,no report,no,,no,no,
+The Procter & Gamble Company,0,no,no,no report,no report,no,,no,no,
+FedEx Corporation,0,no,no,no report,no report,no,,no,no,
+DISH Network Corporation,0,no,no,no report,no report,no,,no,no,
+Fastenal Company,0,no,no,no report,no report,no,,no,no,
+"Domino's Pizza, Inc.",0,no,no,no report,no report,no,,no,no,
+Exxon Mobil Corporation,0,no,no,no report,no report,no,,no,no,
+DTE Energy Company,0,no,no,no report,no report,no,,no,no,
+Teleflex Incorporated,0,no,no,no report,no report,no,,no,no,
+"EPAM Systems, Inc.",0,no,no,no report,no report,no,,no,no,
+"D.R. Horton, Inc.",0,no,no,no report,no report,no,,no,no,
+Carnival Corporation & plc,0,no,no,no report,no report,no,,no,no,
+Berkshire Hathaway Inc.,0,no,no,no report,no report,no,,no,no,
+"Leidos Holdings, Inc.",0,no,no,no report,no report,no,,no,no,
+"Lamb Weston Holdings, Inc.",0,no,no,no report,no report,no,,no,no,
+Laboratory Corporation of America Holdings,0,no,no,no report,no report,no,,no,no,
+Bristol-Myers Squibb Company,0,no,no,no report,no report,no,,no,no,
+"VeriSign, Inc.",0,no,no,no report,no report,no,,no,no,
+"Brown & Brown, Inc.",0,no,no,no report,no report,no,,no,no,
+Brown-Forman Corporation,0,no,no,no report,no report,no,,no,no,
+"Rollins, Inc.",0,no,no,no report,no report,no,,no,no,
+"Universal Health Services, Inc.",0,no,no,no report,no report,no,,no,no,
+Kimberly-Clark Corporation,0,no,no,no report,no report,no,,no,no,
+Capital One Financial Corporation,0,no,no,no report,no report,no,,no,no,
+STERIS plc,0,no,no,no report,no report,no,,no,no,
+"Cardinal Health, Inc.",0,no,no,no report,no report,no,,no,no,
+"Cisco Systems, Inc.",0,no,no,no report,no report,no,,no,no,
+SBA Communications Corporation,0,no,no,no report,no report,no,,no,no,
+"Jack Henry & Associates, Inc.",0,no,no,no report,no report,no,,no,no,
+CDW Corporation,0,no,no,no report,no report,no,,no,no,
+IQVIA Holdings Inc.,0,no,no,no report,no report,no,,no,no,
+"Intuitive Surgical, Inc.",0,no,no,no report,no report,no,,no,no,
+Union Pacific Corporation,0,no,no,no report,no report,no,,no,no,
+Signature Bank,0,no,no,no report,no report,no,,no,no,
+"Ulta Beauty, Inc.",0,no,no,no report,no report,no,,no,no,
+Snap-on Incorporated,0,no,no,no report,no report,no,,no,no,
+"Tyler Technologies, Inc.",0,no,no,no report,no report,no,,no,no,
+"Twitter, Inc.",0,no,no,no report,no report,no,,no,no,
+"Huntington Ingalls Industries, Inc.",0,no,no,no report,no report,no,,no,no,
+Lennar Corporation,0,no,no,no report,no report,no,,no,no,
+The Charles Schwab Corporation,0,no,no,no report,no report,no,,no,no,
+      `;
+      function CompanyLogo(CompanyName) {
+        if (CompanyName.slice(0, 4) === 'The ') {
+          CompanyName = CompanyName.slice(4);
+        }
+        NameParts = CompanyName.replace(/[\.\&]/g, '').match(/^([\w\-\']+) ?([\w\-\']+)? ?([\w\-\']+)?/);
+        ImageName = NameParts[1];
+        if (NameParts[2]) { ImageName += NameParts[2]; }
+        if (ImageName.length === 2 && NameParts[3]) { ImageName += NameParts[3]; }
+        return '<img src="img/' + ImageName + '_32.png" class="logo">';
+      }
+      function CleanNumber(DirtyNumber, DecimalCount) {
+        if (DirtyNumber === '') { return DirtyNumber; }
+        var CleanNumber = DirtyNumber.replaceAll(/[^\d\.]/g, '').replace(/^0+/g, '');
+        if (CleanNumber.indexOf('.') !== -1) {
+          CleanNumber = CleanNumber.replace(/0+$/g, '').replace(/\.$/g, '');
+        }
+        return Intl.NumberFormat('en-US', { minimumFractionDigits: DecimalCount, maximumFractionDigits: DecimalCount }).format(CleanNumber);
+      }
+      function ShortNameWithToolTip(LongName) {
+        ShortName = LongName.replace('&amp;', '&').trim();
+        PrefixList = ['company', 'co', 'incorporated', 'inc', 'corporation', 'corp', 'limited', 'ltd', 'llc', 'plc'];
+        if (ShortName.slice(0, 4) === 'The ') {
+          ShortName = ShortName.slice(4).trim();
+          PrefixList = PrefixList.slice(1);
+        }
+        if (ShortName.slice(-1) === '.') {
+          ShortName = ShortName.slice(0, -1).trim();
+        }
+        PrefixList.forEach(function(suffix) {
+          if (ShortName.slice(-suffix.length - 1).toLowerCase() === ' ' + suffix.toLowerCase()) {
+            ShortName = ShortName.slice(0, -suffix.length - 1).trim();
+          }
+        });
+        if (ShortName.length > 25 && ShortName.indexOf(' ') > -1) {
+          if (ShortName.indexOf(' ') > 25) {
+            ShortName = ShortName.slice(0, ShortName.indexOf(' ')).trim();
+          } else {
+            ShortName = ShortName.slice(0, 28).trim();
+            ShortName = ShortName.slice(0, ShortName.lastIndexOf(' ')).trim();
+          }
+          if (ShortName.slice(-1) === ',') {
+            ShortName = ShortName.slice(0, -1).trim();
+          }
+        }
+        if (ShortName.slice(-1) === '&') {
+          ShortName = ShortName.slice(0, -1).trim();
+        }
+        if (ShortName.slice(-4) === ' and') {
+          ShortName = ShortName.slice(0, -4).trim();
+        }
+        if (ShortName.slice(-4) === ' of') {
+          ShortName = ShortName.slice(0, -3).trim();
+        }
+        if (ShortName.slice(-1) === ',') {
+          ShortName = ShortName.slice(0, -1).trim();
+        }
+        return '<a href="#" data-toggle="tooltip" title="' + LongName + '">' + ShortName + '</a>';
+      }
+      ParsedData = $.csv.toArrays(RawData).slice(1).map(function(r) { return [
+        '',
+        '&nbsp; <span class="no-wrap">' + CompanyLogo(r[0]) + ' ' + ShortNameWithToolTip(r[0]) + '</span>',
+        r[1],
+        '<span class="no-wrap">' + r[2] + '</span>', r[9], r[3], r[4] === 'Operational control, Equity share' ? 'Operational control' : r[4], r[5],
+        r[6], CleanNumber(r[7], 0),
+        r[8] + (r[10] ? ' — <a href="' + r[10] + '" target="_new">download</a>' : ''),
+      ]; });
+      TableData = ParsedData.slice(1);
+      $(document).ready( function () {
+        var TransparencyTable = $('#TransparencyTable').DataTable( {
+          data: TableData,
+          sDom: 'ltipr',
+          autoWidth: false,
+          paging: false,
+          fixedHeader: true,
+          searching: true,
+          language: { searchPlaceholder: 'Search', search: '' },
+          columnDefs: [
+            { orderable: false, targets: [ 0 ] },
+            { type: 'num-fmt', targets: [ 2, 9 ] },
+            { className: 'text-center grey-background', targets: [ 0 ] },
+            { className: 'text-center', targets: [ 2, 3, 4, 5, 7, 8, 10 ] },
+            { className: 'text-right pad-right-extra', targets: [ 9 ] },
+            { className: 'no-wrap', targets: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] },
+          ],
+          order: [ [ 1, 'asc' ] ],
+        } );
+        TransparencyTable.on( 'order.dt search.dt', function () {
+          TransparencyTable.column( 0, { search:'applied', order:'applied' } )
+            .nodes()
+            .each( function (cell, i) { cell.innerHTML = i + 1; } );
+        } ).draw();
+        $('[data-toggle="tooltip"]').tooltip();
+        $('#mySearchText').keyup(function() {
+          TransparencyTable.search($('#mySearchText').val()).draw();
+        } );
+      } );
+    </script>
+  </head>
+  <body>
+
+    <header class="hide-on-print">
+      <div class="navbar navbar-dark" style="background-color: #8800ff;">
+        <div class="container d-flex justify-content-between">
+          <a href="index.html" class="navbar-brand d-flex align-items-center">
+            The Stakeholder Takeover Project &nbsp; &nbsp;
+            <em style="font-size: 70%;">Humanizing corporations through the market power of people</em>
+          </a>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-sm navbar-light grey-background py-0">
+        <div class="container d-flex justify-content-between">
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link py-1" href="index.html">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link py-1" href="#">|</a></li>
+              <li class="nav-item">
+                <a class="nav-link py-1" href="rankings_2021.html">Rankings</a>
+              </li>
+              <li class="nav-item"><a class="nav-link py-1" href="#">|</a></li>
+              <li class="nav-item">
+                <a class="nav-link py-1 active" href="transparency_2021.html">Transparency</a>
+              </li>
+              <li class="nav-item"><a class="nav-link py-1" href="#">|</a></li>
+              <li class="nav-item">
+                <a class="nav-link py-1" href="definitions.html">Definitions</a>
+              </li>
+            </ul>
+           </div>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main" class="space-above space-below">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-lg-2">
+            <a href="transparency_2020.html"><button type="button" class="btn btn-secondary">2020</button></a>
+            <a href="transparency_2021.html"><button type="button" class="btn btn-primary green">2021</button></a>
+          </div>
+          <div class="col-lg-7">
+            <h2>2021 Transparency</h2>
+          </div>
+          <div class="col-lg-3 d-flex align-items-end hide-on-print">
+            <a href="transparency-how-to-use.html" class="hide-on-print">How to use this page</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9">
+            Sample: All S&P 500 companies<br>
+            Data: From voluntary GHG reports.<br>
+            <span class="hide-on-print">Click on the green <button type="button" class="btn btn-success green">Buttons</button> to order data by field</span>
+          </div>
+          <div class="col-lg-3 d-flex align-items-end hide-on-print">
+            <input type="text" id="mySearchText" placeholder="Search..." aria-controls="TransparencyTable" class="hide-on-print">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <table id="TransparencyTable" class="table table-sm table-hover">
+      <thead>
+        <!-- Empty row needed for layout - do not remove -->
+        <tr class="no-bottom-border">
+          <th class="no-top-border"></th>
+
+          <th class="no-top-border"></th>
+
+          <th class="right-border no-top-border"></th>
+
+          <th class="top-border"></th>
+          <th class="top-border"></th>
+          <th class="top-border"></th>
+          <th class="top-border"></th>
+          <th class="right-border top-border"></th>
+
+          <th class="top-border"></th>
+          <th class="right-border top-border"></th>
+
+          <th class="no-top-border no-right-border"></th>
+        </tr>
+        <tr class="no-top-border">
+          <th rowspan="2" class="header white-background"></th>
+          <th rowspan="2" class="header text-center no-right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="The company name and logo.">Company</button></th>
+          <th rowspan="2" class="header text-center right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="How many of ten data points did the company report for 2021?">Transparency<br>score (of 10)</button></th>
+          <th colspan="5" class="header text-center right-border no-bottom-border">GHG Information Reported</th>
+          <th colspan="2" class="header text-center right-border no-bottom-border">Data Comparability</th>
+          <th rowspan="2" class="header text-center no-right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company published a 2021 Greenhouse Gas report"><span class="no-wrap">GHG</span><br><span class="no-wrap">report</span></button></th>
+        </tr>
+        <tr class="no-top-border bottom-border">
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company reported the amounts of its scope 1 and 2 emissions"><span class="no-wrap">Scope 1+2</span><br>emissions</button></th>
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company reported at least one category of scope 3 emissions"><span class="no-wrap">Scope 3</span><br>emissions</button></th>
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company reported its biogenic emissions">Biogenic<br>emissions</button></th>
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company reported its criteria for inclusion of subsidiary emissions">Firm boundary</button></th>
+          <th class="header text-center right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company reported how it converted gases to CO2 equivalents">GWP<br>assessment</button></th>
+
+          <th class="header text-center"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Company’s 10-K, GHG, and CSR reports are for calendar year"><span class="no-wrap">All data are</span><br><span class="no-wrap">calendar year</span></button></th>
+          <th class="header text-center right-border"><button type="button" class="btn btn-success sort-button green" data-toggle="tooltip" title="Days from end of reporting period to release of the GHG data"><span class="no-wrap">Days to</span><br><span class="no-wrap">GHG release</span></button></th>
+        </tr>
+      </thead>
+      <tbody class="columnGroupBorders">
+
+      </tbody>
+    </table>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Lynn LoPucki</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

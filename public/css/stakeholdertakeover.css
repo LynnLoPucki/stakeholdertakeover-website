@@ -36,7 +36,7 @@ footer p { margin-bottom: .25rem; }
 
 .sort-button { height: 56px; width: 95%; padding: 0px 6px !important; }
 
-.sort-button.green, .btn-success.green { background-color: #35650d; border-color: #35650d; }
+.btn.green, .sort-button.green, .btn-success.green { background-color: #35650d; border-color: #35650d; }
 
 .sort-button:hover { background-color: #aaa; border-color: #aaa; }
 
